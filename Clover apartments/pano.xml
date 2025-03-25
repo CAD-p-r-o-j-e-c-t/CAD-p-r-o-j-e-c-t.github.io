@@ -73,7 +73,7 @@
       </sound>
       <lensflare id="Lensflare01" color="0xffffff" pan="-106.890" blinding="70.000" alpha="80.000" type="6" tilt="72.210"/>
       <lensflare id="Lensflare02" color="0xffffff" pan="-265.110" blinding="50.000" alpha="80.000" type="6" tilt="56.980"/>
-      <lensflare id="Lensflare03" color="0xffffff" pan="-271.200" blinding="10.000" alpha="80.000" type="3" tilt="4.940"/>
+      <lensflare id="Lensflare03" color="0xffffff" pan="-268.330" blinding="10.000" alpha="80.000" type="3" tilt="13.240"/>
       <lensflare id="Lensflare04" color="0xffffff" pan="-140.820" blinding="50.000" alpha="80.000" type="6" tilt="63.600"/>
       <lensflare id="Lensflare05" color="0xffffff" pan="-50.850" blinding="50.000" alpha="80.000" type="6" tilt="68.970"/>
       <lensflare id="Lensflare06" color="0xffffff" pan="-238.050" blinding="30.000" alpha="80.000" type="6" tilt="53.130"/>
