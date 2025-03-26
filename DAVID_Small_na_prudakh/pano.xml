@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour hassounds="1" apprev="20986" start="node4" appversion="7.1.8">
+  <panorama id="node14">
+    <input leveltileurl="tiles/node14/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="2000" levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" overlap="1" width="2000">
+      <level predecode="0" preload="0" width="2000" height="2000"/>
+      <level predecode="0" preload="0" width="1000" height="1000"/>
+      <level predecode="1" preload="1" width="500" height="500"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" tilt="0" fov="100" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" tilt="90" fov="140" fovstereographic="330"/>
+    </view>
+    <userdata longitude="" tags="00" author="" description="" latitude="" datetime="" copyright="" heading="0" customnodeid="" title="" source="" comment="" nodeid="node14" info=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderradius="1" textcolor="0x000000" border="1" textalpha="1" wordwrap="1" height="20" enabled="1" backgroundalpha="1" backgroundcolor="0xffffff" bordercolor="0x000000" width="180" background="1" borderalpha="1"/>
+      <polystyle backgroundalpha="0.25098" backgroundcolor="0x0000ff" handcursor="1" bordercolor="0x0000ff" mode="0" borderalpha="1"/>
+      <hotspot url="{node4}" skinid="ht_node" id="Point01" pan="-268.72" tilt="-10.72" description="" target="91.2/-10.8/100.0" title=""/>
+    </hotspots>
+    <media>
+      <sound pansize="10.000" pan="-1.000" id="_background" loop="2" tiltsize="10.000" field="90.000" ambientlevel="0.000" level="1.000" startmutedmobile="0" tilt="-1.000" nodechangekeep="1" mode="0">
+        <source url="media/tmpdggegqsw.mp3" mono="0"/>
+        <source url="media/beabadoobee-Coffee.mp3" mono="0"/>
+      </sound>
+    </media>
+    <transition blendtime="1" softedge="0" type="crossdissolve" zoomout="3" zoomfov="40" zoomin="6" enabled="1" zoomoutpause="0" blendcolor="0x000000" zoomafterinfov="140" zoomspeed="2" zoomafteroutfov="40" delay="none"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0"/>
+    <control simulatemass="1" dblclickfullscreen="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedkeyboard="0" speedwheel="1" lockedwheel="0" contextvr="1" contextfullscreen="1" hideabout="0" lockedmouse="0" lockedkeyboardzoom="0" rubberband="1" sensitivity="8" zoomcentercursor="1"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node4">
+    <input leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="2000" levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" overlap="1" width="2000">
+      <level predecode="0" preload="0" width="2000" height="2000"/>
+      <level predecode="0" preload="0" width="1000" height="1000"/>
+      <level predecode="1" preload="1" width="500" height="500"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" tilt="0" fov="100" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" tilt="90" fov="140" fovstereographic="330"/>
+    </view>
+    <userdata longitude="" tags="TelegramDesktop" author="" description="" latitude="" datetime="" copyright="" heading="0" customnodeid="" title="" source="" comment="" nodeid="node4" info=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderradius="1" textcolor="0x000000" border="1" textalpha="1" wordwrap="1" height="20" enabled="1" backgroundalpha="1" backgroundcolor="0xffffff" bordercolor="0x000000" width="180" background="1" borderalpha="1"/>
+      <polystyle backgroundalpha="0.25098" backgroundcolor="0x0000ff" handcursor="1" bordercolor="0x0000ff" mode="0" borderalpha="1"/>
+      <hotspot url="{node5}" skinid="ht_node" id="Point01" pan="-318.69" tilt="-4.24" description="" target="87.8/0.1/100.0" title=""/>
+      <hotspot url="{node3}" skinid="ht_node" id="Point02" pan="-39.03" tilt="-1.24" description="" target="" title=""/>
+      <hotspot url="images/BMW Vladimir.jpg" skinid="ht_image" id="Point03" pan="-27.53" tilt="-18.43" description="" target="" title=""/>
+      <hotspot url="images/  .jpg" skinid="ht_image" id="Point04" pan="-4.27" tilt="-14.02" description="" target="" title=""/>
+      <hotspot pan="-268.08" id="Point05" description="" use3D="0" customimageheight="69" title="" distance3D="394.337" url="{node14}" skinid="ht_node" tilt="-10.66" target="91.4/-11.5/100.0" customimagewidth="69" customimage="media/icons8--100.png" fov="10"/>
+    </hotspots>
+    <media>
+      <sound pansize="10.000" pan="-64.160" id="Element01" loop="1" tiltsize="10.000" field="90.000" ambientlevel="0.000" level="1.000" startmutedmobile="0" tilt="-24.400" nodechangekeep="0" mode="5">
+        <source url="media/zmz 402 motor.mp3" mono="0"/>
+      </sound>
+      <sound pansize="10.000" pan="-1.000" id="_background" loop="2" tiltsize="10.000" field="90.000" ambientlevel="0.000" level="1.000" startmutedmobile="0" tilt="-1.000" nodechangekeep="1" mode="0">
+        <source url="media/tmpdggegqsw.mp3" mono="0"/>
+        <source url="media/beabadoobee-Coffee.mp3" mono="0"/>
+      </sound>
+      <lensflare blinding="80.000" pan="-227.280" id="Lensflare01" tilt="20.270" type="3" alpha="80.000" color="0xffffff"/>
+    </media>
+    <transition blendtime="1" softedge="0" type="crossdissolve" zoomout="3" zoomfov="40" zoomin="6" enabled="1" zoomoutpause="0" blendcolor="0x000000" zoomafterinfov="140" zoomspeed="2" zoomafteroutfov="40" delay="none"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0"/>
+    <control simulatemass="1" dblclickfullscreen="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedkeyboard="0" speedwheel="1" lockedwheel="0" contextvr="1" contextfullscreen="1" hideabout="0" lockedmouse="0" lockedkeyboardzoom="0" rubberband="1" sensitivity="8" zoomcentercursor="1"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node3">
+    <input leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="2000" levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" overlap="1" width="2000">
+      <level predecode="0" preload="0" width="2000" height="2000"/>
+      <level predecode="0" preload="0" width="1000" height="1000"/>
+      <level predecode="1" preload="1" width="500" height="500"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" tilt="0" fov="100" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" tilt="90" fov="140" fovstereographic="330"/>
+    </view>
+    <userdata longitude="" tags="TelegramDesktop" author="" description="" latitude="" datetime="25.03.2025 0:18" copyright="" heading="0" customnodeid="" title="" source="" comment="" nodeid="node3" info=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderradius="1" textcolor="0x000000" border="1" textalpha="1" wordwrap="1" height="20" enabled="1" backgroundalpha="1" backgroundcolor="0xffffff" bordercolor="0x000000" width="180" background="1" borderalpha="1"/>
+      <polystyle backgroundalpha="0.25098" backgroundcolor="0x0000ff" handcursor="1" bordercolor="0x0000ff" mode="0" borderalpha="1"/>
+      <hotspot url="{node6}" skinid="ht_node" id="Point01" pan="-15.75" tilt="5.28" description="" target="" title=""/>
+      <hotspot url="{node4}" skinid="ht_node" id="Point02" pan="-326.84" tilt="-0.09" description="" target="9.9/3.9/100.0" title=""/>
+    </hotspots>
+    <media>
+      <sound pansize="10.000" pan="-1.000" id="_background" loop="2" tiltsize="10.000" field="90.000" ambientlevel="0.000" level="1.000" startmutedmobile="0" tilt="-1.000" nodechangekeep="1" mode="0">
+        <source url="media/tmpdggegqsw.mp3" mono="0"/>
+        <source url="media/beabadoobee-Coffee.mp3" mono="0"/>
+      </sound>
+      <lensflare blinding="80.000" pan="-46.820" id="Lensflare01" tilt="25.680" type="3" alpha="80.000" color="0xffffff"/>
+    </media>
+    <transition blendtime="1" softedge="0" type="crossdissolve" zoomout="3" zoomfov="40" zoomin="6" enabled="1" zoomoutpause="0" blendcolor="0x000000" zoomafterinfov="140" zoomspeed="2" zoomafteroutfov="40" delay="none"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0"/>
+    <control simulatemass="1" dblclickfullscreen="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedkeyboard="0" speedwheel="1" lockedwheel="0" contextvr="1" contextfullscreen="1" hideabout="0" lockedmouse="0" lockedkeyboardzoom="0" rubberband="1" sensitivity="8" zoomcentercursor="1"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node5">
+    <input leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="2000" levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" overlap="1" width="2000">
+      <level predecode="0" preload="0" width="2000" height="2000"/>
+      <level predecode="0" preload="0" width="1000" height="1000"/>
+      <level predecode="1" preload="1" width="500" height="500"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" tilt="0" fov="100" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" tilt="90" fov="140" fovstereographic="330"/>
+    </view>
+    <userdata longitude="" tags="TelegramDesktop" author="" description="" latitude="" datetime="" copyright="" heading="0" customnodeid="" title="" source="" comment="" nodeid="node5" info=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderradius="1" textcolor="0x000000" border="1" textalpha="1" wordwrap="1" height="20" enabled="1" backgroundalpha="1" backgroundcolor="0xffffff" bordercolor="0x000000" width="180" background="1" borderalpha="1"/>
+      <polystyle backgroundalpha="0.25098" backgroundcolor="0x0000ff" handcursor="1" bordercolor="0x0000ff" mode="0" borderalpha="1"/>
+      <hotspot url="{node6}" skinid="ht_node" id="Point01" pan="-270.43" tilt="-5.83" description="" target="-97.3/-3.0/100.0" title=""/>
+      <hotspot url="{node7}" skinid="ht_node" id="Point02" pan="-249.26" tilt="8.01" description="" target="146.3/-32.2/100.0" title=""/>
+      <hotspot url="{node4}" skinid="ht_node" id="Point03" pan="-90.82" tilt="-5.1" description="" target="17.4/4.4/108.2" title=""/>
+      <hotspot url="images/hall 2.jpg" skinid="ht_image" id="Point04" pan="-269.4" tilt="40.19" description="" target="" title=""/>
+      <hotspot pan="-157.4" id="Point05" description="" use3D="0" customimageheight="69" title="" distance3D="394.337" url="images/hall 1.1.jpg" skinid="ht_image" tilt="3.57" target="" customimagewidth="69" customimage="media/Mona liza.png" fov="10"/>
+      <hotspot pan="-73.86" id="Point06" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="{node5}" skinid="ht_node" tilt="-21.37" target="-83.3/-29.4/100.0" customimagewidth="100" customimage="media/icons8-1-100.png" fov="10"/>
+      <hotspot pan="-89.86" id="Point07" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="{node12}" skinid="ht_node" tilt="-20.2" target="-90.4/-25.7/100.0" customimagewidth="100" customimage="media/icons8-2-100.png" fov="10"/>
+      <hotspot pan="-105.64" id="Point08" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="{node13}" skinid="ht_node" tilt="-22.11" target="-101.4/-27.6/100.0" customimagewidth="100" customimage="media/icons8-3-100.png" fov="10"/>
+    </hotspots>
+    <media>
+      <sound pansize="10.000" pan="-1.000" id="_background" loop="2" tiltsize="10.000" field="90.000" ambientlevel="0.000" level="1.000" startmutedmobile="0" tilt="-1.000" nodechangekeep="1" mode="0">
+        <source url="media/tmpdggegqsw.mp3" mono="0"/>
+        <source url="media/beabadoobee-Coffee.mp3" mono="0"/>
+      </sound>
+      <lensflare blinding="50.000" pan="-196.240" id="Lensflare01" tilt="50.520" type="6" alpha="80.000" color="0xffffff"/>
+      <lensflare blinding="50.000" pan="-129.030" id="Lensflare02" tilt="38.580" type="6" alpha="80.000" color="0xffffff"/>
+      <lensflare blinding="50.000" pan="-170.810" id="Lensflare03" tilt="89.810" type="4" alpha="80.000" color="0xffffff"/>
+    </media>
+    <transition blendtime="1" softedge="0" type="crossdissolve" zoomout="3" zoomfov="40" zoomin="6" enabled="1" zoomoutpause="0" blendcolor="0x000000" zoomafterinfov="140" zoomspeed="2" zoomafteroutfov="40" delay="none"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0"/>
+    <control simulatemass="1" dblclickfullscreen="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedkeyboard="0" speedwheel="1" lockedwheel="0" contextvr="1" contextfullscreen="1" hideabout="0" lockedmouse="0" lockedkeyboardzoom="0" rubberband="1" sensitivity="8" zoomcentercursor="1"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node6">
+    <input leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="2000" levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" overlap="1" width="2000">
+      <level predecode="0" preload="0" width="2000" height="2000"/>
+      <level predecode="0" preload="0" width="1000" height="1000"/>
+      <level predecode="1" preload="1" width="500" height="500"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" tilt="0" fov="100" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" tilt="90" fov="140" fovstereographic="330"/>
+    </view>
+    <userdata longitude="" tags="TelegramDesktop" author="" description="" latitude="" datetime="07.03.2025 20:45" copyright="" heading="0" customnodeid="" title="" source="" comment="" nodeid="node6" info=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderradius="1" textcolor="0x000000" border="1" textalpha="1" wordwrap="1" height="20" enabled="1" backgroundalpha="1" backgroundcolor="0xffffff" bordercolor="0x000000" width="180" background="1" borderalpha="1"/>
+      <polystyle backgroundalpha="0.25098" backgroundcolor="0x0000ff" handcursor="1" bordercolor="0x0000ff" mode="0" borderalpha="1"/>
+      <hotspot url="{node3}" skinid="ht_node" id="Point01" pan="-255.18" tilt="-4.08" description="" target="-37.2/3.9/100.0" title=""/>
+      <hotspot url="{node5}" skinid="ht_node" id="Point02" pan="-100.86" tilt="-15.32" description="" target="-91.6/-3.2/108.2" title=""/>
+      <hotspot url="{node7}" skinid="ht_node" id="Point03" pan="-101.47" tilt="61.79" description="" target="90.9/-4.5/72.3" title=""/>
+      <hotspot pan="-192.81" id="Point04" description="" use3D="1" customimageheight="39" title="" distance3D="744.675" url="images/living room 4.jpg" skinid="ht_image" tilt="2.27" target="" customimagewidth="39" customimage="media/Mona liza.png" fov="3"/>
+      <hotspot url="images/living room  2 .jpg" skinid="ht_image" id="Point05" pan="-355.42" tilt="73.67" description="" target="" title=""/>
+      <hotspot url="images/living room  3.jpg" skinid="ht_image" id="Point06" pan="-358.99" tilt="-5.24" description="" target="" title=""/>
+      <hotspot url="images/living room 5.jpg" skinid="ht_image" id="Point07" pan="-192.77" tilt="-18.88" description="" target="" title=""/>
+    </hotspots>
+    <media>
+      <image roty="-5.030" popoutscaling="100" handcursor="0" rotz="-1.850" pan="85.120" id="Element01" hidepinned="0" height="394" stretch="0.955" popbackmode="0" clickmode="1" tilt="-47.440" rotx="43.830" fov="27.120" width="394">
+        <source url="media/_logo-1.png"/>
+      </image>
+      <sound pansize="10.000" pan="-1.000" id="_background" loop="2" tiltsize="10.000" field="90.000" ambientlevel="0.000" level="1.000" startmutedmobile="0" tilt="-1.000" nodechangekeep="1" mode="0">
+        <source url="media/tmpdggegqsw.mp3" mono="0"/>
+        <source url="media/beabadoobee-Coffee.mp3" mono="0"/>
+      </sound>
+      <lensflare blinding="70.000" pan="-247.230" id="Lensflare01" tilt="47.060" type="3" alpha="80.000" color="0xffffff"/>
+      <lensflare blinding="40.000" pan="-205.900" id="Lensflare02" tilt="77.750" type="6" alpha="80.000" color="0xffffff"/>
+      <lensflare blinding="25.000" pan="-18.950" id="Lensflare03" tilt="10.300" type="6" alpha="80.000" color="0xffffff"/>
+    </media>
+    <transition blendtime="1" softedge="0" type="crossdissolve" zoomout="3" zoomfov="40" zoomin="6" enabled="1" zoomoutpause="0" blendcolor="0x000000" zoomafterinfov="140" zoomspeed="2" zoomafteroutfov="40" delay="none"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0"/>
+    <control simulatemass="1" dblclickfullscreen="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedkeyboard="0" speedwheel="1" lockedwheel="0" contextvr="1" contextfullscreen="1" hideabout="0" lockedmouse="0" lockedkeyboardzoom="0" rubberband="1" sensitivity="8" zoomcentercursor="1"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node7">
+    <input leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="2000" levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" overlap="1" width="2000">
+      <level predecode="0" preload="0" width="2000" height="2000"/>
+      <level predecode="0" preload="0" width="1000" height="1000"/>
+      <level predecode="1" preload="1" width="500" height="500"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" tilt="0" fov="100" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" tilt="90" fov="140" fovstereographic="330"/>
+    </view>
+    <userdata longitude="" tags="TelegramDesktop" author="" description="" latitude="" datetime="21.03.2025 18:42" copyright="" heading="0" customnodeid="" title="" source="" comment="" nodeid="node7" info=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderradius="1" textcolor="0x000000" border="1" textalpha="1" wordwrap="1" height="20" enabled="1" backgroundalpha="1" backgroundcolor="0xffffff" bordercolor="0x000000" width="180" background="1" borderalpha="1"/>
+      <polystyle backgroundalpha="0.25098" backgroundcolor="0x0000ff" handcursor="1" bordercolor="0x0000ff" mode="0" borderalpha="1"/>
+      <hotspot url="{node5}" skinid="ht_node" id="Point01" pan="-189.5" tilt="-25.42" description="" target="105.9/3.1/100.0" title=""/>
+      <hotspot url="{node6}" skinid="ht_node" id="Point02" pan="-261.22" tilt="-25.75" description="" target="165.9/4.1/100.0" title=""/>
+      <hotspot pan="-15.57" id="Point03" description="" use3D="1" customimageheight="512" title="" distance3D="9776.25" url="images/2  1.jpg" skinid="ht_image" tilt="13.15" target="" customimagewidth="512" customimage="media/Mona liza.png" fov="3"/>
+      <hotspot pan="-350.43" id="Point04" description="" use3D="1" customimageheight="29" title="" distance3D="553.733" url="images/2  2.jpg" skinid="ht_image" tilt="13.46" target="" customimagewidth="29" customimage="media/image.png" fov="3"/>
+      <hotspot url="{node8}" skinid="ht_node" id="Point05" pan="-10.4" tilt="-9.14" description="" target="" title=""/>
+      <hotspot url="{node9}" skinid="ht_node" id="Point06" pan="-1.42" tilt="-5.12" description="" target="" title=""/>
+    </hotspots>
+    <media>
+      <sound pansize="10.000" pan="-1.000" id="_background" loop="2" tiltsize="10.000" field="90.000" ambientlevel="0.000" level="1.000" startmutedmobile="0" tilt="-1.000" nodechangekeep="1" mode="0">
+        <source url="media/tmpdggegqsw.mp3" mono="0"/>
+        <source url="media/beabadoobee-Coffee.mp3" mono="0"/>
+      </sound>
+      <lensflare blinding="38.000" pan="-259.220" id="Lensflare01" tilt="13.140" type="1" alpha="80.000" color="0xffffff"/>
+      <lensflare blinding="50.000" pan="-270.490" id="Lensflare02" tilt="65.350" type="3" alpha="80.000" color="0xffffff"/>
+      <lensflare blinding="50.000" pan="-88.860" id="Lensflare03" tilt="71.960" type="3" alpha="80.000" color="0xffffff"/>
+      <lensflare blinding="20.000" pan="-89.070" id="Lensflare04" tilt="-33.850" type="6" alpha="80.000" color="0xffffff"/>
+    </media>
+    <transition blendtime="1" softedge="0" type="crossdissolve" zoomout="3" zoomfov="40" zoomin="6" enabled="1" zoomoutpause="0" blendcolor="0x000000" zoomafterinfov="140" zoomspeed="2" zoomafteroutfov="40" delay="none"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0"/>
+    <control simulatemass="1" dblclickfullscreen="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedkeyboard="0" speedwheel="1" lockedwheel="0" contextvr="1" contextfullscreen="1" hideabout="0" lockedmouse="0" lockedkeyboardzoom="0" rubberband="1" sensitivity="8" zoomcentercursor="1"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node8">
+    <input leveltileurl="tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1500" levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" overlap="1" width="1500">
+      <level predecode="0" preload="0" width="1500" height="1500"/>
+      <level predecode="0" preload="0" width="750" height="750"/>
+      <level predecode="1" preload="1" width="375" height="375"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" tilt="0" fov="100" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" tilt="90" fov="140" fovstereographic="330"/>
+    </view>
+    <userdata longitude="" tags="041" author="" description="" latitude="" datetime="" copyright="" heading="0" customnodeid="" title="" source="" comment="" nodeid="node8" info=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderradius="1" textcolor="0x000000" border="1" textalpha="1" wordwrap="1" height="20" enabled="1" backgroundalpha="1" backgroundcolor="0xffffff" bordercolor="0x000000" width="180" background="1" borderalpha="1"/>
+      <polystyle backgroundalpha="0.25098" backgroundcolor="0x0000ff" handcursor="1" bordercolor="0x0000ff" mode="0" borderalpha="1"/>
+      <hotspot url="{node10}" skinid="ht_node" id="Point01" pan="-26.65" tilt="-7.03" description="" target="" title=""/>
+      <hotspot url="{node7}" skinid="ht_node" id="Point02" pan="-57.49" tilt="-6.29" description="" target="" title=""/>
+      <hotspot pan="-132.7" id="Point03" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="images/bedroom 2 1.1 .jpg" skinid="ht_image" tilt="-59.35" target="" customimagewidth="100" customimage="media/icons8-1-100.png" fov="10"/>
+      <hotspot pan="-159.89" id="Point04" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="images/bedroom 2 3.1 .jpg" skinid="ht_image" tilt="-65.59" target="" customimagewidth="100" customimage="media/icons8-2-100.png" fov="10"/>
+      <hotspot pan="-201.13" id="Point05" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="images/bedroom 2 2.1 .jpg" skinid="ht_image" tilt="-65.13" target="" customimagewidth="100" customimage="media/icons8-3-100.png" fov="10"/>
+      <hotspot pan="-230.48" id="Point06" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="images/bedroom 2 4.1.jpg" skinid="ht_image" tilt="-59.78" target="" customimagewidth="100" customimage="media/icons8-4-100.png" fov="10"/>
+    </hotspots>
+    <media>
+      <image roty="-44.486" popoutscaling="100" handcursor="0" rotz="0.495" pan="-26.774" id="Element01" hidepinned="0" height="100" stretch="0.630" popbackmode="0" clickmode="0" tilt="-1.552" rotx="1.048" fov="10.843" width="100">
+        <source url="media/icons8--100-1.png"/>
+      </image>
+      <sound pansize="10.000" pan="-1.000" id="_background" loop="2" tiltsize="10.000" field="90.000" ambientlevel="0.000" level="1.000" startmutedmobile="0" tilt="-1.000" nodechangekeep="1" mode="0">
+        <source url="media/tmpdggegqsw.mp3" mono="0"/>
+        <source url="media/beabadoobee-Coffee.mp3" mono="0"/>
+      </sound>
+      <lensflare blinding="20.000" pan="-260.590" id="Lensflare01" tilt="8.830" type="3" alpha="70.000" color="0xffffff"/>
+      <lensflare blinding="50.000" pan="-328.300" id="Lensflare02" tilt="81.920" type="6" alpha="80.000" color="0xffffff"/>
+    </media>
+    <transition blendtime="1" softedge="0" type="crossdissolve" zoomout="3" zoomfov="40" zoomin="6" enabled="1" zoomoutpause="0" blendcolor="0x000000" zoomafterinfov="140" zoomspeed="2" zoomafteroutfov="40" delay="none"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0"/>
+    <control simulatemass="1" dblclickfullscreen="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedkeyboard="0" speedwheel="1" lockedwheel="0" contextvr="1" contextfullscreen="1" hideabout="0" lockedmouse="0" lockedkeyboardzoom="0" rubberband="1" sensitivity="8" zoomcentercursor="1"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node10">
+    <input leveltileurl="tiles/node10/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1500" levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" overlap="1" width="1500">
+      <level predecode="0" preload="0" width="1500" height="1500"/>
+      <level predecode="0" preload="0" width="750" height="750"/>
+      <level predecode="1" preload="1" width="375" height="375"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" tilt="0" fov="100" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" tilt="90" fov="140" fovstereographic="330"/>
+    </view>
+    <userdata longitude="" tags="051" author="" description="" latitude="" datetime="25.03.2025 19:01" copyright="" heading="0" customnodeid="" title="" source="" comment="" nodeid="node10" info=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderradius="1" textcolor="0x000000" border="1" textalpha="1" wordwrap="1" height="20" enabled="1" backgroundalpha="1" backgroundcolor="0xffffff" bordercolor="0x000000" width="180" background="1" borderalpha="1"/>
+      <polystyle backgroundalpha="0.25098" backgroundcolor="0x0000ff" handcursor="1" bordercolor="0x0000ff" mode="0" borderalpha="1"/>
+      <hotspot url="{node8}" skinid="ht_node" id="Point01" pan="-186.35" tilt="-24.67" description="" target="" title=""/>
+      <hotspot pan="-159.29" id="Point02" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="images/boy bathroom  2.1 .jpg" skinid="ht_image" tilt="13.77" target="" customimagewidth="100" customimage="media/icons8-1-100.png" fov="10"/>
+      <hotspot pan="-159.2" id="Point03" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="images/boy bathroom  3.1 .jpg" skinid="ht_image" tilt="-0.12" target="" customimagewidth="100" customimage="media/icons8-2-100.png" fov="10"/>
+    </hotspots>
+    <media>
+      <sound pansize="10.000" pan="-1.000" id="_background" loop="2" tiltsize="10.000" field="90.000" ambientlevel="0.000" level="1.000" startmutedmobile="0" tilt="-1.000" nodechangekeep="1" mode="0">
+        <source url="media/tmpdggegqsw.mp3" mono="0"/>
+        <source url="media/beabadoobee-Coffee.mp3" mono="0"/>
+      </sound>
+      <lensflare blinding="50.000" pan="-265.040" id="Lensflare01" tilt="40.040" type="6" alpha="80.000" color="0xffffff"/>
+      <lensflare blinding="50.000" pan="-260.440" id="Lensflare02" tilt="60.830" type="1" alpha="80.000" color="0xffffff"/>
+      <lensflare blinding="50.000" pan="-107.390" id="Lensflare03" tilt="73.590" type="1" alpha="80.000" color="0xffffff"/>
+      <lensflare blinding="20.000" pan="-327.260" id="Lensflare04" tilt="46.080" type="1" alpha="80.000" color="0xffffff"/>
+      <lensflare blinding="20.000" pan="-19.600" id="Lensflare05" tilt="47.990" type="1" alpha="80.000" color="0xffffff"/>
+    </media>
+    <transition blendtime="1" softedge="0" type="crossdissolve" zoomout="3" zoomfov="40" zoomin="6" enabled="1" zoomoutpause="0" blendcolor="0x000000" zoomafterinfov="140" zoomspeed="2" zoomafteroutfov="40" delay="none"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0"/>
+    <control simulatemass="1" dblclickfullscreen="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedkeyboard="0" speedwheel="1" lockedwheel="0" contextvr="1" contextfullscreen="1" hideabout="0" lockedmouse="0" lockedkeyboardzoom="0" rubberband="1" sensitivity="8" zoomcentercursor="1"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node9">
+    <input leveltileurl="tiles/node9/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1500" levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" overlap="1" width="1500">
+      <level predecode="0" preload="0" width="1500" height="1500"/>
+      <level predecode="0" preload="0" width="750" height="750"/>
+      <level predecode="1" preload="1" width="375" height="375"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" tilt="0" fov="100" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" tilt="90" fov="140" fovstereographic="330"/>
+    </view>
+    <userdata longitude="" tags="062" author="" description="" latitude="" datetime="" copyright="" heading="0" customnodeid="" title="" source="" comment="" nodeid="node9" info=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderradius="1" textcolor="0x000000" border="1" textalpha="1" wordwrap="1" height="20" enabled="1" backgroundalpha="1" backgroundcolor="0xffffff" bordercolor="0x000000" width="180" background="1" borderalpha="1"/>
+      <polystyle backgroundalpha="0.25098" backgroundcolor="0x0000ff" handcursor="1" bordercolor="0x0000ff" mode="0" borderalpha="1"/>
+      <hotspot url="{node11}" skinid="ht_node" id="Point01" pan="-52.21" tilt="-7.24" description="" target="" title=""/>
+      <hotspot url="{node7}" skinid="ht_node" id="Point02" pan="-306.3" tilt="-7.1" description="" target="" title=""/>
+      <hotspot pan="-301.41" id="Point03" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="images/bedroom 1 1.1.jpg" skinid="ht_image" tilt="-65.54" target="" customimagewidth="100" customimage="media/icons8-1-100.png" fov="10"/>
+      <hotspot pan="-351.55" id="Point04" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="images/bedroom 1 3.1 .jpg" skinid="ht_image" tilt="-73.18" target="" customimagewidth="100" customimage="media/icons8-2-100.png" fov="10"/>
+      <hotspot pan="-51.34" id="Point05" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="images/bedroom 1 2.1 .jpg" skinid="ht_image" tilt="-69.07" target="" customimagewidth="100" customimage="media/icons8-3-100.png" fov="10"/>
+    </hotspots>
+    <media>
+      <image roty="-56.931" popoutscaling="100" handcursor="0" rotz="-1.691" pan="-52.321" id="Element01" hidepinned="0" height="100" stretch="0.685" popbackmode="0" clickmode="0" tilt="2.545" rotx="-2.867" fov="12.710" width="100">
+        <source url="media/icons8--100-1.png"/>
+      </image>
+      <sound pansize="10.000" pan="-1.000" id="_background" loop="2" tiltsize="10.000" field="90.000" ambientlevel="0.000" level="1.000" startmutedmobile="0" tilt="-1.000" nodechangekeep="1" mode="0">
+        <source url="media/tmpdggegqsw.mp3" mono="0"/>
+        <source url="media/beabadoobee-Coffee.mp3" mono="0"/>
+      </sound>
+    </media>
+    <transition blendtime="1" softedge="0" type="crossdissolve" zoomout="3" zoomfov="40" zoomin="6" enabled="1" zoomoutpause="0" blendcolor="0x000000" zoomafterinfov="140" zoomspeed="2" zoomafteroutfov="40" delay="none"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0"/>
+    <control simulatemass="1" dblclickfullscreen="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedkeyboard="0" speedwheel="1" lockedwheel="0" contextvr="1" contextfullscreen="1" hideabout="0" lockedmouse="0" lockedkeyboardzoom="0" rubberband="1" sensitivity="8" zoomcentercursor="1"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node11">
+    <input leveltileurl="tiles/node11/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1500" levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" overlap="1" width="1500">
+      <level predecode="0" preload="0" width="1500" height="1500"/>
+      <level predecode="0" preload="0" width="750" height="750"/>
+      <level predecode="1" preload="1" width="375" height="375"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" tilt="0" fov="100" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" tilt="90" fov="140" fovstereographic="330"/>
+    </view>
+    <userdata longitude="" tags="072" author="" description="" latitude="" datetime="19.03.2025 17:04" copyright="" heading="0" customnodeid="" title="" source="" comment="" nodeid="node11" info=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderradius="1" textcolor="0x000000" border="1" textalpha="1" wordwrap="1" height="20" enabled="1" backgroundalpha="1" backgroundcolor="0xffffff" bordercolor="0x000000" width="180" background="1" borderalpha="1"/>
+      <polystyle backgroundalpha="0.25098" backgroundcolor="0x0000ff" handcursor="1" bordercolor="0x0000ff" mode="0" borderalpha="1"/>
+      <hotspot url="{node9}" skinid="ht_node" id="Point01" pan="-210.36" tilt="-24.76" description="" target="" title=""/>
+      <hotspot pan="-200.99" id="Point02" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="images/bathroom 1 1.1 .jpg" skinid="ht_image" tilt="-57.02" target="" customimagewidth="100" customimage="media/icons8-1-100.png" fov="10"/>
+      <hotspot pan="-220.67" id="Point03" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="images/bathroom 1 2.1 .jpg" skinid="ht_image" tilt="-50.61" target="" customimagewidth="100" customimage="media/icons8-2-100.png" fov="10"/>
+      <hotspot pan="-234.93" id="Point04" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="images/bathroom 1 3.1 .jpg" skinid="ht_image" tilt="-43.1" target="" customimagewidth="100" customimage="media/icons8-3-100.png" fov="10"/>
+    </hotspots>
+    <media>
+      <sound pansize="10.000" pan="-1.000" id="_background" loop="2" tiltsize="10.000" field="90.000" ambientlevel="0.000" level="1.000" startmutedmobile="0" tilt="-1.000" nodechangekeep="1" mode="0">
+        <source url="media/tmpdggegqsw.mp3" mono="0"/>
+        <source url="media/beabadoobee-Coffee.mp3" mono="0"/>
+      </sound>
+    </media>
+    <transition blendtime="1" softedge="0" type="crossdissolve" zoomout="3" zoomfov="40" zoomin="6" enabled="1" zoomoutpause="0" blendcolor="0x000000" zoomafterinfov="140" zoomspeed="2" zoomafteroutfov="40" delay="none"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0"/>
+    <control simulatemass="1" dblclickfullscreen="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedkeyboard="0" speedwheel="1" lockedwheel="0" contextvr="1" contextfullscreen="1" hideabout="0" lockedmouse="0" lockedkeyboardzoom="0" rubberband="1" sensitivity="8" zoomcentercursor="1"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node12">
+    <input leveltileurl="tiles/node12/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="2000" levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" overlap="1" width="2000">
+      <level predecode="0" preload="0" width="2000" height="2000"/>
+      <level predecode="0" preload="0" width="1000" height="1000"/>
+      <level predecode="1" preload="1" width="500" height="500"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" tilt="0" fov="100" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" tilt="90" fov="140" fovstereographic="330"/>
+    </view>
+    <userdata longitude="" tags="TelegramDesktop" author="" description="" latitude="" datetime="20.03.2025 23:57" copyright="" heading="0" customnodeid="" title="" source="" comment="" nodeid="node12" info=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderradius="1" textcolor="0x000000" border="1" textalpha="1" wordwrap="1" height="20" enabled="1" backgroundalpha="1" backgroundcolor="0xffffff" bordercolor="0x000000" width="180" background="1" borderalpha="1"/>
+      <polystyle backgroundalpha="0.25098" backgroundcolor="0x0000ff" handcursor="1" bordercolor="0x0000ff" mode="0" borderalpha="1"/>
+      <hotspot pan="-74.96" id="Point01" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="{node5}" skinid="ht_node" tilt="-27.63" target="-75.7/-29.0/100.0" customimagewidth="100" customimage="media/icons8-1-100.png" fov="10"/>
+      <hotspot pan="-91.14" id="Point02" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="{node12}" skinid="ht_node" tilt="-26.17" target="-91.7/-29.3/100.0" customimagewidth="100" customimage="media/icons8-2-100.png" fov="10"/>
+      <hotspot pan="-105.86" id="Point03" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="{node13}" skinid="ht_node" tilt="-27.95" target="-105.3/-29.0/100.0" customimagewidth="100" customimage="media/icons8-3-100.png" fov="10"/>
+      <hotspot url="{node6}" skinid="ht_node" id="Point04" pan="-270.53" tilt="-7.68" description="" target="" title=""/>
+    </hotspots>
+    <media>
+      <sound pansize="10.000" pan="-1.000" id="_background" loop="2" tiltsize="10.000" field="90.000" ambientlevel="0.000" level="1.000" startmutedmobile="0" tilt="-1.000" nodechangekeep="1" mode="0">
+        <source url="media/tmpdggegqsw.mp3" mono="0"/>
+        <source url="media/beabadoobee-Coffee.mp3" mono="0"/>
+      </sound>
+    </media>
+    <transition blendtime="1" softedge="0" type="crossdissolve" zoomout="3" zoomfov="40" zoomin="6" enabled="1" zoomoutpause="0" blendcolor="0x000000" zoomafterinfov="140" zoomspeed="2" zoomafteroutfov="40" delay="none"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0"/>
+    <control simulatemass="1" dblclickfullscreen="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedkeyboard="0" speedwheel="1" lockedwheel="0" contextvr="1" contextfullscreen="1" hideabout="0" lockedmouse="0" lockedkeyboardzoom="0" rubberband="1" sensitivity="8" zoomcentercursor="1"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node13">
+    <input leveltileurl="tiles/node13/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="2000" levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" overlap="1" width="2000">
+      <level predecode="0" preload="0" width="2000" height="2000"/>
+      <level predecode="0" preload="0" width="1000" height="1000"/>
+      <level predecode="1" preload="1" width="500" height="500"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" tilt="0" fov="100" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" scaletofit="1" pan="360" tilt="90" fov="140" fovstereographic="330"/>
+    </view>
+    <userdata longitude="" tags="TelegramDesktop" author="" description="" latitude="" datetime="20.03.2025 23:57" copyright="" heading="0" customnodeid="" title="" source="" comment="" nodeid="node13" info=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderradius="1" textcolor="0x000000" border="1" textalpha="1" wordwrap="1" height="20" enabled="1" backgroundalpha="1" backgroundcolor="0xffffff" bordercolor="0x000000" width="180" background="1" borderalpha="1"/>
+      <polystyle backgroundalpha="0.25098" backgroundcolor="0x0000ff" handcursor="1" bordercolor="0x0000ff" mode="0" borderalpha="1"/>
+      <hotspot pan="-75.95" id="Point01" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="{node5}" skinid="ht_node" tilt="-28.84" target="-77.7/-28.7/100.0" customimagewidth="100" customimage="media/icons8-1-100.png" fov="10"/>
+      <hotspot pan="-91.73" id="Point02" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="{node12}" skinid="ht_node" tilt="-27.95" target="-90.8/-28.6/100.0" customimagewidth="100" customimage="media/icons8-2-100.png" fov="10"/>
+      <hotspot pan="-105.96" id="Point03" description="" use3D="0" customimageheight="100" title="" distance3D="571.503" url="{node13}" skinid="ht_node" tilt="-29.07" target="-104.7/-28.4/100.0" customimagewidth="100" customimage="media/icons8-3-100.png" fov="10"/>
+      <hotspot url="{node6}" skinid="ht_node" id="Point04" pan="-271.14" tilt="-8.04" description="" target="" title=""/>
+    </hotspots>
+    <media>
+      <sound pansize="10.000" pan="-1.000" id="_background" loop="2" tiltsize="10.000" field="90.000" ambientlevel="0.000" level="1.000" startmutedmobile="0" tilt="-1.000" nodechangekeep="1" mode="0">
+        <source url="media/tmpdggegqsw.mp3" mono="0"/>
+        <source url="media/beabadoobee-Coffee.mp3" mono="0"/>
+      </sound>
+    </media>
+    <transition blendtime="1" softedge="0" type="crossdissolve" zoomout="3" zoomfov="40" zoomin="6" enabled="1" zoomoutpause="0" blendcolor="0x000000" zoomafterinfov="140" zoomspeed="2" zoomafteroutfov="40" delay="none"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0"/>
+    <control simulatemass="1" dblclickfullscreen="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedkeyboard="0" speedwheel="1" lockedwheel="0" contextvr="1" contextfullscreen="1" hideabout="0" lockedmouse="0" lockedkeyboardzoom="0" rubberband="1" sensitivity="8" zoomcentercursor="1"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
+  </panorama>
+  <masternode>
+    <userdata comment="" tags="" author="Корпорация Архитектуры и Дизайна" description="" copyright="" title="Чистые пруды 3"/>
+    <animationsequences>
+      <sequence title="Animation01"/>
+    </animationsequences>
+  </masternode>
+</tour>
