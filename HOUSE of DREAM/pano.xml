@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour apprev="20986" start="node5" appversion="7.1.8" hassounds="1">
+  <panorama id="node5">
+    <input leveltilesize="510" width="2000" levelbiashidpi="1.000" levelbias="0.400" height="2000" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="2000" preload="0" predecode="0" height="2000"/>
+      <level width="1000" preload="0" predecode="0" height="1000"/>
+      <level width="500" preload="1" predecode="1" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="00" heading="0" description="" title="" customnodeid="" longitude="" datetime="" comment="" latitude="" source="" copyright="" nodeid="node5"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-49.12" url="{node13}" id="Point01" skinid="ht_node" title="В гостиную ➪" description="" target="30.0/-5.2/92.4" tilt="-5.33"/>
+      <hotspot pan="-68.33" url="{node7}" id="Point02" skinid="ht_node" title="Вход в дом ➪" description="" target="179.4/-3.1/100.0" tilt="-4.68"/>
+      <hotspot pan="-351.77" url="{node6}" id="Point03" skinid="ht_node" title="На задний двор ➪" description="" target="4.3/-0.3/100.0" tilt="-0.74"/>
+      <hotspot pan="-85.46" url="{node15}" id="Point04" skinid="ht_node" title="В Мастер-спальню ➪" description="" target="-71.9/-8.6/100.0" tilt="24.56"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+      <lensflare pan="-133.070" color="0xffffff" id="Lensflare01" tilt="48.300" alpha="80.000" type="3" blinding="50.000"/>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node6">
+    <input leveltilesize="510" width="2000" levelbiashidpi="1.000" levelbias="0.400" height="2000" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="2000" preload="0" predecode="0" height="2000"/>
+      <level width="1000" preload="0" predecode="0" height="1000"/>
+      <level width="500" preload="1" predecode="1" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="00" heading="0" description="" title="" customnodeid="" longitude="" datetime="" comment="" latitude="" source="" copyright="" nodeid="node6"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-77.31" url="{node5}" id="Point01" skinid="ht_node" title="К въездным воротам ➪" description="" target="-17.0/-3.9/100.0" tilt="-2.98"/>
+      <hotspot pan="-318.83" url="{node5}" id="Point02" skinid="ht_node" title="К въездным воротам ➪" description="" target="-17.0/-3.9/100.0" tilt="-1.84"/>
+      <hotspot pan="-28.04" url="{node13}" id="Point03" skinid="ht_node" title="В гостиную ➪" description="" target="3.9/-5.6/100.0" tilt="-4.79"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+      <lensflare pan="-293.960" color="0xffffff" id="Lensflare01" tilt="44.360" alpha="80.000" type="4" blinding="50.000"/>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node7">
+    <input leveltilesize="510" width="1000" levelbiashidpi="1.000" levelbias="0.400" height="1000" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1000" preload="0" predecode="0" height="1000"/>
+      <level width="500" preload="1" predecode="1" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="01" heading="0" description="" title="" customnodeid="" longitude="" datetime="10.12.2024 14:31" comment="" latitude="" source="" copyright="" nodeid="node7"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-11.86" url="{node5}" id="Point01" skinid="ht_node" title="Выход на парковку ➪" description="" target="-80.6/8.0/100.0" tilt="-3.67"/>
+      <hotspot pan="-175.85" url="{node11}" id="Point02" skinid="ht_node" title="Посмотреть кино ➪" description="" target="" tilt="-3.18"/>
+      <hotspot pan="-153.84" url="{node13}" id="Point03" skinid="ht_node" title="В гостиную ➪" description="" target="3.9/-5.6/100.0" tilt="-3.05"/>
+      <hotspot pan="-202.58" url="{node9}" id="Point04" skinid="ht_node" title="В Санузел 1 этаж ➪" description="" target="" tilt="-3.98"/>
+      <hotspot pan="-138.33" url="{node20}" id="Point05" skinid="ht_node" title="2-й этаж ➪" description="" target="-95.3/-14.9/100.0" tilt="12.7"/>
+      <hotspot pan="-305.34" distance3D="182.881" description="" skinid="ht_node" title="Выключить свет 💡" target="24.3/-18.0/100.0" customimagewidth="32" tilt="-21.67" fov="10" customimageheight="37" use3D="0" url="{node8}" id="Point06" customimage="media/pngwing.com.png"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node8">
+    <input leveltilesize="510" width="1000" levelbiashidpi="1.000" levelbias="0.400" height="1000" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1000" preload="0" predecode="0" height="1000"/>
+      <level width="500" preload="1" predecode="1" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="01" heading="0" description="" title="" customnodeid="" longitude="" datetime="" comment="" latitude="" source="" copyright="" nodeid="node8"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-334.49" distance3D="182.881" description="" skinid="ht_node" title="Включить свет 💡" target="53.4/-20.7/100.0" customimagewidth="32" tilt="-18.7" fov="10" customimageheight="37" use3D="0" url="{node7}" id="Point01" customimage="media/pngwing.com.png"/>
+      <hotspot pan="-359.58" url="{node5}" id="Point02" skinid="ht_node" title="Выход на парковку ➪" description="" target="-80.6/8.0/100.0" tilt="-9.66"/>
+      <hotspot pan="-166.27" url="{node11}" id="Point03" skinid="ht_node" title="Посмотреть кино ➪" description="" target="" tilt="-18.42"/>
+      <hotspot pan="-218.23" url="{node9}" id="Point04" skinid="ht_node" title="В Санузел 1 этаж ➪" description="" target="" tilt="-20.34"/>
+      <hotspot pan="-115.34" url="{node13}" id="Point05" skinid="ht_node" title="В гостиную ➪" description="" target="3.9/-5.6/100.0" tilt="-4.72"/>
+      <hotspot pan="-83.15" url="{node20}" id="Point06" skinid="ht_node" title="2-й этаж ➪" description="" target="-95.3/-14.9/100.0" tilt="14.22"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node13">
+    <input leveltilesize="510" width="1000" levelbiashidpi="1.000" levelbias="0.400" height="1000" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node13/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1000" preload="0" predecode="0" height="1000"/>
+      <level width="500" preload="1" predecode="1" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="04-" heading="0" description="" title="" customnodeid="" longitude="" datetime="" comment="" latitude="" source="" copyright="" nodeid="node13"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-357.09" url="{node7}" id="Point01" skinid="ht_node" title="В прихожую ➪" description="" target="-172.0/-5.1/100.0" tilt="-3.09"/>
+      <hotspot pan="-277.84" distance3D="182.881" description="" skinid="ht_node" title="Выключить свет 💡" target="133.6/5.8/100.0" customimagewidth="32" tilt="4.12" fov="10" customimageheight="37" use3D="0" url="{node14}" id="Point02" customimage="media/pngwing.com.png"/>
+      <hotspot pan="-300.58" url="{node6}" id="Point03" skinid="ht_node" title="Выход на задний двор ➪" description="" target="-85.0/-5.5/100.0" tilt="-2.89"/>
+      <hotspot pan="-48.27" url="{node5}" id="Point04" skinid="ht_node" title="Выход на парковку ➪" description="" target="-17.0/-3.9/100.0" tilt="-6.97"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+      <lensflare pan="-105.260" color="0xffffff" id="Lensflare01" tilt="50.260" alpha="80.000" type="3" blinding="15.000"/>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node14">
+    <input leveltilesize="510" width="1000" levelbiashidpi="1.000" levelbias="0.400" height="1000" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node14/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1000" preload="0" predecode="0" height="1000"/>
+      <level width="500" preload="1" predecode="1" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="04-" heading="0" description="" title="" customnodeid="" longitude="" datetime="10.12.2024 8:02" comment="" latitude="" source="" copyright="" nodeid="node14"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-224.85" distance3D="182.881" description="" skinid="ht_node" title="Включить свет 💡" target="80.8/7.1/100.0" customimagewidth="32" tilt="6.72" fov="10" customimageheight="37" use3D="0" url="{node13}" id="Point01" customimage="media/pngwing.com.png"/>
+      <hotspot pan="-266.2" url="{node6}" id="Point02" skinid="ht_node" title="Выход на задний двор ➪" description="" target="-85.0/-5.5/100.0" tilt="-3.74"/>
+      <hotspot pan="-130.3" url="{node5}" id="Point03" skinid="ht_node" title="Выход на парковку ➪" description="" target="-17.0/-3.9/100.0" tilt="-4.26"/>
+      <hotspot pan="-1.03" url="{node7}" id="Point04" skinid="ht_node" title="В прихожую ➪" description="" target="-172.0/-5.1/100.0" tilt="-4.71"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node9">
+    <input leveltilesize="510" width="1000" levelbiashidpi="1.000" levelbias="0.400" height="1000" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node9/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1000" preload="0" predecode="0" height="1000"/>
+      <level width="500" preload="1" predecode="1" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="02" heading="0" description="" title="" customnodeid="" longitude="" datetime="" comment="" latitude="" source="" copyright="" nodeid="node9"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-90.79" url="{node7}" id="Point01" skinid="ht_node" title="В прихожую ➪" description="" target="-176.4/-2.7/100.0" tilt="-11.53"/>
+      <hotspot pan="-272.52" url="{node10}" id="Point02" skinid="ht_node" title="Вперед ➪" description="" target="1.0/-12.3/117.0" tilt="-25.84"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node10">
+    <input leveltilesize="510" width="1000" levelbiashidpi="1.000" levelbias="0.400" height="1000" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node10/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1000" preload="0" predecode="0" height="1000"/>
+      <level width="500" preload="1" predecode="1" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="02" heading="0" description="" title="" customnodeid="" longitude="" datetime="" comment="" latitude="" source="" copyright="" nodeid="node10"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-131.78" url="{node9}" id="Point01" skinid="ht_node" title="Вернуться ➪" description="" target="-90.5/-18.3/100.0" tilt="-8.07"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node11">
+    <input leveltilesize="510" width="1000" levelbiashidpi="1.000" levelbias="0.400" height="1000" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node11/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1000" preload="0" predecode="0" height="1000"/>
+      <level width="500" preload="1" predecode="1" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="03" heading="0" description="" title="" customnodeid="" longitude="" datetime="10.12.2024 17:31" comment="" latitude="" source="" copyright="" nodeid="node11"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-296" url="{node7}" id="Point02" skinid="ht_node" title="В прихожую ➪" description="" target="-176.4/-2.7/100.0" tilt="-7.06"/>
+      <hotspot pan="-273.01" distance3D="182.881" description="" skinid="ht_node" title="Включить свет 💡" target="85.0/-10.6/100.0" customimagewidth="32" tilt="-8.58" fov="10" customimageheight="37" use3D="0" url="{node12}" id="Point03" customimage="media/pngwing.com.png"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node12">
+    <input leveltilesize="510" width="1000" levelbiashidpi="1.000" levelbias="0.400" height="1000" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node12/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1000" preload="0" predecode="0" height="1000"/>
+      <level width="500" preload="1" predecode="1" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="03" heading="0" description="" title="" customnodeid="" longitude="" datetime="" comment="" latitude="" source="" copyright="" nodeid="node12"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-272.76" distance3D="182.881" description="" skinid="ht_node" title="Включить свет 💡" target="85.0/-10.6/100.0" customimagewidth="32" tilt="-8.27" fov="10" customimageheight="37" use3D="0" url="{node11}" id="Point01" customimage="media/pngwing.com.png"/>
+      <hotspot pan="-296" url="{node7}" id="Point02" skinid="ht_node" title="В прихожую ➪" description="" target="-174.0/-2.8/100.0" tilt="-5.99"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node20">
+    <input leveltilesize="510" width="1000" levelbiashidpi="1.000" levelbias="0.400" height="1000" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node20/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1000" preload="0" predecode="0" height="1000"/>
+      <level width="500" preload="1" predecode="1" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="0112-" heading="0" description="" title="" customnodeid="" longitude="" datetime="30.04.2025 20:46" comment="" latitude="" source="" copyright="" nodeid="node20"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-352.81" url="{node15}" id="Point01" skinid="ht_node" title="В Мастер-спальню ➪" description="" target="-71.9/-8.6/100.0" tilt="-9.36"/>
+      <hotspot pan="-57.63" url="{node8}" id="Point02" skinid="ht_node" title="1-й этаж ➪" description="" target="-90.3/-0.3/100.0" tilt="-37.42"/>
+      <hotspot pan="-226.36" url="{node19}" id="Point03" skinid="ht_node" title="В детский санузел ➪" description="" target="-164.9/-14.0/100.0" tilt="-12.41"/>
+      <hotspot pan="-197.04" url="{node17}" id="Point04" skinid="ht_node" title="В детскую 1 ➪" description="" target="-95.3/-14.9/100.0" tilt="-12.59"/>
+      <hotspot pan="-168.53" url="{node21}" id="Point05" skinid="ht_node" title="2-й этаж ➪" description="" target="-72.7/-8.2/100.0" tilt="-13.16"/>
+      <hotspot pan="-93.76" url="{node13}" id="Point06" skinid="ht_node" title="В гостиную ➪" description="" target="3.9/-5.6/100.0" tilt="-16.82"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+      <lensflare pan="-141.980" color="0xffffff" id="Lensflare01" tilt="36.260" alpha="80.000" type="3" blinding="55.000"/>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node15">
+    <input leveltilesize="510" width="1000" levelbiashidpi="1.000" levelbias="0.400" height="1000" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node15/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1000" preload="0" predecode="0" height="1000"/>
+      <level width="500" preload="1" predecode="1" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="05-" heading="0" description="" title="" customnodeid="" longitude="" datetime="" comment="" latitude="" source="" copyright="" nodeid="node15"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-71.51" url="{node16}" id="Point01" skinid="ht_node" title="В Мастер-санузел ➪" description="" target="4.9/-7.1/108.2" tilt="-10.21"/>
+      <hotspot pan="-56.28" url="{node20}" id="Point02" skinid="ht_node" title="2-й этаж ➪" description="" target="5.6/-11.5/100.0" tilt="-9.91"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+      <lensflare pan="-284.380" color="0xffffff" id="Lensflare01" tilt="33.320" alpha="80.000" type="3" blinding="30.000"/>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node16">
+    <input leveltilesize="510" width="1000" levelbiashidpi="1.000" levelbias="0.400" height="1000" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node16/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1000" preload="0" predecode="0" height="1000"/>
+      <level width="500" preload="1" predecode="1" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="06-" heading="0" description="" title="" customnodeid="" longitude="" datetime="" comment="" latitude="" source="" copyright="" nodeid="node16"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-86.39" url="{node15}" id="Point01" skinid="ht_node" title="В Мастер-спальню ➪" description="" target="-71.9/-8.6/100.0" tilt="-17.01"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node17">
+    <input leveltilesize="510" width="2500" levelbiashidpi="1.000" levelbias="0.400" height="2500" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node17/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="2500" preload="0" predecode="0" height="2500"/>
+      <level width="1250" preload="0" predecode="0" height="1250"/>
+      <level width="625" preload="0" predecode="0" height="625"/>
+      <level width="312" preload="1" predecode="1" height="312"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="071" heading="0" description="" title="" customnodeid="" longitude="" datetime="23.12.2024 19:59" comment="" latitude="" source="" copyright="" nodeid="node17"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-87.09" url="{node20}" id="Point01" skinid="ht_node" title="2-й этаж ➪" description="" target="157.4/-13.1/100.0" tilt="-9.11"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node21">
+    <input leveltilesize="510" width="2500" levelbiashidpi="1.000" levelbias="0.400" height="2500" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node21/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="2500" preload="0" predecode="0" height="2500"/>
+      <level width="1250" preload="0" predecode="0" height="1250"/>
+      <level width="625" preload="0" predecode="0" height="625"/>
+      <level width="312" preload="1" predecode="1" height="312"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="082" heading="0" description="" title="" customnodeid="" longitude="" datetime="" comment="" latitude="" source="" copyright="" nodeid="node21"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-77.58" url="{node20}" id="Point01" skinid="ht_node" title="2-й этаж ➪" description="" target="-172.3/-10.7/100.0" tilt="-11.79"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node19">
+    <input leveltilesize="510" width="2500" levelbiashidpi="1.000" levelbias="0.400" height="2500" levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node19/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="2500" preload="0" predecode="0" height="2500"/>
+      <level width="1250" preload="0" predecode="0" height="1250"/>
+      <level width="625" preload="0" predecode="0" height="625"/>
+      <level width="312" preload="1" predecode="1" height="312"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fovfisheye="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1"/>
+    </view>
+    <userdata author="" info="" tags="09" heading="0" description="" title="" customnodeid="" longitude="" datetime="17.12.2024 23:09" comment="" latitude="" source="" copyright="" nodeid="node19"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" borderradius="1" width="180" backgroundalpha="1" bordercolor="0x000000" height="20" enabled="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000" border="1" textalpha="1" background="1"/>
+      <polystyle borderalpha="1" backgroundcolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff"/>
+      <hotspot pan="-180.2" url="{node20}" id="Point01" skinid="ht_node" title="2-й этаж ➪" description="" target="130.2/-15.1/100.0" tilt="-10.16"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" loop="3" field="90.000" mode="0" tilt="-1.000" nodechangekeep="1" pansize="10.000" startmutedmobile="0" id="_background" ambientlevel="0.000" tiltsize="10.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/beabadoobee-Coffee.mp3"/>
+      </sound>
+    </media>
+    <transition softedge="0" zoomout="3" blendcolor="0x000000" zoomafterinfov="140" enabled="1" zoomfov="40" zoomin="6" zoomoutpause="0" blendtime="1" delay="none" zoomafteroutfov="40" zoomspeed="2" type="crossdissolve"/>
+    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
+    <control simulatemass="1" lockedmouse="0" speedwheel="1" sensitivity="8" contextprojections="0" lockedkeyboard="0" rubberband="1" hideabout="0" invertwheel="0" lockedwheel="0" contextvr="1" dblclickfullscreen="1" invertcontrol="1" contextfullscreen="1" zoomcentercursor="1" lockedkeyboardzoom="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <masternode>
+    <userdata tags="" description="" title="Чистые пруды 3" comment="" copyright="" author="Корпорация Архитектуры и Дизайна"/>
+    <animationsequences>
+      <sequence title="Animation01"/>
+    </animationsequences>
+  </masternode>
+</tour>
