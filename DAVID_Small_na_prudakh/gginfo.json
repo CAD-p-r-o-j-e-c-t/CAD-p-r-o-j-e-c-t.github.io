@@ -4,9 +4,12 @@
 	"external": {
 		"js": [
 			"https://www.youtube.com/iframe_api",
-			"https://player.vimeo.com/api/player.js"
+			"https://player.vimeo.com/api/player.js",
+			"3rdparty/leaflet/leaflet.js"
 		],
-		"css": []
+		"css": [
+			"3rdparty/leaflet/leaflet.css"
+		]
 	},
 	"skin": {
 		"js": "skin.js"
@@ -17,7 +20,7 @@
 	"player": {
 		"js": "pano2vr_player.js"
 	},
-	"creationdate": "2025-04-15T18:13:56.307Z",
+	"creationdate": "2025-05-05T20:10:25.578Z",
 	"configuration": "pano.xml",
 	"preview": {
 		"img": "preview.jpg",
