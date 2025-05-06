@@ -2,12 +2,12 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-		<title>&#1063;&#1080;&#1089;&#1090;&#1099;&#1077; &#1087;&#1088;&#1091;&#1076;&#1099; 3</title>
+		<title>&#1044;&#1054;&#1052; &#1052;&#1045;&#1063;&#1058;&#1067;</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<meta property="og:title" content="&#1063;&#1080;&#1089;&#1090;&#1099;&#1077; &#1087;&#1088;&#1091;&#1076;&#1099; 3">
-		<meta property="og:description" content="">
+		<meta property="og:title" content="&#1044;&#1054;&#1052; &#1052;&#1045;&#1063;&#1058;&#1067;">
+		<meta property="og:description" content="&#1052;&#1080;&#1085;&#1080;&#1084;&#1072;&#1083;&#1080;&#1089;&#1090;&#1080;&#1095;&#1085;&#1099;&#1081; &#1089;&#1086;&#1074;&#1088;&#1077;&#1084;&#1077;&#1085;&#1085;&#1099;&#1081; &#1076;&#1086;&#1084; &#1085;&#1072; &#1073;&#1077;&#1088;&#1077;&#1075;&#1091; &#1088;. &#1042;&#1086;&#1083;&#1075;&#1072; 185 &#1082;&#1074;.&#1084;.">
 		<meta name="mobile-web-app-capable" content="yes" />
 		<meta property="og:image" content="preview.jpg">
 		<style type="text/css" title="Default">
@@ -36,14 +36,16 @@
 	</head>
 	<body>
 <!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
-		<script type="text/javascript" src="pano2vr_player.js?ts=37824590">
+		<script type="text/javascript" src="pano2vr_player.js?ts=48585930">
 		</script>
-		<script type="text/javascript" src="skin.js?ts=37824590">
+		<script type="text/javascript" src="skin.js?ts=48585930">
 		</script>
-		<script type="text/javascript" src="skin_vr.js?ts=37824590">
+		<script type="text/javascript" src="skin_vr.js?ts=48585930">
 		</script>
+		<link rel="stylesheet" href="3rdparty/leaflet/leaflet.css"/>
 		<script src="https://www.youtube.com/iframe_api"></script>
 		<script src="https://player.vimeo.com/api/player.js"></script>
+		<script src="3rdparty/leaflet/leaflet.js"></script>
 		<div id="container" style="width:100%;height:100%;overflow:hidden;">
 		<br>Loading...<br><br>
 		</div>
@@ -93,14 +95,14 @@
 			pano=new pano2vrPlayer("container");
 			pano.startNode = startNode;
 			pano.startView = startView;
-			pano.setQueryParameter("ts=37824590")
+			pano.setQueryParameter("ts=48585930")
 			// add the skin object
 			skin=new pano2vrSkin(pano);
 			// add the vrskin object
 			vrskin=new pano2vrVrSkin(pano);
 			// load the configuration
 			window.addEventListener("load", function() {
-				pano.readConfigUrlAsync("pano.xml?ts=37824590");
+				pano.readConfigUrlAsync("pano.xml?ts=48585930");
 			});
 			if (window.navigator.userAgent.match(/Safari/i)) {
 				// fix for white borders, rotation on iPhone
