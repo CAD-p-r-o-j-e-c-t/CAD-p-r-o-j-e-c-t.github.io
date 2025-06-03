@@ -1,7 +1,7 @@
 // Garden Gnome Software - VR - Skin
 // Pano2VR 7.1.8/20986
 // Filename: feather_vr_Anatoliy.ggsk
-// Generated 2025-04-30T21:30:38
+// Generated 2025-06-03T20:22:49
 
 function pano2vrVrSkin(player,base) {
 	player.addVariable('node_cloner_vr_hasUp', 2, false, { ignoreInState: 0  });
@@ -28,6 +28,24 @@ function pano2vrVrSkin(player,base) {
 	player.addVariable('open_info_hotspots', 0, "", { ignoreInState: 0  });
 	player.addVariable('opt_url_popup', 2, true, { ignoreInState: 1  });
 	player.addVariable('resp_phone', 2, false, { ignoreInState: 1  });
+	player.addVariable('vis_menu_left', 2, false, { ignoreInState: 0  });
+	player.addVariable('vis_floorplan', 2, false, { ignoreInState: 0  });
+	player.addVariable('vis_map', 2, false, { ignoreInState: 0  });
+	player.addVariable('vis_info', 2, false, { ignoreInState: 0  });
+	player.addVariable('vis_share', 2, false, { ignoreInState: 0  });
+	player.addVariable('vis_languages', 2, false, { ignoreInState: 0  });
+	player.addVariable('vis_info_popup', 2, false, { ignoreInState: 0  });
+	player.addVariable('vis_video_popup', 2, false, { ignoreInState: 0  });
+	player.addVariable('vis_phone_floorplan', 2, false, { ignoreInState: 0  });
+	player.addVariable('opt_maps', 2, false, { ignoreInState: 1  });
+	player.addVariable('opt_floorplans', 2, false, { ignoreInState: 1  });
+	player.addVariable('kb_accessibility', 2, false, { ignoreInState: 1  });
+	player.addVariable('vis_menu_center', 2, false, { ignoreInState: 0  });
+	player.addVariable('opt_desc_in_maps', 2, true, { ignoreInState: 1  });
+	player.addVariable('vis_floorplan_1', 2, false, { ignoreInState: 0  });
+	player.addVariable('vis_map_1', 2, false, { ignoreInState: 0  });
+	player.addVariable('opt_desc_in_maps_1', 2, true, { ignoreInState: 1  });
+	player.addVariable('resp_phone_1', 2, false, { ignoreInState: 1  });
 	var me=this;
 	var skin=this;
 	var flag=false;
@@ -1026,6 +1044,341 @@ function pano2vrVrSkin(player,base) {
 		me._page_down_bg.add(me._page_down);
 		me._thumbnails.add(me._page_down_bg);
 		me.skinGroup.add(me._thumbnails);
+		geometry = new THREE.PlaneGeometry(0.37, 0.37, 5, 5 );
+		geometry.name = 'floorplan_btn_geometry';
+		loader = new THREE.TextureLoader();
+		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABKCAYAAAAc0MJxAAAHRUlEQVR4nO2cbWxT1xnH/8+9sZ0XtiCtgdAv6ybBaLUXNLVMY4mJRZlI7NiByVGnMqnqRKp1ZYHQ0Y6uCaFrBevWQttNrNPWF00qc7QlNrYzBJ0TG1DFvHVdaSPKpk3T1CWlUgmDhDi+59kHX9sBYjiOr0mknt83Pz7nPo9/PufeWDpPAIVCofgY4w+cXjTfNcyFjmTS1tPDWvY1lSuRJxS7Rdf1IIA1AAAWzqCnKVGufFbhD5y2T9V89BCBu0F4N9jiXAOUQVRHMmkbHbv0IIF2A1h8xZuM1wHRu1CF+QaHWyDoWQArsrHxasM25HKlLRXljSQ2EPAswCvNkAFAJ1CKwfbcwAUmzBOKrdR07RkCNV/9nqWiNkYSKwT4GQDuGeHfgukCiLeA+SSDni'+
+	'dCN4DbcyPmWVhbf2yxcOg9xHgIQIUZ/jNARwF+FMiL0gpf5sb4jx6t9YYTPxHg08hLehMsnEG38x4GLgAAiDjkcR6yXxr9AjO+CWAkE8c6kBb3hePHfOGhxlJqKaruQED3RYYfYLt+lhjbAFQAPAbQ/atONa7WgBNXz5mTKH8goHuj8S1TKcdZIt4BwAbgAwBb7JdG7yq0Qvra2435FtZ2ONGUqqn/C0AHAdwCIAXifSlyrAi6G1/q7SUx27yK2YLXwxsZdqaAA8RYZYamQThgt039qG/9+nGZa/S1txsADvkDgb6p6np/bksS1gHaOl84bvmWbA0Nf0bT6WkGfyMbIyAodOPh0AbX3280X1rUpsiJT6chfkzg9myMgbAO2tHf0vhe8aXfHGH+WGxRalJ7FEwPA3CY4XcZYlvQ3XRU9jo3FPX1I0dqKqerHjFgfJ+A'+
+	'SjM8Asb2kMd5ZA61X0M5hPX0sPbW6uP3piZ5Lxi3muGPmNB9oco4OORypYupsfA9ipm80eF7q9KVZ4jwODKSzgPUuXRp9ZeCFkmaiVX3MF8k8ZW/rk6cZPCrpiSDGC9oU6nloRbnC8VKAgqsqNbBobu0wcQBMH3VDAlm/EIIozvsdX1YbJJimesK8waP30oVYi/A35oRPqaxsb3f4zpdSk1XiNr0h/gyw8BTELgvGyPgjwzeFvKsfbuURHNBVth4Df+pdlLvAotdAGrM6f9g5q6Q23kYRFxqLTlRvnDiQSPN+0DI/oj9JxG6Bpobg1YkKoUbCauduGL4/xh4YpouPjfobpmyqoYKIPN3UYr4eeTuWfyD8Wqxf8jlumxVIisoKAwAwCDGr1MkHou6XaNW564AgHN1dVQ7kZFETA8MeJwvWp3ISmYKS9UsewfgzzH03w'+
+	'Q9Dd8uV85rnnpEeL9cyawmI4wzDxfmsXLmKum33scJJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUoSJUqS8ooiWgoABHzWHwjoZc1lIZw/wJ+j6F4YGXLHsCE2AwADy1I19W97w/E9jonRPvMM5oKjKRarrJ3Uu5j5STMk6s6dY8DiFdUcjTp84cQjRhrvAfmz6ia3E+E1U9g9C2qFMZM3PLypdkIfASMjiXERTFuzX6o1opipLRpvs/Oid0C81zyrfomBXePVRhVYODNNjAAWmDDvYPyLvujx14nodwBuA8AAXpomY3nQ0/jz7LiSt97GcOzzIpLYz4R12RgRXhHT2q6QryF7wjgB4O5MH4vW'+
+	'kzlInxPWPR9b0h+N16UYeyDQAeS60U8ytM6QuyF59fg5i9r4+2OfEg5HrwB/B/mD/G+QoM6BVuep2eaYvSvzKizbHJ5i7Ea+Ofw/BNo50NJwqFCXRtFbryOZtLWF41uFw34W4O8C0EB4n4k3rzrl/FohSTMJepoSQY/z7pu9Jb2RxIaxscm/EWg/MpIuE7h3smJy5YC78bXrtbIUtaK8kaH1Y2MT+0G4wwxNEehpW1V6X5/LdTFUZOE3a4Xlm8P5iuZww6CdYa/z3zLXkBLlOTy8XNfwU4Ba81HuI03sHGh2/auYomejXMLa+mOLYdcfF+DvIf9Z3wSLzmK7Sq8rqjn6xiftnPohgG3INFiDgbd0Qmd/y9rhYhLJYJUwfyCgTy2qv18wniSgzgx/QMy7bBNjL89lhc4qyh8I6NPVS+9jTj0FYIkZ/pCYHrNP/PdX5X'+
+	'46lSLMiubw2SAAaIrFKmon9OlMhPcRaD0zvmyOSRPwHFLGEwMbXefnmqgUrhKWZYQZewi8FURrwPRLkFgMkD8/hA8bAjvCrWvPllrDtaJmwoiyrnWFmhvOlJrICgoIuwygEqA0wNkdMgLGdiv7nguJOkOkbR9oaRi0KpGVFBAGAOeJ0b2kvvrgi3feee0XXwKZ/83CTL7BxAkw7iDG7iX11T+zOlE58IWHGom0Vxm4DYQjRtrYXPbm8J4e1jqSSVtZk5QJb/D4J+a7BoVCoZhP/g/BK5Uo8Iym6wAAAABJRU5ErkJggg==');
+		texture.colorSpace = player.getVRTextureColorSpace();
+		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
+		material.name = 'floorplan_btn_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.materialNormal = material;
+		el.translateX(-7.28);
+		el.translateY(4.18);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 37;
+		el.userData.height = 37;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'floorplan_btn';
+		el.userData.x = -7.28;
+		el.userData.y = 4.18;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
+		el.translateZ(0.020);
+		el.renderOrder = 2;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._floorplan_btn.material) me._floorplan_btn.material.opacity = v;
+			me._floorplan_btn.visible = (v>0 && me._floorplan_btn.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._floorplan_btn.visible
+			let parentEl = me._floorplan_btn.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._floorplan_btn.userData.opacity = v;
+			v = v * me._floorplan_btn.userData.parentOpacity;
+			me._floorplan_btn.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._floorplan_btn.children.length; i++) {
+				let child = me._floorplan_btn.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._floorplan_btn.userData.parentOpacity = v;
+			v = v * me._floorplan_btn.userData.opacity
+			me._floorplan_btn.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._floorplan_btn.children.length; i++) {
+				let child = me._floorplan_btn.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 0.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._floorplan_btn = el;
+		textureOver = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABKCAYAAAAc0MJxAAAESUlEQVR4nO3cSYhcVRSH8Vc9mEBiEkhEk4UTJrqIrhxWUTfBgSDBlaIuJBohGBVBHFaigkEjLhTFgAO6UXEhcUBwWKWjC0fENoKYhUaMERNMIGPn56Je6e3XVdX3DZXu6P021VXv3vM/7+vu6qa5p7MskUgk/sdg/kz3UAWMYuhEBC3BmH9ZNfDQBsApuBf7sH2QQaO4G3tN5aPZLAzX4odCzyODCLoa3wchx/LHw7NZGC7A+10+sc2Kwgq8Wwh4HVvyj8dwA8ZnkzAswtM4GvT0OR5vVBQWYjOOBIW/7Nx8fg225c+HZ4OwvI87sCfo4TfciiGsaURUHnQ7fg8K7sZtGA7WTRJV2D8jwnAlvgkyD2MTFgRr6ovC5fgqKHQET2Jhl7VdRQXXT5gwnI'+
+	'O3Cjlv47wua6uLwll4oxD0Dlb02dNXVLBuYMIwH4/hUFD3O6zus6e8KMzDIzgYbB7HVRF7o0QF6xsTpv1ecwt2BXX+xJ3T3XwpUWjhJvwSbNqLuzAa2WwpUcG+WsJwGT4L9h3DM1gcmR8nCpdge7B4As9hSYn7rSwq2F9KGJbh1cLaD7GyZG5/UViKlwtBH+PCijdaS1RQp68wzMVDOBBc+xHXoVUhr7cobMD+YMFPWFslKKjZiKigXi9hIX/hPsypkdNdVN7ARHDxAcxt4MYaFRXU7SXsRZzRQP2eokaCC+vrBgV1ByIqqD+MHXnGaw3WnSKq299bfm0qcNC0Wq2JLMv+yJ/uHmTW4P8w9R8hiYokiYokiYokiYokiYokiYokiYokiYokiYokiYokiYokiYokiYokiYokiYokiYokiYokiYokiYokiYokiYokiYok'+
+	'iYokiYokiYokiYokiYokiYokiYokiYokiYokiYpk0KJOzx/PFczInAQsK74wEFHyY9hZlt2cv7Q0y7Jv8wOqs1aY/Bh2lmUv5C8dz7JMuCA87LqmRtAc3G/yMewi400Kw7a87uYaNVq4HjuDPvdjQ3FhLVF50FrtQ/AdDuDB/LO0SvvwfOPC6orCRfgk6Os4XtLtGHYdUVjZRcIrmPJ9PghhVUXhNDxv8vn6MVzcb1NpUViMZwtBn+LSiL2NCSsrSvfh8J9xo+mmNMqIyoM2ao90ddilPYlV6odDE8LKiDJ1OPwgHsa82IajRGG19lBgh0N4VM1/AlFHWIwovYfDzyzbaF9RWI6thaA3cXapoOn7KC2snyjtKfSnTJ5C/2c4vEqDXUVhAZ4weQr9a1xRKSi+n2hh3UTpPRy+rpfw2MYmicqD1uXFO+zB+lpB5fuaVl'+
+	'hRlBLD4VUaCkVtwhfB86PaX76LagdV76+fsM7/f9mi/XYQshXLm2xkRHfew/mNBdWkh7DOUHj4PhQ1HF6lgaKoHbim8aCG6CGM9u9GG0UOh1cJbmkPW+/DPQMLaphc2M5c0gdKDodXDR06WQQVwakz3UMikUjMJH8Dee81NAg4PkAAAAAASUVORK5CYII=');
+		textureOver.colorSpace = player.getVRTextureColorSpace();
+		el.userData.materialOver = new THREE.MeshBasicMaterial( {map: textureOver, side: THREE.DoubleSide, transparent: true} );
+		el.userData.materialOver.name = 'floorplan_btn_materialOver';
+		el.userData.ggId="floorplan_btn";
+		me._floorplan_btn.logicBlock_position = function() {
+			var newLogicStatePosition;
+			if (
+				((player.getVariableValue('opt_maps') == true))
+			)
+			{
+				newLogicStatePosition = 0;
+			}
+			else {
+				newLogicStatePosition = -1;
+			}
+			if (me._floorplan_btn.ggCurrentLogicStatePosition != newLogicStatePosition) {
+				me._floorplan_btn.ggCurrentLogicStatePosition = newLogicStatePosition;
+				if (me._floorplan_btn.ggCurrentLogicStatePosition == 0) {
+					var newPos = skin.getElementVrPosition(me._floorplan_btn, 0, 45);
+					var deltaX = (newPos.x - me._floorplan_btn.position.x) * 100.0;
+					me._floorplan_btn.userData.transitionValue_posx = deltaX;
+					for (var i = 0; i < me._floorplan_btn.userData.transitions.length; i++) {
+						if (me._floorplan_btn.userData.transitions[i].property == 'posx') {
+							clearInterval(me._floorplan_btn.userData.transitions[i].interval);
+							me._floorplan_btn.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_posx = {};
+					transition_posx.property = 'posx';
+					transition_posx.startTime = Date.now();
+					transition_posx.startX = me._floorplan_btn.position.x;
+					transition_posx.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_posx.startTime) / 500;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._floorplan_btn.position.x = transition_posx.startX + ((me._floorplan_btn.userData.transitionValue_posx / 100.0) * tfval);
+						if (percentDone >= 1.0) {
+							clearInterval(transition_posx.interval);
+							me._floorplan_btn.userData.transitions.splice(me._floorplan_btn.userData.transitions.indexOf(transition_posx), 1);
+						}
+					}, 20);
+					me._floorplan_btn.userData.transitions.push(transition_posx);
+					var deltaY = (newPos.y - me._floorplan_btn.position.y) * 100.0;
+					me._floorplan_btn.userData.transitionValue_posy = deltaY;
+					for (var i = 0; i < me._floorplan_btn.userData.transitions.length; i++) {
+						if (me._floorplan_btn.userData.transitions[i].property == 'posy') {
+							clearInterval(me._floorplan_btn.userData.transitions[i].interval);
+							me._floorplan_btn.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_posy = {};
+					transition_posy.property = 'posy';
+					transition_posy.startTime = Date.now();
+					transition_posy.startY = me._floorplan_btn.position.y;
+					transition_posy.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_posy.startTime) / 500;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._floorplan_btn.position.y = transition_posy.startY + ((me._floorplan_btn.userData.transitionValue_posy / 100.0) * tfval);
+						if (percentDone >= 1.0) {
+							clearInterval(transition_posy.interval);
+							me._floorplan_btn.userData.transitions.splice(me._floorplan_btn.userData.transitions.indexOf(transition_posy), 1);
+						}
+					}, 20);
+					me._floorplan_btn.userData.transitions.push(transition_posy);
+				}
+				else {
+					var elPos = skin.getElementVrPosition(me._floorplan_btn, -728, -418);
+					var deltaX = (elPos.x - me._floorplan_btn.position.x) * 100.0;
+					me._floorplan_btn.userData.transitionValue_posx = deltaX;
+					for (var i = 0; i < me._floorplan_btn.userData.transitions.length; i++) {
+						if (me._floorplan_btn.userData.transitions[i].property == 'posx') {
+							clearInterval(me._floorplan_btn.userData.transitions[i].interval);
+							me._floorplan_btn.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_posx = {};
+					transition_posx.property = 'posx';
+					transition_posx.startTime = Date.now();
+					transition_posx.startX = me._floorplan_btn.position.x;
+					transition_posx.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_posx.startTime) / 500;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._floorplan_btn.position.x = transition_posx.startX + ((me._floorplan_btn.userData.transitionValue_posx / 100.0) * tfval);
+						if (percentDone >= 1.0) {
+							clearInterval(transition_posx.interval);
+							me._floorplan_btn.userData.transitions.splice(me._floorplan_btn.userData.transitions.indexOf(transition_posx), 1);
+						}
+					}, 20);
+					me._floorplan_btn.userData.transitions.push(transition_posx);
+					var deltaY = (elPos.y - me._floorplan_btn.position.y) * 100.0;
+					me._floorplan_btn.userData.transitionValue_posy = deltaY;
+					for (var i = 0; i < me._floorplan_btn.userData.transitions.length; i++) {
+						if (me._floorplan_btn.userData.transitions[i].property == 'posy') {
+							clearInterval(me._floorplan_btn.userData.transitions[i].interval);
+							me._floorplan_btn.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_posy = {};
+					transition_posy.property = 'posy';
+					transition_posy.startTime = Date.now();
+					transition_posy.startY = me._floorplan_btn.position.y;
+					transition_posy.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_posy.startTime) / 500;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._floorplan_btn.position.y = transition_posy.startY + ((me._floorplan_btn.userData.transitionValue_posy / 100.0) * tfval);
+						if (percentDone >= 1.0) {
+							clearInterval(transition_posy.interval);
+							me._floorplan_btn.userData.transitions.splice(me._floorplan_btn.userData.transitions.indexOf(transition_posy), 1);
+						}
+					}, 20);
+					me._floorplan_btn.userData.transitions.push(transition_posy);
+				}
+			}
+		}
+		me._floorplan_btn.logicBlock_position();
+		me._floorplan_btn.logicBlock_alpha = function() {
+			var newLogicStateAlpha;
+			if (
+				((player.getVariableValue('opt_floorplans') == true))
+			)
+			{
+				newLogicStateAlpha = 0;
+			}
+			else {
+				newLogicStateAlpha = -1;
+			}
+			if (me._floorplan_btn.ggCurrentLogicStateAlpha != newLogicStateAlpha) {
+				me._floorplan_btn.ggCurrentLogicStateAlpha = newLogicStateAlpha;
+				if (me._floorplan_btn.ggCurrentLogicStateAlpha == 0) {
+					me._floorplan_btn.userData.transitionValue_alpha = 1;
+					for (var i = 0; i < me._floorplan_btn.userData.transitions.length; i++) {
+						if (me._floorplan_btn.userData.transitions[i].property == 'alpha') {
+							clearInterval(me._floorplan_btn.userData.transitions[i].interval);
+							me._floorplan_btn.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_alpha = {};
+					transition_alpha.property = 'alpha';
+					transition_alpha.startTime = Date.now();
+					transition_alpha.startAlpha = me._floorplan_btn.material ? me._floorplan_btn.material.opacity : me._floorplan_btn.userData.opacity;
+					transition_alpha.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_alpha.startTime) / 500;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._floorplan_btn.userData.setOpacity(transition_alpha.startAlpha + (me._floorplan_btn.userData.transitionValue_alpha - transition_alpha.startAlpha) * tfval);
+						if (percentDone >= 1.0) {
+							clearInterval(transition_alpha.interval);
+							me._floorplan_btn.userData.transitions.splice(me._floorplan_btn.userData.transitions.indexOf(transition_alpha), 1);
+						}
+					}, 20);
+					me._floorplan_btn.userData.transitions.push(transition_alpha);
+				}
+				else {
+					me._floorplan_btn.userData.transitionValue_alpha = 0;
+					for (var i = 0; i < me._floorplan_btn.userData.transitions.length; i++) {
+						if (me._floorplan_btn.userData.transitions[i].property == 'alpha') {
+							clearInterval(me._floorplan_btn.userData.transitions[i].interval);
+							me._floorplan_btn.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_alpha = {};
+					transition_alpha.property = 'alpha';
+					transition_alpha.startTime = Date.now();
+					transition_alpha.startAlpha = me._floorplan_btn.material ? me._floorplan_btn.material.opacity : me._floorplan_btn.userData.opacity;
+					transition_alpha.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_alpha.startTime) / 500;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._floorplan_btn.userData.setOpacity(transition_alpha.startAlpha + (me._floorplan_btn.userData.transitionValue_alpha - transition_alpha.startAlpha) * tfval);
+						if (percentDone >= 1.0) {
+							clearInterval(transition_alpha.interval);
+							me._floorplan_btn.userData.transitions.splice(me._floorplan_btn.userData.transitions.indexOf(transition_alpha), 1);
+						}
+					}, 20);
+					me._floorplan_btn.userData.transitions.push(transition_alpha);
+				}
+			}
+		}
+		me._floorplan_btn.logicBlock_alpha();
+		me._floorplan_btn.userData.onclick=function (e) {
+				me._map_node_title.userData.ggUpdateText=function(force) {
+					var params = [];
+					params.push(player._(String(player._(me.ggUserdata.title))));
+					var hs = player._("%1", params);
+					if (hs!=this.ggText || force) {
+						this.ggText=me._map_node_title.userData.ggStripTags(hs);
+						this.ggRenderText();
+					}
+				}
+			me._map_node_title.userData.ggUpdateText();
+				me._map_node_description.userData.ggUpdateText=function(force) {
+					var params = [];
+					params.push(player._(String(player._(me.ggUserdata.description))));
+					var hs = player._("%1", params);
+					if (hs!=this.ggText || force) {
+						this.ggText=me._map_node_description.userData.ggStripTags(hs);
+						this.ggRenderText();
+					}
+				}
+			me._map_node_description.userData.ggUpdateText();
+			if (
+				(
+					((player.getVariableValue('resp_phone') == true))
+				)
+			) {
+				player.setVariableValue('vis_phone_floorplan', true);
+			}
+			if (
+				(
+					((player.getVariableValue('resp_phone') == false))
+				)
+			) {
+				player.setVariableValue('vis_floorplan', !player.getVariableValue('vis_floorplan'));
+			}
+			player.setVariableValue('vis_map', false);
+			player.setVariableValue('vis_info', false);
+			player.setVariableValue('vis_share', false);
+			player.setVariableValue('vis_languages', false);
+			player.setVariableValue('vis_url_popup', false);
+			player.setVariableValue('vis_info_popup', false);
+			player.setVariableValue('vis_image_popup', false);
+			player.setVariableValue('vis_pdf_popup', false);
+			player.setVariableValue('vis_video_popup', false);
+		}
+		me._floorplan_btn.userData.onmouseenter=function (e) {
+			me._floorplan_btn.material = me._floorplan_btn.userData.materialOver;
+			me.elementMouseOver['floorplan_btn']=true;
+		}
+		me._floorplan_btn.userData.onmouseleave=function (e) {
+			me._floorplan_btn.material = me._floorplan_btn.userData.materialNormal;
+			me.elementMouseOver['floorplan_btn']=false;
+		}
+		me._floorplan_btn.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me.skinGroup.add(me._floorplan_btn);
 		el = new THREE.Group();
 		el.userData.setOpacityInternal = function(v) {};
 		el.translateX(-3.27);
@@ -1041,8 +1394,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 2.27;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.020);
-		el.renderOrder = 2;
+		el.translateZ(0.030);
+		el.renderOrder = 3;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -1153,8 +1506,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = -0.55;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 2;
-		el.translateZ(0.030);
-		el.renderOrder = 3;
+		el.translateZ(0.040);
+		el.renderOrder = 4;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -1324,8 +1677,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
-		el.translateZ(0.040);
-		el.renderOrder = 4;
+		el.translateZ(0.050);
+		el.renderOrder = 5;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -1438,8 +1791,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
-		el.translateZ(0.040);
-		el.renderOrder = 4;
+		el.translateZ(0.050);
+		el.renderOrder = 5;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -1604,8 +1957,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
-		el.translateZ(0.050);
-		el.renderOrder = 5;
+		el.translateZ(0.060);
+		el.renderOrder = 6;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -1673,8 +2026,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 2.27;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.030);
-		el.renderOrder = 3;
+		el.translateZ(0.040);
+		el.renderOrder = 4;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -1785,8 +2138,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.040);
-		el.renderOrder = 4;
+		el.translateZ(0.050);
+		el.renderOrder = 5;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -1952,8 +2305,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
-		el.translateZ(0.050);
-		el.renderOrder = 5;
+		el.translateZ(0.060);
+		el.renderOrder = 6;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -2041,8 +2394,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.040);
-		el.renderOrder = 4;
+		el.translateZ(0.050);
+		el.renderOrder = 5;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -2213,8 +2566,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = -0.24;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
-		el.translateZ(0.050);
-		el.renderOrder = 5;
+		el.translateZ(0.060);
+		el.renderOrder = 6;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -2426,8 +2779,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.060);
-		el.renderOrder = 6;
+		el.translateZ(0.070);
+		el.renderOrder = 7;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -2543,8 +2896,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 2.275;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 0;
-		el.translateZ(0.070);
-		el.renderOrder = 7;
+		el.translateZ(0.080);
+		el.renderOrder = 8;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -2741,8 +3094,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = -2.25;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 2;
-		el.translateZ(0.080);
-		el.renderOrder = 8;
+		el.translateZ(0.090);
+		el.renderOrder = 9;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -2903,8 +3256,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0.1;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 2;
-		el.translateZ(0.110);
-		el.renderOrder = 11;
+		el.translateZ(0.120);
+		el.renderOrder = 12;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -3190,8 +3543,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
-		el.translateZ(0.120);
-		el.renderOrder = 12;
+		el.translateZ(0.130);
+		el.renderOrder = 13;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -3392,8 +3745,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
-		el.translateZ(0.130);
-		el.renderOrder = 13;
+		el.translateZ(0.140);
+		el.renderOrder = 14;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -3463,8 +3816,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = -0.18;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 2;
-		el.translateZ(0.130);
-		el.renderOrder = 13;
+		el.translateZ(0.140);
+		el.renderOrder = 14;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -3750,8 +4103,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
-		el.translateZ(0.140);
-		el.renderOrder = 14;
+		el.translateZ(0.150);
+		el.renderOrder = 15;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -3952,8 +4305,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
-		el.translateZ(0.150);
-		el.renderOrder = 15;
+		el.translateZ(0.160);
+		el.renderOrder = 16;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -4021,8 +4374,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.070);
-		el.renderOrder = 7;
+		el.translateZ(0.080);
+		el.renderOrder = 8;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -4122,8 +4475,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = -0.3;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
-		el.translateZ(0.080);
-		el.renderOrder = 8;
+		el.translateZ(0.090);
+		el.renderOrder = 9;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -4259,8 +4612,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 2.275;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 0;
-		el.translateZ(0.090);
-		el.renderOrder = 9;
+		el.translateZ(0.100);
+		el.renderOrder = 10;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -4458,8 +4811,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.080);
-		el.renderOrder = 8;
+		el.translateZ(0.090);
+		el.renderOrder = 9;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -4576,8 +4929,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 2.275;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 0;
-		el.translateZ(0.100);
-		el.renderOrder = 10;
+		el.translateZ(0.110);
+		el.renderOrder = 11;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -4795,8 +5148,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.090);
-		el.renderOrder = 9;
+		el.translateZ(0.100);
+		el.renderOrder = 10;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -4928,22 +5281,22 @@ function pano2vrVrSkin(player,base) {
 		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
 		el.userData.curScaleOffX = 0;
 		el.userData.curScaleOffY = 0;
-		el.name = 'close_popup_phone';
+		el.name = 'close_popup_phone 1';
 		el.userData.x = 0;
 		el.userData.y = 2.75;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.100);
-		el.renderOrder = 10;
+		el.translateZ(0.110);
+		el.renderOrder = 11;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
-			if (me._close_popup_phone.material) me._close_popup_phone.material.opacity = v;
-			me._close_popup_phone.visible = (v>0 && me._close_popup_phone.userData.visible);
+			if (me._close_popup_phone_1.material) me._close_popup_phone_1.material.opacity = v;
+			me._close_popup_phone_1.visible = (v>0 && me._close_popup_phone_1.userData.visible);
 		}
 		el.userData.isVisible = function() {
-			let vis = me._close_popup_phone.visible
-			let parentEl = me._close_popup_phone.parent;
+			let vis = me._close_popup_phone_1.visible
+			let parentEl = me._close_popup_phone_1.parent;
 			while (vis && parentEl) {
 				if (!parentEl.visible) {
 					vis = false;
@@ -4954,22 +5307,22 @@ function pano2vrVrSkin(player,base) {
 			return vis;
 		}
 		el.userData.setOpacity = function(v) {
-			me._close_popup_phone.userData.opacity = v;
-			v = v * me._close_popup_phone.userData.parentOpacity;
-			me._close_popup_phone.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._close_popup_phone.children.length; i++) {
-				let child = me._close_popup_phone.children[i];
+			me._close_popup_phone_1.userData.opacity = v;
+			v = v * me._close_popup_phone_1.userData.parentOpacity;
+			me._close_popup_phone_1.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._close_popup_phone_1.children.length; i++) {
+				let child = me._close_popup_phone_1.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
 			};
 		}
 		el.userData.setParentOpacity = function(v) {
-			me._close_popup_phone.userData.parentOpacity = v;
-			v = v * me._close_popup_phone.userData.opacity
-			me._close_popup_phone.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._close_popup_phone.children.length; i++) {
-				let child = me._close_popup_phone.children[i];
+			me._close_popup_phone_1.userData.parentOpacity = v;
+			v = v * me._close_popup_phone_1.userData.opacity
+			me._close_popup_phone_1.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._close_popup_phone_1.children.length; i++) {
+				let child = me._close_popup_phone_1.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
@@ -4980,10 +5333,10 @@ function pano2vrVrSkin(player,base) {
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
-		me._close_popup_phone = el;
+		me._close_popup_phone_1 = el;
 		el.userData.ggPermeable=false;
-		el.userData.ggId="close_popup_phone";
-		me._close_popup_phone.userData.onclick=function (e) {
+		el.userData.ggId="close_popup_phone 1";
+		me._close_popup_phone_1.userData.onclick=function (e) {
 			player.setVariableValue('vis_phone_info', false);
 			player.setVariableValue('vis_phone_image', false);
 			player.setVariableValue('vis_phone_pdf', false);
@@ -4992,24 +5345,24 @@ function pano2vrVrSkin(player,base) {
 			player.setVariableValue('vis_phone_video_file', false);
 			player.setVariableValue('vis_phone_video_url', false);
 		}
-		me._close_popup_phone.userData.onmouseenter=function (e) {
-			me.elementMouseOver['close_popup_phone']=true;
-			me._btn_close_popup_phone.logicBlock_visible();
+		me._close_popup_phone_1.userData.onmouseenter=function (e) {
+			me.elementMouseOver['close_popup_phone_1']=true;
+			me._btn_close_popup_phone_1.logicBlock_visible();
 		}
-		me._close_popup_phone.userData.onmouseleave=function (e) {
-			me.elementMouseOver['close_popup_phone']=false;
-			me._btn_close_popup_phone.logicBlock_visible();
+		me._close_popup_phone_1.userData.onmouseleave=function (e) {
+			me.elementMouseOver['close_popup_phone_1']=false;
+			me._btn_close_popup_phone_1.logicBlock_visible();
 		}
-		me._close_popup_phone.userData.ggUpdatePosition=function (useTransition) {
+		me._close_popup_phone_1.userData.ggUpdatePosition=function (useTransition) {
 		}
 		geometry = new THREE.PlaneGeometry(0.3, 0.3, 5, 5 );
-		geometry.name = 'btn_close_popup_phone_geometry';
+		geometry.name = 'btn_close_popup_phone 1_geometry';
 		loader = new THREE.TextureLoader();
 		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAABl0lEQVRoge2ZsU4CQRBA37CxvsKG9qj8CfUTKAhfSSz8BOAjhEbbbSyoyTkWJwbRGNjbnYTsvOSqCzPzjsvezg44juM4juM4juOUZB2byTI27bXlHaX8aBmbVgkvQtiu4u00NfmlrOLtVAkbIWzWsZmkxEgSHoHQXzegCwvpPocu+pzIB2hKnCTh+/HuFWQO7DGQPpHdg8wfx7u3lFiSu5CH8fvzkJilcwwSLlFQ6diDhUsVVupBZhGGvAWWfGuyCUOeQkuvC1mFYVjBFotgdmFIK9xCFgoJw2UCVrJQUBjOE7GUhcLC8L+QtSwYCMPfYv0dW1kwEoaf0qp0CAgEDGXBUBi+2jvVJxECgEInyMxKFhK7pUEcP+KkBm8YZsKHV1ogKHSqdP0/bdNPHz'+
 	'ARPl20BJmJyAyjfvoY/yzlpKqNR1Vby6qah6raw6oOAKo64qnqEK+qY9qqDuItv505cyUJL2PTCmGbo4Bz+b0f7+76GddlDJkeKobNe5/je4CnqdPDZJaxaVNntNeY13Ecx3Ecx3GcyvgEKsOoKkU8t1IAAAAASUVORK5CYII=');
 		texture.colorSpace = player.getVRTextureColorSpace();
 		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
-		material.name = 'btn_close_popup_phone_material';
+		material.name = 'btn_close_popup_phone 1_material';
 		el = new THREE.Mesh( geometry, material );
 		el.userData.materialNormal = material;
 		el.translateX(-3.65);
@@ -5020,22 +5373,22 @@ function pano2vrVrSkin(player,base) {
 		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
 		el.userData.curScaleOffX = 0;
 		el.userData.curScaleOffY = 0;
-		el.name = 'btn_close_popup_phone';
+		el.name = 'btn_close_popup_phone 1';
 		el.userData.x = -3.65;
 		el.userData.y = 0;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.110);
-		el.renderOrder = 11;
+		el.translateZ(0.120);
+		el.renderOrder = 12;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
-			if (me._btn_close_popup_phone.material) me._btn_close_popup_phone.material.opacity = v;
-			me._btn_close_popup_phone.visible = (v>0 && me._btn_close_popup_phone.userData.visible);
+			if (me._btn_close_popup_phone_1.material) me._btn_close_popup_phone_1.material.opacity = v;
+			me._btn_close_popup_phone_1.visible = (v>0 && me._btn_close_popup_phone_1.userData.visible);
 		}
 		el.userData.isVisible = function() {
-			let vis = me._btn_close_popup_phone.visible
-			let parentEl = me._btn_close_popup_phone.parent;
+			let vis = me._btn_close_popup_phone_1.visible
+			let parentEl = me._btn_close_popup_phone_1.parent;
 			while (vis && parentEl) {
 				if (!parentEl.visible) {
 					vis = false;
@@ -5046,22 +5399,22 @@ function pano2vrVrSkin(player,base) {
 			return vis;
 		}
 		el.userData.setOpacity = function(v) {
-			me._btn_close_popup_phone.userData.opacity = v;
-			v = v * me._btn_close_popup_phone.userData.parentOpacity;
-			me._btn_close_popup_phone.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._btn_close_popup_phone.children.length; i++) {
-				let child = me._btn_close_popup_phone.children[i];
+			me._btn_close_popup_phone_1.userData.opacity = v;
+			v = v * me._btn_close_popup_phone_1.userData.parentOpacity;
+			me._btn_close_popup_phone_1.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._btn_close_popup_phone_1.children.length; i++) {
+				let child = me._btn_close_popup_phone_1.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
 			};
 		}
 		el.userData.setParentOpacity = function(v) {
-			me._btn_close_popup_phone.userData.parentOpacity = v;
-			v = v * me._btn_close_popup_phone.userData.opacity
-			me._btn_close_popup_phone.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._btn_close_popup_phone.children.length; i++) {
-				let child = me._btn_close_popup_phone.children[i];
+			me._btn_close_popup_phone_1.userData.parentOpacity = v;
+			v = v * me._btn_close_popup_phone_1.userData.opacity
+			me._btn_close_popup_phone_1.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._btn_close_popup_phone_1.children.length; i++) {
+				let child = me._btn_close_popup_phone_1.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
@@ -5072,16 +5425,16 @@ function pano2vrVrSkin(player,base) {
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
-		me._btn_close_popup_phone = el;
+		me._btn_close_popup_phone_1 = el;
 		textureOver = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAABBklEQVRoge2ZSw6DMAwFLe7B/U+EKKiL3uR1gb1BVQUhMTZ5I7FEnokiPooIIYQQQgghhLQEwABgyDa36EYdOInIDGAsHV4wdxSRl4hMroutq7xi4+0RDWDUWQCwuO+unUDTaM9Zt4uEifUQChdrtBALG2vUFAwfa9QQTRNrXBFOF2uUiKeNNc4EpI81joQ8Jtb4F/S4WONX2GNjjV3gR69nxhoabaEW7hrr/gPfDV1t6a4eWl29lrr68DgTkj66JCBt9BXxdNE1hNNE1xQNH91CMGx0S7Fw0R5CYaI9RW6PxnaYtngK7KJX3HB6OOtg1+NSXejZNViHpzwQJ4QQQgghhJBDfAHSnjXTQH3XaAAAAABJRU5ErkJggg==');
 		textureOver.colorSpace = player.getVRTextureColorSpace();
 		el.userData.materialOver = new THREE.MeshBasicMaterial( {map: textureOver, side: THREE.DoubleSide, transparent: true} );
-		el.userData.materialOver.name = 'btn_close_popup_phone_materialOver';
-		el.userData.ggId="btn_close_popup_phone";
-		me._btn_close_popup_phone.logicBlock_visible = function() {
+		el.userData.materialOver.name = 'btn_close_popup_phone 1_materialOver';
+		el.userData.ggId="btn_close_popup_phone 1";
+		me._btn_close_popup_phone_1.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
-				((me.elementMouseOver['close_popup_phone'] == true))
+				((me.elementMouseOver['close_popup_phone_1'] == true))
 			)
 			{
 				newLogicStateVisible = 0;
@@ -5089,31 +5442,31 @@ function pano2vrVrSkin(player,base) {
 			else {
 				newLogicStateVisible = -1;
 			}
-			if (me._btn_close_popup_phone.ggCurrentLogicStateVisible != newLogicStateVisible) {
-				me._btn_close_popup_phone.ggCurrentLogicStateVisible = newLogicStateVisible;
-				if (me._btn_close_popup_phone.ggCurrentLogicStateVisible == 0) {
-			me._btn_close_popup_phone.visible=false;
-			me._btn_close_popup_phone.userData.visible=false;
+			if (me._btn_close_popup_phone_1.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._btn_close_popup_phone_1.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._btn_close_popup_phone_1.ggCurrentLogicStateVisible == 0) {
+			me._btn_close_popup_phone_1.visible=false;
+			me._btn_close_popup_phone_1.userData.visible=false;
 				}
 				else {
-			me._btn_close_popup_phone.visible=((!me._btn_close_popup_phone.material && Number(me._btn_close_popup_phone.userData.opacity>0)) || Number(me._btn_close_popup_phone.material.opacity)>0)?true:false;
-			me._btn_close_popup_phone.userData.visible=true;
+			me._btn_close_popup_phone_1.visible=((!me._btn_close_popup_phone_1.material && Number(me._btn_close_popup_phone_1.userData.opacity>0)) || Number(me._btn_close_popup_phone_1.material.opacity)>0)?true:false;
+			me._btn_close_popup_phone_1.userData.visible=true;
 				}
 			}
 		}
-		me._btn_close_popup_phone.logicBlock_visible();
-		me._btn_close_popup_phone.userData.onmouseenter=function (e) {
-			me._btn_close_popup_phone.material = me._btn_close_popup_phone.userData.materialOver;
-			me.elementMouseOver['btn_close_popup_phone']=true;
+		me._btn_close_popup_phone_1.logicBlock_visible();
+		me._btn_close_popup_phone_1.userData.onmouseenter=function (e) {
+			me._btn_close_popup_phone_1.material = me._btn_close_popup_phone_1.userData.materialOver;
+			me.elementMouseOver['btn_close_popup_phone_1']=true;
 		}
-		me._btn_close_popup_phone.userData.onmouseleave=function (e) {
-			me._btn_close_popup_phone.material = me._btn_close_popup_phone.userData.materialNormal;
-			me.elementMouseOver['btn_close_popup_phone']=false;
+		me._btn_close_popup_phone_1.userData.onmouseleave=function (e) {
+			me._btn_close_popup_phone_1.material = me._btn_close_popup_phone_1.userData.materialNormal;
+			me.elementMouseOver['btn_close_popup_phone_1']=false;
 		}
-		me._btn_close_popup_phone.userData.ggUpdatePosition=function (useTransition) {
+		me._btn_close_popup_phone_1.userData.ggUpdatePosition=function (useTransition) {
 		}
-		me._close_popup_phone.add(me._btn_close_popup_phone);
-		me._screentint_phone.add(me._close_popup_phone);
+		me._close_popup_phone_1.add(me._btn_close_popup_phone_1);
+		me._screentint_phone.add(me._close_popup_phone_1);
 		el = new THREE.Group();
 		el.userData.setOpacityInternal = function(v) {};
 		el.translateX(0);
@@ -5129,8 +5482,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = -0.18875;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.110);
-		el.renderOrder = 11;
+		el.translateZ(0.120);
+		el.renderOrder = 12;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -5243,8 +5596,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0.51875;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.120);
-		el.renderOrder = 12;
+		el.translateZ(0.130);
+		el.renderOrder = 13;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -5526,8 +5879,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 2.48875;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.130);
-		el.renderOrder = 13;
+		el.translateZ(0.140);
+		el.renderOrder = 14;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -5734,8 +6087,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = -0.84;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.120);
-		el.renderOrder = 12;
+		el.translateZ(0.130);
+		el.renderOrder = 13;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -5899,8 +6252,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = -2.6;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 2;
-		el.translateZ(0.140);
-		el.renderOrder = 14;
+		el.translateZ(0.150);
+		el.renderOrder = 15;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -6061,8 +6414,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = -0.715;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.170);
-		el.renderOrder = 17;
+		el.translateZ(0.180);
+		el.renderOrder = 18;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -6348,8 +6701,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
-		el.translateZ(0.180);
-		el.renderOrder = 18;
+		el.translateZ(0.190);
+		el.renderOrder = 19;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -6551,8 +6904,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
-		el.translateZ(0.190);
-		el.renderOrder = 19;
+		el.translateZ(0.200);
+		el.renderOrder = 20;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -6622,8 +6975,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = -0.735;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.190);
-		el.renderOrder = 19;
+		el.translateZ(0.200);
+		el.renderOrder = 20;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -6909,8 +7262,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
-		el.translateZ(0.200);
-		el.renderOrder = 20;
+		el.translateZ(0.210);
+		el.renderOrder = 21;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -7112,8 +7465,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 0;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
-		el.translateZ(0.210);
-		el.renderOrder = 21;
+		el.translateZ(0.220);
+		el.renderOrder = 22;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -7180,8 +7533,8 @@ function pano2vrVrSkin(player,base) {
 		el.userData.y = 2.665;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.100);
-		el.renderOrder = 10;
+		el.translateZ(0.110);
+		el.renderOrder = 11;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
@@ -7232,6 +7585,2816 @@ function pano2vrVrSkin(player,base) {
 		me._code_element_feather_box_hotspot_component.userData.ggUpdatePosition=function (useTransition) {
 		}
 		me.skinGroup.add(me._code_element_feather_box_hotspot_component);
+		width = 0.52;
+		height = 0.52;
+		roundedRectShape = new THREE.Shape();
+		roundedRectShape.moveTo((-width / 2.0) + 0.25, (height / 2.0));
+		roundedRectShape.lineTo((width / 2.0) - 0.25, (height / 2.0));
+		roundedRectShape.arc(0, -0.25, 0.25, Math.PI / 2.0, 2.0 * Math.PI, true);
+		roundedRectShape.lineTo((width / 2.0), (-height / 2.0) + 0.25);
+		roundedRectShape.arc(-0.25, 0, 0.25, 2.0 * Math.PI, 3.0 * Math.PI / 2.0, true);
+		roundedRectShape.lineTo((-width / 2.0) + 0.25, (-height / 2.0));
+		roundedRectShape.arc(0, 0.25, 0.25, 3.0 * Math.PI / 2.0, Math.PI, true);
+		roundedRectShape.lineTo((-width / 2.0), (height / 2.0) - 0.25);
+		roundedRectShape.arc(0.25, 0, 0.25, Math.PI, Math.PI / 2.0, true);
+		geometry = new THREE.ShapeGeometry(roundedRectShape);
+		geometry.name = 'map_toggle_geometry';
+		geometry.computeBoundingBox();
+		var min = geometry.boundingBox.min;
+		var max = geometry.boundingBox.max;
+		var offset = new THREE.Vector2(0 - min.x, 0 - min.y);
+		var range = new THREE.Vector2(max.x - min.x, max.y - min.y);
+		var vertexPositions = geometry.getAttribute('position');
+		var vertexUVs = geometry.getAttribute('uv');
+		for (var i = 0; i < vertexPositions.count; i++) {
+			var v1 = vertexPositions.getX(i);
+			var	v2 = vertexPositions.getY(i);
+			vertexUVs.setX(i, (v1 + offset.x) / range.x);
+			vertexUVs.setY(i, (v2 + offset.y) / range.y);
+		}
+		geometry.uvsNeedUpdate = true;
+		material = new THREE.MeshBasicMaterial( { color: new THREE.Color(0.309804, 0.709804, 0.760784).convertSRGBToLinear(), side : THREE.DoubleSide, transparent : true } ); 
+		material.name = 'map_toggle_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.backgroundColorAlpha = 1;
+		el.userData.borderColorAlpha = 1;
+		el.userData.setOpacityInternal = function(v) {
+			me._map_toggle.material.opacity = v * me._map_toggle.userData.backgroundColorAlpha;
+			if (me._map_toggle.userData.ggSubElement) {
+				me._map_toggle.userData.ggSubElement.material.opacity = v
+				me._map_toggle.userData.ggSubElement.visible = (v>0 && me._map_toggle.userData.visible);
+			}
+			me._map_toggle.visible = (v>0 && me._map_toggle.userData.visible);
+		}
+		el.userData.setBackgroundColor = function(v) {
+			me._map_toggle.material.color = v;
+		}
+		el.userData.setBackgroundColorAlpha = function(v) {
+			me._map_toggle.userData.backgroundColorAlpha = v;
+			me._map_toggle.userData.setOpacity(me._map_toggle.userData.opacity);
+		}
+		el.translateX(0);
+		el.translateY(-2.54);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 52;
+		el.userData.height = 52;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_toggle';
+		el.userData.x = 0;
+		el.userData.y = -2.54;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 2;
+		el.translateZ(0.120);
+		el.renderOrder = 12;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.isVisible = function() {
+			let vis = me._map_toggle.visible
+			let parentEl = me._map_toggle.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_toggle.userData.opacity = v;
+			v = v * me._map_toggle.userData.parentOpacity;
+			me._map_toggle.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_toggle.children.length; i++) {
+				let child = me._map_toggle.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_toggle.userData.parentOpacity = v;
+			v = v * me._map_toggle.userData.opacity
+			me._map_toggle.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_toggle.children.length; i++) {
+				let child = me._map_toggle.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_toggle = el;
+		el.userData.ggId="map_toggle";
+		me._map_toggle.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((player.hasMap() == true)) || 
+				((player.hasFloorplan() == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._map_toggle.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._map_toggle.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._map_toggle.ggCurrentLogicStateVisible == 0) {
+			me._map_toggle.visible=((!me._map_toggle.material && Number(me._map_toggle.userData.opacity>0)) || Number(me._map_toggle.material.opacity)>0)?true:false;
+			me._map_toggle.userData.visible=true;
+				}
+				else {
+			me._map_toggle.visible=false;
+			me._map_toggle.userData.visible=false;
+				}
+			}
+		}
+		me._map_toggle.logicBlock_visible();
+		me._map_toggle.logicBlock_alpha = function() {
+			var newLogicStateAlpha;
+			if (
+				((player.getVariableValue('resp_phone_1') == false))
+			)
+			{
+				newLogicStateAlpha = 0;
+			}
+			else if (
+				((player.getVariableValue('vis_floorplan_1') == true)) || 
+				((player.getVariableValue('vis_map_1') == true))
+			)
+			{
+				newLogicStateAlpha = 1;
+			}
+			else {
+				newLogicStateAlpha = -1;
+			}
+			if (me._map_toggle.ggCurrentLogicStateAlpha != newLogicStateAlpha) {
+				me._map_toggle.ggCurrentLogicStateAlpha = newLogicStateAlpha;
+				if (me._map_toggle.ggCurrentLogicStateAlpha == 0) {
+					me._map_toggle.userData.transitionValue_alpha = 1;
+					for (var i = 0; i < me._map_toggle.userData.transitions.length; i++) {
+						if (me._map_toggle.userData.transitions[i].property == 'alpha') {
+							clearInterval(me._map_toggle.userData.transitions[i].interval);
+							me._map_toggle.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_alpha = {};
+					transition_alpha.property = 'alpha';
+					transition_alpha.startTime = Date.now();
+					transition_alpha.startAlpha = me._map_toggle.material ? me._map_toggle.material.opacity : me._map_toggle.userData.opacity;
+					transition_alpha.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_alpha.startTime) / 300;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._map_toggle.userData.setOpacity(transition_alpha.startAlpha + (me._map_toggle.userData.transitionValue_alpha - transition_alpha.startAlpha) * tfval);
+						if (percentDone >= 1.0) {
+							clearInterval(transition_alpha.interval);
+							me._map_toggle.userData.transitions.splice(me._map_toggle.userData.transitions.indexOf(transition_alpha), 1);
+						}
+					}, 20);
+					me._map_toggle.userData.transitions.push(transition_alpha);
+				}
+				else if (me._map_toggle.ggCurrentLogicStateAlpha == 1) {
+					me._map_toggle.userData.transitionValue_alpha = 0;
+					for (var i = 0; i < me._map_toggle.userData.transitions.length; i++) {
+						if (me._map_toggle.userData.transitions[i].property == 'alpha') {
+							clearInterval(me._map_toggle.userData.transitions[i].interval);
+							me._map_toggle.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_alpha = {};
+					transition_alpha.property = 'alpha';
+					transition_alpha.startTime = Date.now();
+					transition_alpha.startAlpha = me._map_toggle.material ? me._map_toggle.material.opacity : me._map_toggle.userData.opacity;
+					transition_alpha.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_alpha.startTime) / 300;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._map_toggle.userData.setOpacity(transition_alpha.startAlpha + (me._map_toggle.userData.transitionValue_alpha - transition_alpha.startAlpha) * tfval);
+						if (percentDone >= 1.0) {
+							clearInterval(transition_alpha.interval);
+							me._map_toggle.userData.transitions.splice(me._map_toggle.userData.transitions.indexOf(transition_alpha), 1);
+						}
+					}, 20);
+					me._map_toggle.userData.transitions.push(transition_alpha);
+				}
+				else {
+					me._map_toggle.userData.transitionValue_alpha = 1;
+					for (var i = 0; i < me._map_toggle.userData.transitions.length; i++) {
+						if (me._map_toggle.userData.transitions[i].property == 'alpha') {
+							clearInterval(me._map_toggle.userData.transitions[i].interval);
+							me._map_toggle.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_alpha = {};
+					transition_alpha.property = 'alpha';
+					transition_alpha.startTime = Date.now();
+					transition_alpha.startAlpha = me._map_toggle.material ? me._map_toggle.material.opacity : me._map_toggle.userData.opacity;
+					transition_alpha.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_alpha.startTime) / 300;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._map_toggle.userData.setOpacity(transition_alpha.startAlpha + (me._map_toggle.userData.transitionValue_alpha - transition_alpha.startAlpha) * tfval);
+						if (percentDone >= 1.0) {
+							clearInterval(transition_alpha.interval);
+							me._map_toggle.userData.transitions.splice(me._map_toggle.userData.transitions.indexOf(transition_alpha), 1);
+						}
+					}, 20);
+					me._map_toggle.userData.transitions.push(transition_alpha);
+				}
+			}
+		}
+		me._map_toggle.logicBlock_alpha();
+		me._map_toggle.userData.onclick=function (e) {
+			if (
+				(
+					((player.hasFloorplan() == true))
+				)
+			) {
+				player.setVariableValue('vis_floorplan_1', !player.getVariableValue('vis_floorplan_1'));
+			}
+			if (
+				(
+					((player.hasFloorplan() == false))
+				)
+			) {
+				player.setVariableValue('vis_map_1', !player.getVariableValue('vis_map_1'));
+			}
+		}
+		me._map_toggle.userData.onmouseenter=function (e) {
+			me.elementMouseOver['map_toggle']=true;
+			me._map_icon.logicBlock_visible();
+			me._map_icon_active.logicBlock_visible();
+			me._floorplan_icon.logicBlock_visible();
+			me._floorplan_icon_active.logicBlock_visible();
+		}
+		me._map_toggle.userData.onmouseleave=function (e) {
+			me.elementMouseOver['map_toggle']=false;
+			me._map_icon.logicBlock_visible();
+			me._map_icon_active.logicBlock_visible();
+			me._floorplan_icon.logicBlock_visible();
+			me._floorplan_icon_active.logicBlock_visible();
+		}
+		me._map_toggle.userData.ggUpdatePosition=function (useTransition) {
+		}
+		geometry = new THREE.PlaneGeometry(0.36, 0.36, 5, 5 );
+		geometry.name = 'map_icon_geometry';
+		loader = new THREE.TextureLoader();
+		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAGK0lEQVR4nO2cTWyURRjHf9u1rmLXCJFtQaguEbRKygaCxqDxYEAuKkrqURMqxEis8SAXo9YD5WSrFz3gBQ4WExEhfsaURKAaL/hJRNR+IEIpJJqWggXa9TAzmdnSd9/dnXk/VvpP3uTN7sz/+c/svDPP88y8CzMoikTUAoAUMB9IA3Xys3PAKHASGI9IFxB+ByWBHPAQcD/QBCwCajzKTwJ9wC/AIaAH+B6YCFxpyMgBncBpIG95nZZcuTCEBzmCEsAa4GXggWm+PwL8CBwD+oERYEx+dwNwI5AFlgDNwN3TcBwAtgJfIjqvapADein85c8D3UALMLcCzrmybrfkMrl7CWlE2SKFGP4TaPHDQBtiEnaFtOQcNuxMSNsph3acIoOYSJXgUeA13HbMVK'+
+	'SBdmlL2T0otcQKzcAgWuR2whWZkTaV/QGpKRZYh/Bb8sBFYEOEWlqlhrzU9FiEWkAKmEQvv6uilQMIDcqdmCTCTmpGj5yfgIVRCZkGjQhNaiSF/rhlEM+5Gjlx6hyFRvRIGqAy16IipBArhZpz4vBYeWEVek46CFwbhtFO9GoR5YRcKlrRejuDNpZDO4HbgzbmEMoFmCBAjzuBDh9GiaEzVgT16AWll4Bi0DXoodoehIGA0Y7WvzoIAwfQsVWQ4UNQSKNjt69ck+fQvd/mmhwx5OuBFfKqJ5jHoA3djmUuidXKdR63oycLdFEYx6lrUH6XdWgvjU6VvOGKNIl2uLodcdYC2xD5Zr8M4rgsW+vI9i7JO4R3qrcsrECLbXHANxvYb3COATsR/spqebXKz8aMcvtlXVu0GJzLHfCxxSC0dddrKeycHUBDkfINiI5S5Xuw'+
+	'H0kZg+8lSy4A9kmynx1wbUOL20JpE3GCwh+pw4GOI5JrnwMufpNk71nyZNFzzg7KW6US6JE0jv3E3S25jlnykEKHFu2WXF3oOafYY+WFBvSc1GWp5XXJcxmfHLbfLD7fKNNvISgBPCHvdyNWkHIxJOsCPI6dn6TakgTmFSvo10GmzzNiISiDyM+AnRer6t6K3YJhtqWoX+fXQXXG/ZhnKX8sMO6PW/CYdRd4lvLHOePeqoPMPfBrKpYTP5iuwuViBf066Kxxf3PFcuCEcd/oWcofZt0TnqX8YbblrGcpwuugYfTj8aAFj6o7CJyx4HHWQSPoIWiTIMsDH8r79VS+zK+X93uwO6ygJvhLiOSfFZTX+aklT5wcxc9wFx3wriT7G/voNw6hRg3wDw7z6uauwHRndMrB1GB1J+EHq0sNPie7MncZhJsd8M1GNLTcdEcPbt'+
+	'Idmw3OJgd8JIA/JOEhF4SUnzDrwF3CTO3M/I7DtK4K7vKIQ5euoFKuA1zZMQO4T7kuMvjbHfKyxCB+xSWxRALhRiyXV4Zgkvavotux2DX5t5L4T0La43aMFEJ7HtEW53gS3fsbgzAQMDbhNrd+BZLAUWmgj+oKXmsROaA84lB6MihDT1NdJzsUNqB1PxWkoVpEHldtQbvwS4LGHPSW86+4cxc8sRb9a7wdtDEHeAet9+GwjH4kDU4C94RltALciz5kuidMw1nggjR8FJgVpvESMQu9qFzArcNZEl4g3o+a+WgFcSLFFzXAF4aIR6IQ4YFH0bo+J8IXB+chUpYqX+QkOrZEEzrfcwaffa8wsBa9+9pHtGcXM2iHcIIQVy0/mDmWr4HrItBwPfCNoeO5CDQUxVtocbtwdDipRNQA7xv23wzRdslIAp+gRW4N0XaHYfdj'+
+	'Aoy1bJFGvIeqxD4Tgs2Nhr0fqIITuI3AKbSnvSlAW2YK4xTxfKlmWixDLLFK/PMB2DCP9J7B8bHeMLAUcaZHNcLJeUAJc59sCPvtqMhwJ+LvJcx8to1Xm6Awr/wXcIelxsixGJ0LziMOcFeyyiQpfBXrOHC7I42RI0vh1s5eCg9n+aFO1lH1+4kgOg8atwCH0Y38jtJOiS1E/KGJqndYcv0vMXUknARWFim/Eu0yVDLyqhJJxDykGv0vIm4yJ+8EIr4zt6YrnbuqFs8iDmepDvgAuEleu43PL8myVyXuQ6xGXgcXBmWZqxpz0O+DmNde+d0MEHPOi4jH6aK8j8P/q8UOt8lrBtWC/wCekxdh2HZ6DQAAAABJRU5ErkJggg==');
+		texture.colorSpace = player.getVRTextureColorSpace();
+		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
+		material.name = 'map_icon_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.materialNormal = material;
+		el.translateX(0);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 36;
+		el.userData.height = 36;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_icon';
+		el.userData.x = 0;
+		el.userData.y = 0;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
+		el.translateZ(0.130);
+		el.renderOrder = 13;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._map_icon.material) me._map_icon.material.opacity = v;
+			me._map_icon.visible = (v>0 && me._map_icon.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._map_icon.visible
+			let parentEl = me._map_icon.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_icon.userData.opacity = v;
+			v = v * me._map_icon.userData.parentOpacity;
+			me._map_icon.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_icon.children.length; i++) {
+				let child = me._map_icon.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_icon.userData.parentOpacity = v;
+			v = v * me._map_icon.userData.opacity
+			me._map_icon.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_icon.children.length; i++) {
+				let child = me._map_icon.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_icon = el;
+		el.userData.ggId="map_icon";
+		me._map_icon.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.elementMouseOver['map_toggle'] == true)) || 
+				((player.hasFloorplan() == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._map_icon.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._map_icon.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._map_icon.ggCurrentLogicStateVisible == 0) {
+			me._map_icon.visible=false;
+			me._map_icon.userData.visible=false;
+				}
+				else {
+			me._map_icon.visible=((!me._map_icon.material && Number(me._map_icon.userData.opacity>0)) || Number(me._map_icon.material.opacity)>0)?true:false;
+			me._map_icon.userData.visible=true;
+				}
+			}
+		}
+		me._map_icon.logicBlock_visible();
+		me._map_icon.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map_toggle.add(me._map_icon);
+		geometry = new THREE.PlaneGeometry(0.36, 0.36, 5, 5 );
+		geometry.name = 'map_icon_active_geometry';
+		loader = new THREE.TextureLoader();
+		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAGoUlEQVR4nO2cSYwVVRiFT4GIA23EKCAi0sQJNdDRqCFqXBjUjSPBpSZOMRIxLmRjUFyIK0A3usCNLgQTESWOMZiIoHGDI0FR6QYVoSHBAC0ydH8u6i/rb3xTv3ur6pF4kpdUvb73nFO37vTfe19L/6MhkqoNAGMlTZbUJWmcfX1Q0gFJO5MkOVyVN6nkAgJGS+qRdJOk6yXNkDRd0qg6WYYkbZO0RdIGSeskfZ0kyWDxbksE0AMsA3YTjt3G1VOG98JqEJBIulnSU5JuqJFks6RvJW2V1Ctpv6QB+9vpks6Q1C3pYkkzJV1eg2O9pOckfZwkCTH9FwqrMRuPe/N/ASuBecA5bXCeY3lXGpfHxrJqVBCAsVb9B535fmAB0BVRp8s4+53OoGmPjaUTFc'+
+	'AEYIMzfAB4JmbB1NDsAhabVobPgAlFabYFYCaw3ZlcUaZJezkrnH4fMLMs/YYA7gQOmrEjwP0VennAPGCe7qjKS2boDmDIDO0GrqvUUOrpOvLpxFBlhWTNKqs53wHnV2KkBoCp5imrSeU2N2vzfa7mdEzhZLBCympSH21MLdoVHmsjRdbnVN6s6sGaW9YnfQacXIboMjdaVNYhtwrruDMsK1qsh3wSuKJQsYhwU4BBippxAwl5+HCATpuMNQAw0Q0oG0njxOgiN7uquji6QMEgnXFnmFOEwHoj76fA8KEokIYlWez2aWzyHlf6C6KS69/mOxG4yj4Ti2gGpAFuhlkxibOR66+YtQfoBpYzPI7LsN3+1h1Rr4t8qWRpLNLR5BOulZE4xwDPA4drFMzxOGxpx0TSXmW8u4B6S70jIrzKmZ0XgW888InjHABeI52vzLHP'+
+	'A/bdgEv3CTA+gv48x3llKJ+AhY4waLpuNccXzqvApAbpJ1lBZVgXWpNIw6QMT4ZwZYRrjez7CFzPO3MLaaEjJu3A/UtaEsHHZuNaG8ol4Ccjez2Qp5u8z3m1lcJxeRNXkw4T2HGTrmsDbA3hyQLTLLRYHMi13HgGGjWrBvknkfdJywO9PGs8x2iyht2sF5/s0vQGGEok3W23q5Mk2TVSDsuz2m7vGkkNrIHsWUZLOrdRwmYF5Oc8+wMMTZA01a5DZrFZ3gskhQwY/lkazuuaFdA4dz1QN1VzTHHXOwJ4fN4pdVM1x0F3HVRAfg/8pLbtdB78VOFYo4TNCmivuz67bTvSb+56at1UzeHz/lY3VXP4Z9lbN5XKK6B+5c3jxgCeLO92SXsCeKIV0H7lVbDtBTI7WPCW3c5td5iXNNdu1wQeVsg6+KNKzyG1DzfrfD+Qp5'+
+	'Mmih/Eig4EvGJk+wiMfjsh1ABGAX8aV/i6OsN3BWqd0RkJ1/HB6muNmhvFBKtXOL7wXRngMkc4PwLfeHvQDK0ud6wjznLHfMc5I5Qvq+K/GOGGYEK1tWC2JLTmOO1sZ+ZnYi3rkgd3ANOjkGrYkmsf/0Uf8Zdcpzv+xbF4BVzsiBdFI875E9KFrCvtMyHa2x2u87R7jotik39pxL9Sxh53ZJAu3fxqz/BlEQL3uNJ/KLpAwQAedv6D19ZrCYwGfjCBbcAJE7ySDgq95n0L6YH2QoTuc2+h4092ZADud77vLVJoDLDVhPqJMC8pGsBZ5FvOPxJputBI8Fb3Nl4qVCwCgJed31vKEn3bBIeAa0oRbQPAteSHTNeUKdwNHDLhH4DTShNvEcBpblA5RMQJZ6sGHu/kpnZc04p+IqUVA6OAj5yJ20o3UQfA7c7XhxRxoqxF'+
+	'I+cCe83IPmJEx+GeZpCv9+wBGu57lWHoVvLd121UeHaRNIbrNS+DpY1azcDwNZbPgVMq8HAq8IXz8WjZHhoCeNGZW0WMw0mta48C3nD6L5Sl3TJIY7X3nMnnStRe4nTfpahYKxSkZwC/dWYfLEHzIaf3DZ1+Apf0RyR/mOEh4OECtfwSxh904I9qagKYZUNshscK0PBHevcQ81hvGSDdXtnlHiL8PGDO7ffJdhG4HVUZgEuBne5hFhEwqyVdu/bryr8Dl8T0XDqAi8jXggGWtjPKkI6S/qdYO4ALi/BcOkijf7+18w4wrnnOf/OPszwZeik7Oi8awHnAJveQXwFNT4kB5wNfu3ybgPPK8Fw6atSEncDVDdJfTT5lGHHNOyFhfclS99B/A4/6zts64/kM35puq+86YQE8QnpOOcObwJn2We2+Pwo8UrXfSgDMttGoHr'+
+	'YDs6v2WSlIt2XW1iicd4CzqvbXEbA+5wlrTkfsuvL/r9ZxAKYB06r28T9GgH8ASmfWJ+DY3NgAAAAASUVORK5CYII=');
+		texture.colorSpace = player.getVRTextureColorSpace();
+		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
+		material.name = 'map_icon_active_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.materialNormal = material;
+		el.translateX(0);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 36;
+		el.userData.height = 36;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_icon_active';
+		el.userData.x = 0;
+		el.userData.y = 0;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
+		el.translateZ(0.140);
+		el.renderOrder = 14;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._map_icon_active.material) me._map_icon_active.material.opacity = v;
+			me._map_icon_active.visible = (v>0 && me._map_icon_active.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._map_icon_active.visible
+			let parentEl = me._map_icon_active.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_icon_active.userData.opacity = v;
+			v = v * me._map_icon_active.userData.parentOpacity;
+			me._map_icon_active.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_icon_active.children.length; i++) {
+				let child = me._map_icon_active.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_icon_active.userData.parentOpacity = v;
+			v = v * me._map_icon_active.userData.opacity
+			me._map_icon_active.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_icon_active.children.length; i++) {
+				let child = me._map_icon_active.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_icon_active = el;
+		el.userData.ggId="map_icon_active";
+		me._map_icon_active.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.elementMouseOver['map_toggle'] == true)) && 
+				((player.hasFloorplan() == false))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._map_icon_active.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._map_icon_active.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._map_icon_active.ggCurrentLogicStateVisible == 0) {
+			me._map_icon_active.visible=((!me._map_icon_active.material && Number(me._map_icon_active.userData.opacity>0)) || Number(me._map_icon_active.material.opacity)>0)?true:false;
+			me._map_icon_active.userData.visible=true;
+				}
+				else {
+			me._map_icon_active.visible=false;
+			me._map_icon_active.userData.visible=false;
+				}
+			}
+		}
+		me._map_icon_active.logicBlock_visible();
+		me._map_icon_active.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map_toggle.add(me._map_icon_active);
+		geometry = new THREE.PlaneGeometry(0.36, 0.36, 5, 5 );
+		geometry.name = 'floorplan_icon_geometry';
+		loader = new THREE.TextureLoader();
+		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAACdElEQVR4nO2cMWsUQRiGHwX9A94fuE7c/6BXCBb5CynyAwQtU9umEhR7K4uAhVUaf0NARYKVWEsKK0OIFrdLxnXmvp2d+eaO8D6wxe0t+755YAYC8x0IIcTN5SHweNslMln2lysL4Bj401+nQOcdWsgCeA1cAhc4SboLPAfOuZYzXFfAO3ZPVKrzfs2QW8AecMb/YgY5uybK6ryqFdQBJ6OXnwGHwecD1lJ2RVSq8xEVBYVrdnjpOfAMuNMHjMM6titqTudsYmv2EngF3Aue2xTWWlSNziapNXtC/I+aEuYtyqNzlNSa3etLxMgJ8xDl3Rmw1+wmssOoI6pJ56lrtkpYhDmimnTOXbNFYROYIqpZ5zlrdnZYJilRX4EfLTovgd/Bl1PX7KywAmKimn'+
+	'QOv/jM9DU7K6wCHfAxeP97nDrfjjz0FPhZIcyTL8CL4PNLnDrHBIkACTKQIAMJMpAgAwkykCADCTKQIAMJMpAgAwkykCADCTKQIAMJMpAgAwkykCADCTKQIAMJMpAgAwkykCADCTKQIAMJMpAgAwkykCADCTKQIAMvQQvWwywDb9j+dI/FcL76H2oLGs4qfwOeBPfvA5/YjTGoMWHnB/29C+B7+NCKsgOXqbPKV8AvfGYxvDpHz1eXhE05X+0xi+HduThszkxETVGtOmeH1ZiJqCGqaecpYTVnIgZKRDXtbIXVnuOIvT9XVNPOqbCS2as55Ihq2nkcVmOfKWGKqKadw7Aj6u4zJWwSdRDcO8S582r0co99poSUqGadV6MQz32mBO95sSRL1v9/tNxnSuiAD1zLeUuDzk1+FqYyj1j/BI8QQtxI/gI2mOYcVcYKzwAA'+
+	'AABJRU5ErkJggg==');
+		texture.colorSpace = player.getVRTextureColorSpace();
+		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
+		material.name = 'floorplan_icon_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.materialNormal = material;
+		el.translateX(0);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 36;
+		el.userData.height = 36;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'floorplan_icon';
+		el.userData.x = 0;
+		el.userData.y = 0;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
+		el.translateZ(0.150);
+		el.renderOrder = 15;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._floorplan_icon.material) me._floorplan_icon.material.opacity = v;
+			me._floorplan_icon.visible = (v>0 && me._floorplan_icon.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._floorplan_icon.visible
+			let parentEl = me._floorplan_icon.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._floorplan_icon.userData.opacity = v;
+			v = v * me._floorplan_icon.userData.parentOpacity;
+			me._floorplan_icon.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._floorplan_icon.children.length; i++) {
+				let child = me._floorplan_icon.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._floorplan_icon.userData.parentOpacity = v;
+			v = v * me._floorplan_icon.userData.opacity
+			me._floorplan_icon.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._floorplan_icon.children.length; i++) {
+				let child = me._floorplan_icon.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._floorplan_icon = el;
+		el.userData.ggId="floorplan_icon";
+		me._floorplan_icon.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.elementMouseOver['map_toggle'] == true)) || 
+				((player.hasFloorplan() == false))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._floorplan_icon.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._floorplan_icon.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._floorplan_icon.ggCurrentLogicStateVisible == 0) {
+			me._floorplan_icon.visible=false;
+			me._floorplan_icon.userData.visible=false;
+				}
+				else {
+			me._floorplan_icon.visible=((!me._floorplan_icon.material && Number(me._floorplan_icon.userData.opacity>0)) || Number(me._floorplan_icon.material.opacity)>0)?true:false;
+			me._floorplan_icon.userData.visible=true;
+				}
+			}
+		}
+		me._floorplan_icon.logicBlock_visible();
+		me._floorplan_icon.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map_toggle.add(me._floorplan_icon);
+		geometry = new THREE.PlaneGeometry(0.36, 0.36, 5, 5 );
+		geometry.name = 'floorplan_icon_active_geometry';
+		loader = new THREE.TextureLoader();
+		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAACkUlEQVR4nO2cvWoVQRiGZwW9AXMD6cTcQ0whWOQWUuQCBC1PbZtKMNhbWQgWVmm8BiGKBCuxlhRWHkIei+zBcbNzvtmd+eYc5H267M+8b57DLBzY74QghBD/KcA+8HjTPaYA7AK73iE7wDv+8gnYcw0tpO98ClwBSxdJwD3gOXDJba6Bt9smak3no5ohHXAIXIyIWcnZKlEZnQ9qBe0BZ4PFL4BF9PdxL2UrRK3pfFJNEP/u2RWXwDPgLnAwDOuLbUzUnM5zQsb27BXwCrgfXZcMay2qRueckNSePRv7p3LCvEV5dE4FpfbsIdAl7skO8xDl3Xl1w9o9a9w7+dOoIapJZzL3bJWw8Xsni2rSmYl7tigsbw1TVLPOzNizs8Omr5US9RX44d6Zmy9ov6'+
+	'OTWXt2VlgBCVH+nQcnPpO5Z2eFVaAX9TFa/71X5zsj1z3tuu5naZgnXdd9CSG8iA699Oo8JkhESJCBBBlIkIEEGUiQgQQZSJCBBBlIkIEEGUiQgQQZSJCBBBlIkIEEGUiQgQQZSJCBBBlIkIEEGUiQgQQZSJCBBBlIkIEEGUiQgQQZSJCBBBm4CAJ2QgiL6NBrtmwMakjf+XR4vKog+neVQwjfQghPolMPQgjnbMEY1JBB54f94WUI4Xt8UdELl6TfVb4GfuEwi+HY+fb71SVhZLxfjc8shmvn4jBmzETUFNWq8+Qw6sxE1Bhaadc5J4yKMxHRmrNFNe1shVF5jiOx/tTpnnadU2EUzF7NYYqopp2HYVR4zpSQI6pp50HYCRWfM4W91ok6jo4tXDsPBMVUe84U9kuJatN5RJDbc6aEhCj/ztwM1C1p+JwpoRf1IZLz'+
+	'xr0zLX4WpjLAI2B/0z2EEMKLP+kmXS1VUGd8AAAAAElFTkSuQmCC');
+		texture.colorSpace = player.getVRTextureColorSpace();
+		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
+		material.name = 'floorplan_icon_active_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.materialNormal = material;
+		el.translateX(0);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 36;
+		el.userData.height = 36;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'floorplan_icon_active';
+		el.userData.x = 0;
+		el.userData.y = 0;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
+		el.translateZ(0.160);
+		el.renderOrder = 16;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._floorplan_icon_active.material) me._floorplan_icon_active.material.opacity = v;
+			me._floorplan_icon_active.visible = (v>0 && me._floorplan_icon_active.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._floorplan_icon_active.visible
+			let parentEl = me._floorplan_icon_active.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._floorplan_icon_active.userData.opacity = v;
+			v = v * me._floorplan_icon_active.userData.parentOpacity;
+			me._floorplan_icon_active.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._floorplan_icon_active.children.length; i++) {
+				let child = me._floorplan_icon_active.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._floorplan_icon_active.userData.parentOpacity = v;
+			v = v * me._floorplan_icon_active.userData.opacity
+			me._floorplan_icon_active.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._floorplan_icon_active.children.length; i++) {
+				let child = me._floorplan_icon_active.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._floorplan_icon_active = el;
+		el.userData.ggId="floorplan_icon_active";
+		me._floorplan_icon_active.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.elementMouseOver['map_toggle'] == true)) && 
+				((player.hasFloorplan() == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._floorplan_icon_active.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._floorplan_icon_active.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._floorplan_icon_active.ggCurrentLogicStateVisible == 0) {
+			me._floorplan_icon_active.visible=((!me._floorplan_icon_active.material && Number(me._floorplan_icon_active.userData.opacity>0)) || Number(me._floorplan_icon_active.material.opacity)>0)?true:false;
+			me._floorplan_icon_active.userData.visible=true;
+				}
+				else {
+			me._floorplan_icon_active.visible=false;
+			me._floorplan_icon_active.userData.visible=false;
+				}
+			}
+		}
+		me._floorplan_icon_active.logicBlock_visible();
+		me._floorplan_icon_active.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map_toggle.add(me._floorplan_icon_active);
+		me.skinGroup.add(me._map_toggle);
+		el = new THREE.Group();
+		el.userData.setOpacityInternal = function(v) {};
+		el.translateX(0);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 480;
+		el.userData.height = 360;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map';
+		el.userData.x = 0;
+		el.userData.y = 0;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
+		el.translateZ(0.130);
+		el.renderOrder = 13;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._map.material) me._map.material.opacity = v;
+			me._map.visible = (v>0 && me._map.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._map.visible
+			let parentEl = me._map.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map.userData.opacity = v;
+			v = v * me._map.userData.parentOpacity;
+			me._map.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map.children.length; i++) {
+				let child = me._map.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map.userData.parentOpacity = v;
+			v = v * me._map.userData.opacity
+			me._map.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map.children.length; i++) {
+				let child = me._map.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 0.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map = el;
+		el.userData.ggId="map";
+		me._map.logicBlock_alpha = function() {
+			var newLogicStateAlpha;
+			if (
+				((player.getVariableValue('vis_floorplan_1') == true)) || 
+				((player.getVariableValue('vis_map_1') == true))
+			)
+			{
+				newLogicStateAlpha = 0;
+			}
+			else {
+				newLogicStateAlpha = -1;
+			}
+			if (me._map.ggCurrentLogicStateAlpha != newLogicStateAlpha) {
+				me._map.ggCurrentLogicStateAlpha = newLogicStateAlpha;
+				if (me._map.ggCurrentLogicStateAlpha == 0) {
+					me._map.userData.transitionValue_alpha = 1;
+					for (var i = 0; i < me._map.userData.transitions.length; i++) {
+						if (me._map.userData.transitions[i].property == 'alpha') {
+							clearInterval(me._map.userData.transitions[i].interval);
+							me._map.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_alpha = {};
+					transition_alpha.property = 'alpha';
+					transition_alpha.startTime = Date.now();
+					transition_alpha.startAlpha = me._map.material ? me._map.material.opacity : me._map.userData.opacity;
+					transition_alpha.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_alpha.startTime) / 500;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._map.userData.setOpacity(transition_alpha.startAlpha + (me._map.userData.transitionValue_alpha - transition_alpha.startAlpha) * tfval);
+						if (percentDone >= 1.0) {
+							clearInterval(transition_alpha.interval);
+							me._map.userData.transitions.splice(me._map.userData.transitions.indexOf(transition_alpha), 1);
+						}
+					}, 20);
+					me._map.userData.transitions.push(transition_alpha);
+				}
+				else {
+					me._map.userData.transitionValue_alpha = 0;
+					for (var i = 0; i < me._map.userData.transitions.length; i++) {
+						if (me._map.userData.transitions[i].property == 'alpha') {
+							clearInterval(me._map.userData.transitions[i].interval);
+							me._map.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_alpha = {};
+					transition_alpha.property = 'alpha';
+					transition_alpha.startTime = Date.now();
+					transition_alpha.startAlpha = me._map.material ? me._map.material.opacity : me._map.userData.opacity;
+					transition_alpha.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_alpha.startTime) / 500;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._map.userData.setOpacity(transition_alpha.startAlpha + (me._map.userData.transitionValue_alpha - transition_alpha.startAlpha) * tfval);
+						if (percentDone >= 1.0) {
+							clearInterval(transition_alpha.interval);
+							me._map.userData.transitions.splice(me._map.userData.transitions.indexOf(transition_alpha), 1);
+						}
+					}, 20);
+					me._map.userData.transitions.push(transition_alpha);
+				}
+			}
+		}
+		me._map.logicBlock_alpha();
+		me._map.userData.ggUpdatePosition=function (useTransition) {
+		}
+		geometry = new THREE.PlaneGeometry(4.8, 3.6, 5, 5 );
+		geometry.name = 'map_bg_geometry';
+		material = new THREE.MeshBasicMaterial( { color: new THREE.Color(0, 0, 0).convertSRGBToLinear(), side : THREE.DoubleSide, transparent : true } ); 
+		material.name = 'map_bg_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.backgroundColorAlpha = 0.705882;
+		el.userData.borderColorAlpha = 1;
+		el.userData.setOpacityInternal = function(v) {
+			me._map_bg.material.opacity = v * me._map_bg.userData.backgroundColorAlpha;
+			if (me._map_bg.userData.ggSubElement) {
+				me._map_bg.userData.ggSubElement.material.opacity = v
+				me._map_bg.userData.ggSubElement.visible = (v>0 && me._map_bg.userData.visible);
+			}
+			me._map_bg.visible = (v>0 && me._map_bg.userData.visible);
+		}
+		el.userData.setBackgroundColor = function(v) {
+			me._map_bg.material.color = v;
+		}
+		el.userData.setBackgroundColorAlpha = function(v) {
+			me._map_bg.userData.backgroundColorAlpha = v;
+			me._map_bg.userData.setOpacity(me._map_bg.userData.opacity);
+		}
+		el.translateX(0);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 480;
+		el.userData.height = 360;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_bg';
+		el.userData.x = 0;
+		el.userData.y = 0;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.140);
+		el.renderOrder = 14;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.isVisible = function() {
+			let vis = me._map_bg.visible
+			let parentEl = me._map_bg.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_bg.userData.opacity = v;
+			v = v * me._map_bg.userData.parentOpacity;
+			me._map_bg.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_bg.children.length; i++) {
+				let child = me._map_bg.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_bg.userData.parentOpacity = v;
+			v = v * me._map_bg.userData.opacity
+			me._map_bg.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_bg.children.length; i++) {
+				let child = me._map_bg.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_bg = el;
+		el.userData.ggId="map_bg";
+		me._map_bg.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map.add(me._map_bg);
+		geometry = new THREE.PlaneGeometry(3.21, 1.93, 5, 5 );
+		geometry.name = 'map_el_geometry';
+		material = new THREE.MeshBasicMaterial( { color: new THREE.Color(1, 1, 1).convertSRGBToLinear(), side : THREE.DoubleSide, transparent : true } ); 
+		material.name = 'map_el_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.backgroundColorAlpha = 1;
+		el.userData.borderColorAlpha = 1;
+		el.userData.setOpacityInternal = function(v) {
+			me._map_el.material.opacity = v * me._map_el.userData.backgroundColorAlpha;
+			if (me._map_el.userData.ggSubElement) {
+				me._map_el.userData.ggSubElement.material.opacity = v
+				me._map_el.userData.ggSubElement.visible = (v>0 && me._map_el.userData.visible);
+			}
+			me._map_el.visible = (v>0 && me._map_el.userData.visible);
+		}
+		el.userData.setBackgroundColor = function(v) {
+			me._map_el.material.color = v;
+		}
+		el.userData.setBackgroundColorAlpha = function(v) {
+			me._map_el.userData.backgroundColorAlpha = v;
+			me._map_el.userData.setOpacity(me._map_el.userData.opacity);
+		}
+		el.translateX(-0.395);
+		el.translateY(0.105);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 321;
+		el.userData.height = 193;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_el';
+		el.userData.x = -0.395;
+		el.userData.y = 0.105;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.150);
+		el.renderOrder = 15;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.isVisible = function() {
+			let vis = me._map_el.visible
+			let parentEl = me._map_el.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_el.userData.opacity = v;
+			v = v * me._map_el.userData.parentOpacity;
+			me._map_el.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_el.children.length; i++) {
+				let child = me._map_el.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_el.userData.parentOpacity = v;
+			v = v * me._map_el.userData.opacity
+			me._map_el.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_el.children.length; i++) {
+				let child = me._map_el.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_el = el;
+		el.userData.ggId="map_el";
+		me._map_el.logicBlock_position = function() {
+			var newLogicStatePosition;
+			if (
+				((player.getVariableValue('opt_desc_in_maps_1') == false))
+			)
+			{
+				newLogicStatePosition = 0;
+			}
+			else {
+				newLogicStatePosition = -1;
+			}
+			if (me._map_el.ggCurrentLogicStatePosition != newLogicStatePosition) {
+				me._map_el.ggCurrentLogicStatePosition = newLogicStatePosition;
+				if (me._map_el.ggCurrentLogicStatePosition == 0) {
+					var newPos = skin.getElementVrPosition(me._map_el, 0, 70);
+					me._map_el.position.x = newPos.x;
+					me._map_el.position.y = newPos.y;
+				}
+				else {
+					var elPos = skin.getElementVrPosition(me._map_el, 40, 73);
+					me._map_el.position.x = elPos.x;
+					me._map_el.position.y = elPos.y;
+				}
+			}
+		}
+		me._map_el.logicBlock_position();
+		me._map_el.logicBlock_size = function() {
+			var newLogicStateSize;
+			if (
+				((player.getVariableValue('opt_desc_in_maps') == false))
+			)
+			{
+				newLogicStateSize = 0;
+			}
+			else {
+				newLogicStateSize = -1;
+			}
+			if (me._map_el.ggCurrentLogicStateSize != newLogicStateSize) {
+				me._map_el.ggCurrentLogicStateSize = newLogicStateSize;
+				if (me._map_el.ggCurrentLogicStateSize == 0) {
+				}
+				else {
+				}
+			}
+		}
+		me._map_el.logicBlock_size();
+		me._map_el.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((player.getVariableValue('vis_map_1') == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._map_el.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._map_el.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._map_el.ggCurrentLogicStateVisible == 0) {
+			me._map_el.visible=((!me._map_el.material && Number(me._map_el.userData.opacity>0)) || Number(me._map_el.material.opacity)>0)?true:false;
+			me._map_el.userData.visible=true;
+				}
+				else {
+			me._map_el.visible=false;
+			me._map_el.userData.visible=false;
+				}
+			}
+		}
+		me._map_el.logicBlock_visible();
+		me._map_el.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map.add(me._map_el);
+		geometry = new THREE.PlaneGeometry(3.18, 1.95, 5, 5 );
+		geometry.name = 'floorplan_el_geometry';
+		material = new THREE.MeshBasicMaterial( { color: new THREE.Color(1, 1, 1).convertSRGBToLinear(), side : THREE.DoubleSide, transparent : true } ); 
+		material.name = 'floorplan_el_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.backgroundColorAlpha = 1;
+		el.userData.borderColorAlpha = 1;
+		el.userData.setOpacityInternal = function(v) {
+			me._floorplan_el.material.opacity = v * me._floorplan_el.userData.backgroundColorAlpha;
+			if (me._floorplan_el.userData.ggSubElement) {
+				me._floorplan_el.userData.ggSubElement.material.opacity = v
+				me._floorplan_el.userData.ggSubElement.visible = (v>0 && me._floorplan_el.userData.visible);
+			}
+			me._floorplan_el.visible = (v>0 && me._floorplan_el.userData.visible);
+		}
+		el.userData.setBackgroundColor = function(v) {
+			me._floorplan_el.material.color = v;
+		}
+		el.userData.setBackgroundColorAlpha = function(v) {
+			me._floorplan_el.userData.backgroundColorAlpha = v;
+			me._floorplan_el.userData.setOpacity(me._floorplan_el.userData.opacity);
+		}
+		el.translateX(-0.3348);
+		el.translateY(0.125);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 318;
+		el.userData.height = 195;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'floorplan_el';
+		el.userData.x = -0.3348;
+		el.userData.y = 0.125;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.160);
+		el.renderOrder = 16;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.isVisible = function() {
+			let vis = me._floorplan_el.visible
+			let parentEl = me._floorplan_el.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._floorplan_el.userData.opacity = v;
+			v = v * me._floorplan_el.userData.parentOpacity;
+			me._floorplan_el.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._floorplan_el.children.length; i++) {
+				let child = me._floorplan_el.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._floorplan_el.userData.parentOpacity = v;
+			v = v * me._floorplan_el.userData.opacity
+			me._floorplan_el.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._floorplan_el.children.length; i++) {
+				let child = me._floorplan_el.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._floorplan_el = el;
+		el.userData.ggId="floorplan_el";
+		me._floorplan_el.logicBlock_position = function() {
+			var newLogicStatePosition;
+			if (
+				((player.getVariableValue('opt_desc_in_maps_1') == false))
+			)
+			{
+				newLogicStatePosition = 0;
+			}
+			else {
+				newLogicStatePosition = -1;
+			}
+			if (me._floorplan_el.ggCurrentLogicStatePosition != newLogicStatePosition) {
+				me._floorplan_el.ggCurrentLogicStatePosition = newLogicStatePosition;
+				if (me._floorplan_el.ggCurrentLogicStatePosition == 0) {
+					var newPos = skin.getElementVrPosition(me._floorplan_el, 0, 70);
+					me._floorplan_el.position.x = newPos.x;
+					me._floorplan_el.position.y = newPos.y;
+				}
+				else {
+					var elPos = skin.getElementVrPosition(me._floorplan_el, 47.52, 70);
+					me._floorplan_el.position.x = elPos.x;
+					me._floorplan_el.position.y = elPos.y;
+				}
+			}
+		}
+		me._floorplan_el.logicBlock_position();
+		me._floorplan_el.logicBlock_size = function() {
+			var newLogicStateSize;
+			if (
+				((player.getVariableValue('opt_desc_in_maps') == false))
+			)
+			{
+				newLogicStateSize = 0;
+			}
+			else {
+				newLogicStateSize = -1;
+			}
+			if (me._floorplan_el.ggCurrentLogicStateSize != newLogicStateSize) {
+				me._floorplan_el.ggCurrentLogicStateSize = newLogicStateSize;
+				if (me._floorplan_el.ggCurrentLogicStateSize == 0) {
+				}
+				else {
+				}
+			}
+		}
+		me._floorplan_el.logicBlock_size();
+		me._floorplan_el.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((player.getVariableValue('vis_floorplan_1') == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._floorplan_el.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._floorplan_el.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._floorplan_el.ggCurrentLogicStateVisible == 0) {
+			me._floorplan_el.visible=((!me._floorplan_el.material && Number(me._floorplan_el.userData.opacity>0)) || Number(me._floorplan_el.material.opacity)>0)?true:false;
+			me._floorplan_el.userData.visible=true;
+				}
+				else {
+			me._floorplan_el.visible=false;
+			me._floorplan_el.userData.visible=false;
+				}
+			}
+		}
+		me._floorplan_el.logicBlock_visible();
+		me._floorplan_el.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map.add(me._floorplan_el);
+		geometry = new THREE.PlaneGeometry(2, 1.95, 5, 5 );
+		geometry.name = 'map_node_description_geometry';
+		material = new THREE.MeshBasicMaterial( {side : THREE.DoubleSide, transparent : true } ); 
+		material.name = 'map_node_description_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.backgroundColorAlpha = 1;
+		el.userData.borderColorAlpha = 1;
+		el.userData.setOpacityInternal = function(v) {
+			me._map_node_description.material.opacity = v;
+			if (me._map_node_description.userData.hasScrollbar) {
+				me._map_node_description.userData.scrollbar.material.opacity = v;
+				me._map_node_description.userData.scrollbarBg.material.opacity = v;
+			}
+			if (me._map_node_description.userData.ggSubElement) {
+				me._map_node_description.userData.ggSubElement.material.opacity = v
+				me._map_node_description.userData.ggSubElement.visible = (v>0 && me._map_node_description.userData.visible);
+			}
+			me._map_node_description.visible = (v>0 && me._map_node_description.userData.visible);
+		}
+		el.userData.setBackgroundColor = function(v) {
+			me._map_node_description.material.color = v;
+		}
+		el.userData.setBackgroundColorAlpha = function(v) {
+			me._map_node_description.userData.backgroundColorAlpha = v;
+			me._map_node_description.userData.setOpacity(me._map_node_description.userData.opacity);
+		}
+		el.translateX(-1.15);
+		el.translateY(0.125);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 200;
+		el.userData.height = 195;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_node_description';
+		el.userData.x = -1.15;
+		el.userData.y = 0.125;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.170);
+		el.renderOrder = 17;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.isVisible = function() {
+			let vis = me._map_node_description.visible
+			let parentEl = me._map_node_description.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_node_description.userData.opacity = v;
+			v = v * me._map_node_description.userData.parentOpacity;
+			me._map_node_description.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_node_description.children.length; i++) {
+				let child = me._map_node_description.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_node_description.userData.parentOpacity = v;
+			v = v * me._map_node_description.userData.opacity
+			me._map_node_description.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_node_description.children.length; i++) {
+				let child = me._map_node_description.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_node_description = el;
+		el.userData.textLines = [];
+		el.userData.backgroundColor = new THREE.Color(1, 1, 1).convertSRGBToLinear();
+		el.userData.textColor = new THREE.Color(1, 1, 1).convertSRGBToLinear();
+		el.userData.textColorAlpha = 1;
+		var canvas = document.createElement('canvas');
+		canvas.width = 400;
+		canvas.height = 390;
+		el.userData.textCanvas = canvas;
+		el.userData.textCanvasContext = canvas.getContext('2d');
+		el.userData.ggStripTags = function(text) {
+			let doc = new DOMParser().parseFromString(text, 'text/html');
+			return doc.body.textContent || '';
+		}
+		el.userData.ggWrapText = function(scrollbar) {
+			me._map_node_description.userData.totalHeightCanv = 2 * (3);
+			me._map_node_description.userData.textLines = [];
+			var ctx = me._map_node_description.userData.textCanvasContext;
+			var words = [];
+			let tmpText = String(me._map_node_description.userData.ggText);
+			let whiteSpaceIndex = -1;
+			do {
+				whiteSpaceIndex = tmpText.search(/[\s]/);
+				if (whiteSpaceIndex != -1) {
+					words.push(tmpText.substr(0, whiteSpaceIndex));
+					tmpText = tmpText.substr(whiteSpaceIndex);
+					if (tmpText.charAt(0) == '\n') {
+						words.push('\n');
+					}
+					tmpText = tmpText.substr(1);
+				} else {
+					words.push(tmpText);
+				}
+			} while (whiteSpaceIndex != -1);
+			var line = '';
+			for (var i = 0; i < words.length; i++) {
+				if (words[i] == '\n') {
+					me._map_node_description.userData.textLines.push(line);
+					line = '';
+					me._map_node_description.userData.totalHeightCanv += me._map_node_description.userData.lineHeightCanv;
+					continue;
+				}
+				var testLine;
+				if (line == '') {
+					testLine = words[i]
+				} else {
+					testLine = line + ' ' + words[i];
+				}
+				var metrics = ctx.measureText(testLine);
+				var testWidth = metrics.width;
+				if (testWidth > (2 * (me._map_node_description.userData.width - 0 - (scrollbar ? 25 : 0))) && i > 0) {
+					me._map_node_description.userData.textLines.push(line);
+					line = words[i];
+					me._map_node_description.userData.totalHeightCanv += me._map_node_description.userData.lineHeightCanv;
+				} else {
+					line = testLine;
+				}
+			}
+			me._map_node_description.userData.textLines.push(line);
+			me._map_node_description.userData.totalHeightCanv += me._map_node_description.userData.lineHeightCanv;
+		}
+		el.userData.ggPaintCanvasText = function() {
+			var canv = me._map_node_description.userData.textCanvas;
+			var ctx = me._map_node_description.userData.textCanvasContext;
+			ctx.clearRect(0, 0, canv.width, canv.height);
+			ctx.fillStyle = 'rgba(' + me._map_node_description.userData.textColor.r * 255 + ', ' + me._map_node_description.userData.textColor.g * 255 + ', ' + me._map_node_description.userData.textColor.b * 255 + ', ' + me._map_node_description.userData.textColorAlpha + ')';
+			ctx.textBaseline = 'top';
+			var x = 2 * 0;
+			ctx.textAlign = 'left';
+			var y = 2 * 3;
+			y -= me._map_node_description.userData.scrollPosPercent * me._map_node_description.userData.totalHeightCanv;
+			for (var i = 0; i < me._map_node_description.userData.textLines.length; i++) {
+				ctx.fillText(me._map_node_description.userData.textLines[i], x, y);
+				y += me._map_node_description.userData.lineHeightCanv;
+			}
+			var textTexture = new THREE.CanvasTexture(canv);
+			textTexture.name = 'map_node_description_texture';
+			textTexture.minFilter = THREE.LinearFilter;
+			textTexture.colorSpace = THREE.LinearSRGBColorSpace;
+			textTexture.wrapS = THREE.ClampToEdgeWrapping;
+			textTexture.wrapT = THREE.ClampToEdgeWrapping;
+			if (me._map_node_description.material.map) {
+				me._map_node_description.material.map.dispose();
+			}
+			me._map_node_description.material.map = textTexture;
+		}
+		el.userData.ggRenderText = function() {
+			for (let i = 0; i < me._map_node_description.children.length; i++) {
+				let child = me._map_node_description.children[i];
+				if (child.name.includes('scrollbar')) me._map_node_description.remove(child);
+			}
+			var canv = me._map_node_description.userData.textCanvas;
+			var ctx = me._map_node_description.userData.textCanvasContext;
+			ctx.font = '28px Verdana';
+			me._map_node_description.userData.lineHeightCanv = 33.6;
+			me._map_node_description.userData.ggWrapText(false);
+			me._map_node_description.userData.boxWidthCanv = 2 * me._map_node_description.userData.width;
+			me._map_node_description.userData.boxHeightCanv = 2 * me._map_node_description.userData.height;
+			me._map_node_description.userData.scrollPosPercent = 0.0
+			if (me._map_node_description.userData.totalHeightCanv > (2 * (me._map_node_description.userData.height))) {
+				me._map_node_description.userData.ggWrapText(true);
+				me._map_node_description.userData.pagePercent = (2 * (me._map_node_description.userData.height) - me._map_node_description.userData.lineHeightCanv) / me._map_node_description.userData.totalHeightCanv;
+				me._map_node_description.userData.maxScrollPercent = (me._map_node_description.userData.totalHeightCanv - (2 * (me._map_node_description.userData.height))) / me._map_node_description.userData.totalHeightCanv;
+				geometry = new THREE.PlaneGeometry(25 / 100.0, me._map_node_description.userData.height / 100.0, 5, 5 );
+				geometry.name = 'map_node_description_scrollbarBgGeometry';
+				material = new THREE.MeshBasicMaterial( {color: 0x7f7f7f, side: THREE.DoubleSide, transparent: true } );
+				material.name = 'map_node_description_scrollbarBgMaterial';
+				me._map_node_description.userData.scrollbarBg = new THREE.Mesh( geometry, material );
+				me._map_node_description.userData.scrollbarBg.name = 'map_node_description_scrollbarBg';
+				me._map_node_description.add(me._map_node_description.userData.scrollbarBg);
+				me._map_node_description.userData.scrollbarXPos = (me._map_node_description.userData.width - 25) / 200.0;
+				me._map_node_description.userData.scrollbarBg.position.x = me._map_node_description.userData.scrollbarXPos;
+				me._map_node_description.userData.scrollbarBg.position.z = me._map_node_description.position.z + 0.01;
+				me._map_node_description.userData.scrollbarBg.userData.stopPropagation = true;
+				me._map_node_description.userData.scrollbarHeight = ((2 * me._map_node_description.userData.height) / me._map_node_description.userData.totalHeightCanv) * me._map_node_description.userData.height;
+				geometry = new THREE.PlaneGeometry(25 / 100.0, me._map_node_description.userData.scrollbarHeight / 100.0, 5, 5 );
+				geometry.name = 'map_node_description_scrollbarGeometry';
+				material = new THREE.MeshBasicMaterial( {color: 0xbfbfbf, side: THREE.DoubleSide, transparent: true } );
+				material.name = 'map_node_description_scrollbarMaterial';
+				me._map_node_description.userData.scrollbar = new THREE.Mesh( geometry, material );
+				me._map_node_description.userData.scrollbar.name = 'map_node_description_scrollbar';
+				me._map_node_description.add(me._map_node_description.userData.scrollbar);
+				me._map_node_description.userData.scrollbar.position.x = me._map_node_description.userData.scrollbarXPos;
+				me._map_node_description.userData.scrollbar.position.z = me._map_node_description.position.z + 0.02;
+				me._map_node_description.userData.scrollbarYPosMin = (me._map_node_description.userData.height - me._map_node_description.userData.scrollbarHeight) / 200.0;
+				me._map_node_description.userData.scrollbarYPosMax = me._map_node_description.userData.scrollbarYPosMin - (me._map_node_description.userData.height - me._map_node_description.userData.scrollbarHeight) / 100.0;
+				me._map_node_description.userData.scrollbar.position.y = me._map_node_description.userData.scrollbarYPosMin;
+				geometry = new THREE.PlaneGeometry(25 / 100.0, me._map_node_description.userData.height / 200.0, 5, 5 );
+				geometry.name = 'map_node_description_scrollbarPageDownGeometry';
+				material = new THREE.MeshBasicMaterial( {color: 0x000000, side: THREE.DoubleSide, transparent: true } );
+				material.name = 'map_node_description_scrollbarPageDownMaterial';
+				me._map_node_description.userData.scrollbarPageDown = new THREE.Mesh( geometry, material );
+				me._map_node_description.userData.scrollbarPageDown.name = 'map_node_description_scrollbarPageDown';
+				me._map_node_description.userData.scrollbarPageDown.userData.onclick = function() {
+					me._map_node_description.userData.scrollPosPercent -= me._map_node_description.userData.pagePercent;
+					me._map_node_description.userData.scrollPosPercent = Math.max(me._map_node_description.userData.scrollPosPercent, 0);
+					me._map_node_description.userData.ggPaintCanvasText();
+					me._map_node_description.userData.scrollbar.position.y += (me._map_node_description.userData.height * me._map_node_description.userData.pagePercent) / 100.0;
+					me._map_node_description.userData.scrollbar.position.y = Math.min(me._map_node_description.userData.scrollbar.position.y, me._map_node_description.userData.scrollbarYPosMin);
+				}
+				me._map_node_description.userData.scrollbarPageDown.position.x = me._map_node_description.userData.scrollbarXPos;
+				me._map_node_description.userData.scrollbarPageDown.position.y = me._map_node_description.userData.height / 400.0;
+				me._map_node_description.userData.scrollbarPageDown.position.z = me._map_node_description.position.z + 0.05;
+				me._map_node_description.userData.scrollbarPageDown.userData.stopPropagation = true;
+				me._map_node_description.userData.scrollbarPageDown.userData.clickInvisible = true;
+				me._map_node_description.userData.scrollbarPageDown.visible = false;
+				me._map_node_description.add(me._map_node_description.userData.scrollbarPageDown);
+				geometry = new THREE.PlaneGeometry(25 / 100.0, me._map_node_description.userData.height / 200.0, 5, 5 );
+				geometry.name = 'map_node_description_scrollbarPageUpGeometry';
+				material = new THREE.MeshBasicMaterial( {color: 0x000000, side: THREE.DoubleSide, transparent: true } );
+				material.name = 'map_node_description_scrollbarPageUpMaterial';
+				me._map_node_description.userData.scrollbarPageUp = new THREE.Mesh( geometry, material );
+				me._map_node_description.userData.scrollbarPageUp.name = 'map_node_description_scrollbarPageUp';
+				me._map_node_description.userData.scrollbarPageUp.userData.onclick = function() {
+					me._map_node_description.userData.scrollPosPercent += me._map_node_description.userData.pagePercent;
+					me._map_node_description.userData.scrollPosPercent = Math.min(me._map_node_description.userData.scrollPosPercent, me._map_node_description.userData.maxScrollPercent);
+					me._map_node_description.userData.ggPaintCanvasText();
+					me._map_node_description.userData.scrollbar.position.y -= (me._map_node_description.userData.height * me._map_node_description.userData.pagePercent) / 100.0;
+					me._map_node_description.userData.scrollbar.position.y = Math.max(me._map_node_description.userData.scrollbar.position.y, me._map_node_description.userData.scrollbarYPosMax);
+				}
+				me._map_node_description.userData.scrollbarPageUp.position.x = me._map_node_description.userData.scrollbarXPos;
+				me._map_node_description.userData.scrollbarPageUp.position.y = -me._map_node_description.userData.height / 400.0;
+				me._map_node_description.userData.scrollbarPageUp.position.z = me._map_node_description.position.z + 0.05;
+				me._map_node_description.userData.scrollbarPageUp.userData.stopPropagation = true;
+				me._map_node_description.userData.scrollbarPageUp.userData.clickInvisible = true;
+				me._map_node_description.userData.scrollbarPageUp.visible = false;
+				me._map_node_description.add(me._map_node_description.userData.scrollbarPageUp);
+				me._map_node_description.userData.hasScrollbar = true;
+			} else {
+				me._map_node_description.userData.hasScrollbar = false;
+			}
+			canv.width = me._map_node_description.userData.boxWidthCanv;
+			canv.height = me._map_node_description.userData.boxHeightCanv;
+			ctx.font = '28px Verdana';
+			me._map_node_description.userData.ggPaintCanvasText();
+		}
+		me._map_node_description.userData.ggUpdateText=function(force) {
+			var params = [];
+			params.push(player._(String(player._(me.ggUserdata.description))));
+			var hs = player._("%1", params);
+			if (hs!=this.ggText || force) {
+				this.ggText=me._map_node_description.userData.ggStripTags(hs);
+				this.ggRenderText();
+			}
+		}
+		me._map_node_description.userData.ggUpdateText();
+		el.userData.setBackgroundColor = function(v) {
+			me._map_node_description.userData.backgroundColor = v;
+		}
+		el.userData.setBackgroundColorAlpha = function(v) {
+			me._map_node_description.userData.backgroundColorAlpha = v;
+		}
+		el.userData.setTextColor = function(v) {
+			me._map_node_description.userData.textColor = v;
+		}
+		el.userData.setTextColorAlpha = function(v) {
+			me._map_node_description.userData.textColorAlpha = v;
+		}
+		el.userData.ggId="map_node_description";
+		me._map_node_description.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((player.getVariableValue('opt_desc_in_maps_1') == false))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._map_node_description.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._map_node_description.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._map_node_description.ggCurrentLogicStateVisible == 0) {
+			me._map_node_description.visible=false;
+			me._map_node_description.userData.visible=false;
+				}
+				else {
+			me._map_node_description.visible=((!me._map_node_description.material && Number(me._map_node_description.userData.opacity>0)) || Number(me._map_node_description.material.opacity)>0)?true:false;
+			me._map_node_description.userData.visible=true;
+				}
+			}
+		}
+		me._map_node_description.logicBlock_visible();
+		me._map_node_description.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map.add(me._map_node_description);
+		geometry = new THREE.PlaneGeometry(3.01, 0.4, 5, 5 );
+		geometry.name = 'map_node_title_geometry';
+		material = new THREE.MeshBasicMaterial( {side : THREE.DoubleSide, transparent : true } ); 
+		material.name = 'map_node_title_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.backgroundColorAlpha = 1;
+		el.userData.borderColorAlpha = 1;
+		el.userData.setOpacityInternal = function(v) {
+			me._map_node_title.material.opacity = v;
+			if (me._map_node_title.userData.hasScrollbar) {
+				me._map_node_title.userData.scrollbar.material.opacity = v;
+				me._map_node_title.userData.scrollbarBg.material.opacity = v;
+			}
+			if (me._map_node_title.userData.ggSubElement) {
+				me._map_node_title.userData.ggSubElement.material.opacity = v
+				me._map_node_title.userData.ggSubElement.visible = (v>0 && me._map_node_title.userData.visible);
+			}
+			me._map_node_title.visible = (v>0 && me._map_node_title.userData.visible);
+		}
+		el.userData.setBackgroundColor = function(v) {
+			me._map_node_title.material.color = v;
+		}
+		el.userData.setBackgroundColorAlpha = function(v) {
+			me._map_node_title.userData.backgroundColorAlpha = v;
+			me._map_node_title.userData.setOpacity(me._map_node_title.userData.opacity);
+		}
+		el.translateX(-0.645);
+		el.translateY(1.45);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 301;
+		el.userData.height = 40;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_node_title';
+		el.userData.x = -0.645;
+		el.userData.y = 1.45;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.180);
+		el.renderOrder = 18;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.isVisible = function() {
+			let vis = me._map_node_title.visible
+			let parentEl = me._map_node_title.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_node_title.userData.opacity = v;
+			v = v * me._map_node_title.userData.parentOpacity;
+			me._map_node_title.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_node_title.children.length; i++) {
+				let child = me._map_node_title.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_node_title.userData.parentOpacity = v;
+			v = v * me._map_node_title.userData.opacity
+			me._map_node_title.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_node_title.children.length; i++) {
+				let child = me._map_node_title.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_node_title = el;
+		el.userData.textLines = [];
+		el.userData.backgroundColor = new THREE.Color(1, 1, 1).convertSRGBToLinear();
+		el.userData.textColor = new THREE.Color(1, 1, 1).convertSRGBToLinear();
+		el.userData.textColorAlpha = 1;
+		var canvas = document.createElement('canvas');
+		canvas.width = 602;
+		canvas.height = 80;
+		el.userData.textCanvas = canvas;
+		el.userData.textCanvasContext = canvas.getContext('2d');
+		el.userData.ggStripTags = function(text) {
+			let doc = new DOMParser().parseFromString(text, 'text/html');
+			return doc.body.textContent || '';
+		}
+		el.userData.ggWrapText = function(scrollbar) {
+			me._map_node_title.userData.totalHeightCanv = 2 * (3);
+			me._map_node_title.userData.textLines = [];
+			var ctx = me._map_node_title.userData.textCanvasContext;
+			var words = [];
+			let tmpText = String(me._map_node_title.userData.ggText);
+			let whiteSpaceIndex = -1;
+			do {
+				whiteSpaceIndex = tmpText.search(/[\s]/);
+				if (whiteSpaceIndex != -1) {
+					words.push(tmpText.substr(0, whiteSpaceIndex));
+					tmpText = tmpText.substr(whiteSpaceIndex);
+					if (tmpText.charAt(0) == '\n') {
+						words.push('\n');
+					}
+					tmpText = tmpText.substr(1);
+				} else {
+					words.push(tmpText);
+				}
+			} while (whiteSpaceIndex != -1);
+			var line = '';
+			for (var i = 0; i < words.length; i++) {
+				if (words[i] == '\n') {
+					me._map_node_title.userData.textLines.push(line);
+					line = '';
+					me._map_node_title.userData.totalHeightCanv += me._map_node_title.userData.lineHeightCanv;
+					continue;
+				}
+				var testLine;
+				if (line == '') {
+					testLine = words[i]
+				} else {
+					testLine = line + ' ' + words[i];
+				}
+				var metrics = ctx.measureText(testLine);
+				var testWidth = metrics.width;
+				if (testWidth > (2 * (me._map_node_title.userData.width - 0 - (scrollbar ? 25 : 0))) && i > 0) {
+					me._map_node_title.userData.textLines.push(line);
+					line = words[i];
+					me._map_node_title.userData.totalHeightCanv += me._map_node_title.userData.lineHeightCanv;
+				} else {
+					line = testLine;
+				}
+			}
+			me._map_node_title.userData.textLines.push(line);
+			me._map_node_title.userData.totalHeightCanv += me._map_node_title.userData.lineHeightCanv;
+		}
+		el.userData.ggPaintCanvasText = function() {
+			var canv = me._map_node_title.userData.textCanvas;
+			var ctx = me._map_node_title.userData.textCanvasContext;
+			ctx.clearRect(0, 0, canv.width, canv.height);
+			ctx.fillStyle = 'rgba(' + me._map_node_title.userData.textColor.r * 255 + ', ' + me._map_node_title.userData.textColor.g * 255 + ', ' + me._map_node_title.userData.textColor.b * 255 + ', ' + me._map_node_title.userData.textColorAlpha + ')';
+			ctx.textBaseline = 'top';
+			var x = 2 * 0;
+			ctx.textAlign = 'left';
+			var y = 2 * 3;
+			y += (canv.height - me._map_node_title.userData.totalHeightCanv - (2 * 0)) / 2;
+			for (var i = 0; i < me._map_node_title.userData.textLines.length; i++) {
+				var curTextLine = me._map_node_title.userData.textLines[i];
+				var curTextLineBase = me._map_node_title.userData.textLines[i];
+				if ((ctx.measureText(curTextLine).width + (2 * 0)) > canv.width) {
+					var cutChars = 0;
+					do {
+						cutChars++;
+						curTextLine = curTextLineBase.substring(0, curTextLineBase.length - cutChars) + '...';
+					} while (cutChars < curTextLineBase.length && (ctx.measureText(curTextLine).width + (2 * 0)) > canv.width);
+				}
+				ctx.fillText(curTextLine, x, y);
+				y += me._map_node_title.userData.lineHeightCanv;
+			}
+			var textTexture = new THREE.CanvasTexture(canv);
+			textTexture.name = 'map_node_title_texture';
+			textTexture.minFilter = THREE.LinearFilter;
+			textTexture.colorSpace = THREE.LinearSRGBColorSpace;
+			textTexture.wrapS = THREE.ClampToEdgeWrapping;
+			textTexture.wrapT = THREE.ClampToEdgeWrapping;
+			if (me._map_node_title.material.map) {
+				me._map_node_title.material.map.dispose();
+			}
+			me._map_node_title.material.map = textTexture;
+		}
+		el.userData.ggRenderText = function() {
+			for (let i = 0; i < me._map_node_title.children.length; i++) {
+				let child = me._map_node_title.children[i];
+				if (child.name.includes('scrollbar')) me._map_node_title.remove(child);
+			}
+			var canv = me._map_node_title.userData.textCanvas;
+			var ctx = me._map_node_title.userData.textCanvasContext;
+			ctx.font = '600 44px Verdana';
+			me._map_node_title.userData.lineHeightCanv = 44 * 1.2;
+			me._map_node_title.userData.textLines = [];
+			me._map_node_title.userData.textLines.push(me._map_node_title.userData.ggText);
+			me._map_node_title.userData.totalHeightCanv = 2 * (3);
+			me._map_node_title.userData.totalHeightCanv += me._map_node_title.userData.lineHeightCanv;
+			me._map_node_title.userData.boxWidthCanv = 2 * me._map_node_title.userData.width;
+			me._map_node_title.userData.boxHeightCanv = 2 * me._map_node_title.userData.height;
+			me._map_node_title.userData.hasScrollbar = false;
+			canv.width = me._map_node_title.userData.boxWidthCanv;
+			canv.height = me._map_node_title.userData.boxHeightCanv;
+			ctx.font = '600 44px Verdana';
+			me._map_node_title.userData.ggPaintCanvasText();
+		}
+		me._map_node_title.userData.ggUpdateText=function(force) {
+			var params = [];
+			params.push(player._(String(player._(me.ggUserdata.title))));
+			var hs = player._("%1", params);
+			if (hs!=this.ggText || force) {
+				this.ggText=me._map_node_title.userData.ggStripTags(hs);
+				this.ggRenderText();
+			}
+		}
+		me._map_node_title.userData.ggUpdateText();
+		el.userData.setBackgroundColor = function(v) {
+			me._map_node_title.userData.backgroundColor = v;
+		}
+		el.userData.setBackgroundColorAlpha = function(v) {
+			me._map_node_title.userData.backgroundColorAlpha = v;
+		}
+		el.userData.setTextColor = function(v) {
+			me._map_node_title.userData.textColor = v;
+		}
+		el.userData.setTextColorAlpha = function(v) {
+			me._map_node_title.userData.textColorAlpha = v;
+		}
+		el.userData.ggId="map_node_title";
+		me._map_node_title.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map.add(me._map_node_title);
+		el = new THREE.Group();
+		el.userData.setOpacityInternal = function(v) {};
+		el.translateX(0);
+		el.translateY(1.5);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 480;
+		el.userData.height = 60;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_top';
+		el.userData.x = 0;
+		el.userData.y = 1.5;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.190);
+		el.renderOrder = 19;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._map_top.material) me._map_top.material.opacity = v;
+			me._map_top.visible = (v>0 && me._map_top.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._map_top.visible
+			let parentEl = me._map_top.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_top.userData.opacity = v;
+			v = v * me._map_top.userData.parentOpacity;
+			me._map_top.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_top.children.length; i++) {
+				let child = me._map_top.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_top.userData.parentOpacity = v;
+			v = v * me._map_top.userData.opacity
+			me._map_top.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_top.children.length; i++) {
+				let child = me._map_top.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_top = el;
+		el.userData.ggPermeable=false;
+		el.userData.ggId="map_top";
+		me._map_top.userData.onclick=function (e) {
+			player.setVariableValue('vis_floorplan_1', false);
+			player.setVariableValue('vis_map_1', false);
+		}
+		me._map_top.userData.onmouseenter=function (e) {
+			me.elementMouseOver['map_top']=true;
+			me._map_close_btn.logicBlock_visible();
+			me._map_close_btn_active.logicBlock_visible();
+		}
+		me._map_top.userData.onmouseleave=function (e) {
+			me.elementMouseOver['map_top']=false;
+			me._map_close_btn.logicBlock_visible();
+			me._map_close_btn_active.logicBlock_visible();
+		}
+		me._map_top.userData.ggUpdatePosition=function (useTransition) {
+		}
+		geometry = new THREE.PlaneGeometry(0.4, 0.4, 5, 5 );
+		geometry.name = 'map_close_btn_geometry';
+		loader = new THREE.TextureLoader();
+		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAACKklEQVR4nO3bQW7aQBiG4deFWOzKXZCQukQiytYseo72BiHn6cJso1TyPhJ3obvIELmLQOsiHJHOPzP/4nuWJBrGb8CQGRtERERERERERERERFIorAb6+vT0ed9OHgBoD+vNarGzGttCVTdTyvEa4KZ8uf9xe/vLYtyxxSAA+3by0NF9A6Acfanq5s5LxKpupl05eoRuDrBvJwDfLcb+ZDHIBfOuHD1WdTONNP7V/sZjHmN8u4DtYQ089x7JHnEg3vNxribMzoEwPOGifU3+dk41F9OA4CNiyjmYB4S8EVM/d5SAkCdijueMFhDSHlCuV33UgJDmwHKeMqIHhLgHmPtDK0lAiHOgueNBwoBge8Ae4kHigGBz4F7iQYaAEBbAUzzIFBD+L4S3eJAxIH'+
+	'wsiMd4kDkgXBfGazxwEBDeDwTgNR44CQhDEYstdACz3q+6iQeOAsJVq8eu4oGzgHCKOP4J3ezsR9uifV16igfx9kQCdRcec/e3BpwF7L2Fz199QDfLvcdyiZuAA+e/7dsHyR/ZN6rOuQj4zteYZdEeljjb7evLfmLRF+kA+lcugBYTAmg5K4AWVANoST+ANpUCaFszgDbWA+jSjgC6uCiALm8LkPuknnoOusQ3kFlAT/FSzsluPfDtJhY38QA2q8XuuDX6z3ri6YYbC7EWVLPHOxmIaMbsTqWb8uX+eAeQu1u9NqvFrqqbu/6tXnlnJCIiIiIiIiIiIiLyUb8B/yCwlWm0XSQAAAAASUVORK5CYII=');
+		texture.colorSpace = player.getVRTextureColorSpace();
+		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
+		material.name = 'map_close_btn_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.materialNormal = material;
+		el.translateX(2.05);
+		el.translateY(-0.05);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 40;
+		el.userData.height = 40;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_close_btn';
+		el.userData.x = 2.05;
+		el.userData.y = -0.05;
+		el.userData.hanchor = 2;
+		el.userData.vanchor = 0;
+		el.translateZ(0.200);
+		el.renderOrder = 20;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._map_close_btn.material) me._map_close_btn.material.opacity = v;
+			me._map_close_btn.visible = (v>0 && me._map_close_btn.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._map_close_btn.visible
+			let parentEl = me._map_close_btn.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_close_btn.userData.opacity = v;
+			v = v * me._map_close_btn.userData.parentOpacity;
+			me._map_close_btn.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_close_btn.children.length; i++) {
+				let child = me._map_close_btn.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_close_btn.userData.parentOpacity = v;
+			v = v * me._map_close_btn.userData.opacity
+			me._map_close_btn.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_close_btn.children.length; i++) {
+				let child = me._map_close_btn.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_close_btn = el;
+		el.userData.ggId="map_close_btn";
+		me._map_close_btn.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.elementMouseOver['map_top'] == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._map_close_btn.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._map_close_btn.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._map_close_btn.ggCurrentLogicStateVisible == 0) {
+			me._map_close_btn.visible=false;
+			me._map_close_btn.userData.visible=false;
+				}
+				else {
+			me._map_close_btn.visible=((!me._map_close_btn.material && Number(me._map_close_btn.userData.opacity>0)) || Number(me._map_close_btn.material.opacity)>0)?true:false;
+			me._map_close_btn.userData.visible=true;
+				}
+			}
+		}
+		me._map_close_btn.logicBlock_visible();
+		me._map_close_btn.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map_top.add(me._map_close_btn);
+		geometry = new THREE.PlaneGeometry(0.4, 0.4, 5, 5 );
+		geometry.name = 'map_close_btn_active_geometry';
+		loader = new THREE.TextureLoader();
+		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAABYUlEQVR4nO3b0U0DMRBF0VkaSKqhhbSXdlJCEMXQwfARjxQMDt61vZ6175HyG725bAQSiggAAAAAAAAAAIeiqidVvYbXufeemKqen/adeu/5JQwzd08RQ7z7075rrfd+q/VGkXcRuXmIGDbc5LHJrz9+yt2fRI+bXvI02NOWVTwM97ChSM8DDh/P9DhkmHhmz4OGi2f2OGzYeKblgcPHMy0OnSaeqXnwdPFMjcOnjWdKAkwfz2wJQbzImiDES8gJQ7x/vApEvEyJUJ/hRbwciYjEWyNEjJ86exrdxWv1PxH0wEe4AL9ECiTi8WdMjpxARExYE4aIkS1BiBiUhJg+Yo0A00asefh0EVscPE3ElocOH3GPA4eNuOdhw0XscdAwEXsecviIHg7wsGETT8'+
+	'M9bcnicbDHTUn683siboYmIrr/nsiHiFyWZflq9P7ZwoaLPDb5pXzVCwAAAAAAAACAhr4BBei8DFCe9LkAAAAASUVORK5CYII=');
+		texture.colorSpace = player.getVRTextureColorSpace();
+		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
+		material.name = 'map_close_btn_active_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.materialNormal = material;
+		el.translateX(2.05);
+		el.translateY(-0.05);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 40;
+		el.userData.height = 40;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_close_btn_active';
+		el.userData.x = 2.05;
+		el.userData.y = -0.05;
+		el.userData.hanchor = 2;
+		el.userData.vanchor = 0;
+		el.translateZ(0.210);
+		el.renderOrder = 21;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._map_close_btn_active.material) me._map_close_btn_active.material.opacity = v;
+			me._map_close_btn_active.visible = (v>0 && me._map_close_btn_active.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._map_close_btn_active.visible
+			let parentEl = me._map_close_btn_active.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_close_btn_active.userData.opacity = v;
+			v = v * me._map_close_btn_active.userData.parentOpacity;
+			me._map_close_btn_active.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_close_btn_active.children.length; i++) {
+				let child = me._map_close_btn_active.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_close_btn_active.userData.parentOpacity = v;
+			v = v * me._map_close_btn_active.userData.opacity
+			me._map_close_btn_active.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_close_btn_active.children.length; i++) {
+				let child = me._map_close_btn_active.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_close_btn_active = el;
+		el.userData.ggId="map_close_btn_active";
+		me._map_close_btn_active.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.elementMouseOver['map_top'] == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._map_close_btn_active.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._map_close_btn_active.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._map_close_btn_active.ggCurrentLogicStateVisible == 0) {
+			me._map_close_btn_active.visible=((!me._map_close_btn_active.material && Number(me._map_close_btn_active.userData.opacity>0)) || Number(me._map_close_btn_active.material.opacity)>0)?true:false;
+			me._map_close_btn_active.userData.visible=true;
+				}
+				else {
+			me._map_close_btn_active.visible=false;
+			me._map_close_btn_active.userData.visible=false;
+				}
+			}
+		}
+		me._map_close_btn_active.logicBlock_visible();
+		me._map_close_btn_active.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map_top.add(me._map_close_btn_active);
+		me._map.add(me._map_top);
+		el = new THREE.Group();
+		el.userData.setOpacityInternal = function(v) {};
+		el.translateX(-1.8);
+		el.translateY(1.62);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 100;
+		el.userData.height = 20;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'reset info';
+		el.userData.x = -1.8;
+		el.userData.y = 1.62;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.200);
+		el.renderOrder = 20;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._reset_info.material) me._reset_info.material.opacity = v;
+			me._reset_info.visible = (v>0 && me._reset_info.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._reset_info.visible
+			let parentEl = me._reset_info.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._reset_info.userData.opacity = v;
+			v = v * me._reset_info.userData.parentOpacity;
+			me._reset_info.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._reset_info.children.length; i++) {
+				let child = me._reset_info.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._reset_info.userData.parentOpacity = v;
+			v = v * me._reset_info.userData.opacity
+			me._reset_info.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._reset_info.children.length; i++) {
+				let child = me._reset_info.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._reset_info = el;
+		el.userData.ggId="reset info";
+		me._reset_info.userData.onclick=function (e) {
+				me._map_node_title.userData.ggUpdateText=function(force) {
+					var params = [];
+					params.push(player._(String(player._(me.ggUserdata.title))));
+					var hs = player._("%1", params);
+					if (hs!=this.ggText || force) {
+						this.ggText=me._map_node_title.userData.ggStripTags(hs);
+						this.ggRenderText();
+					}
+				}
+			me._map_node_title.userData.ggUpdateText();
+				me._map_node_description.userData.ggUpdateText=function(force) {
+					var params = [];
+					params.push(player._(String(player._(me.ggUserdata.description))));
+					var hs = player._("%1", params);
+					if (hs!=this.ggText || force) {
+						this.ggText=me._map_node_description.userData.ggStripTags(hs);
+						this.ggRenderText();
+					}
+				}
+			me._map_node_description.userData.ggUpdateText();
+		}
+		me._reset_info.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map.add(me._reset_info);
+		me.skinGroup.add(me._map);
+		geometry = new THREE.PlaneGeometry(8, 6, 5, 5 );
+		geometry.name = 'map_phone_geometry';
+		material = new THREE.MeshBasicMaterial( { color: new THREE.Color(0, 0, 0).convertSRGBToLinear(), side : THREE.DoubleSide, transparent : true } ); 
+		material.name = 'map_phone_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.backgroundColorAlpha = 0.705882;
+		el.userData.borderColorAlpha = 1;
+		el.userData.setOpacityInternal = function(v) {
+			me._map_phone.material.opacity = v * me._map_phone.userData.backgroundColorAlpha;
+			if (me._map_phone.userData.ggSubElement) {
+				me._map_phone.userData.ggSubElement.material.opacity = v
+				me._map_phone.userData.ggSubElement.visible = (v>0 && me._map_phone.userData.visible);
+			}
+			me._map_phone.visible = (v>0 && me._map_phone.userData.visible);
+		}
+		el.userData.setBackgroundColor = function(v) {
+			me._map_phone.material.color = v;
+		}
+		el.userData.setBackgroundColorAlpha = function(v) {
+			me._map_phone.userData.backgroundColorAlpha = v;
+			me._map_phone.userData.setOpacity(me._map_phone.userData.opacity);
+		}
+		el.translateX(0);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 800;
+		el.userData.height = 600;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_phone';
+		el.userData.x = 0;
+		el.userData.y = 0;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.140);
+		el.renderOrder = 14;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.isVisible = function() {
+			let vis = me._map_phone.visible
+			let parentEl = me._map_phone.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_phone.userData.opacity = v;
+			v = v * me._map_phone.userData.parentOpacity;
+			me._map_phone.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_phone.children.length; i++) {
+				let child = me._map_phone.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_phone.userData.parentOpacity = v;
+			v = v * me._map_phone.userData.opacity
+			me._map_phone.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_phone.children.length; i++) {
+				let child = me._map_phone.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 0.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_phone = el;
+		el.userData.ggId="map_phone";
+		me._map_phone.logicBlock_alpha = function() {
+			var newLogicStateAlpha;
+			if (
+				((player.getVariableValue('resp_phone_1') == false))
+			)
+			{
+				newLogicStateAlpha = 0;
+			}
+			else if (
+				((player.getVariableValue('vis_floorplan_1') == true)) || 
+				((player.getVariableValue('vis_map_1') == true))
+			)
+			{
+				newLogicStateAlpha = 1;
+			}
+			else {
+				newLogicStateAlpha = -1;
+			}
+			if (me._map_phone.ggCurrentLogicStateAlpha != newLogicStateAlpha) {
+				me._map_phone.ggCurrentLogicStateAlpha = newLogicStateAlpha;
+				if (me._map_phone.ggCurrentLogicStateAlpha == 0) {
+					me._map_phone.userData.transitionValue_alpha = 0;
+					for (var i = 0; i < me._map_phone.userData.transitions.length; i++) {
+						if (me._map_phone.userData.transitions[i].property == 'alpha') {
+							clearInterval(me._map_phone.userData.transitions[i].interval);
+							me._map_phone.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_alpha = {};
+					transition_alpha.property = 'alpha';
+					transition_alpha.startTime = Date.now();
+					transition_alpha.startAlpha = me._map_phone.material ? me._map_phone.material.opacity : me._map_phone.userData.opacity;
+					transition_alpha.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_alpha.startTime) / 500;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._map_phone.userData.setOpacity(transition_alpha.startAlpha + (me._map_phone.userData.transitionValue_alpha - transition_alpha.startAlpha) * tfval);
+						if (percentDone >= 1.0) {
+							clearInterval(transition_alpha.interval);
+							me._map_phone.userData.transitions.splice(me._map_phone.userData.transitions.indexOf(transition_alpha), 1);
+						}
+					}, 20);
+					me._map_phone.userData.transitions.push(transition_alpha);
+				}
+				else if (me._map_phone.ggCurrentLogicStateAlpha == 1) {
+					me._map_phone.userData.transitionValue_alpha = 1;
+					for (var i = 0; i < me._map_phone.userData.transitions.length; i++) {
+						if (me._map_phone.userData.transitions[i].property == 'alpha') {
+							clearInterval(me._map_phone.userData.transitions[i].interval);
+							me._map_phone.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_alpha = {};
+					transition_alpha.property = 'alpha';
+					transition_alpha.startTime = Date.now();
+					transition_alpha.startAlpha = me._map_phone.material ? me._map_phone.material.opacity : me._map_phone.userData.opacity;
+					transition_alpha.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_alpha.startTime) / 500;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._map_phone.userData.setOpacity(transition_alpha.startAlpha + (me._map_phone.userData.transitionValue_alpha - transition_alpha.startAlpha) * tfval);
+						if (percentDone >= 1.0) {
+							clearInterval(transition_alpha.interval);
+							me._map_phone.userData.transitions.splice(me._map_phone.userData.transitions.indexOf(transition_alpha), 1);
+						}
+					}, 20);
+					me._map_phone.userData.transitions.push(transition_alpha);
+				}
+				else {
+					me._map_phone.userData.transitionValue_alpha = 0;
+					for (var i = 0; i < me._map_phone.userData.transitions.length; i++) {
+						if (me._map_phone.userData.transitions[i].property == 'alpha') {
+							clearInterval(me._map_phone.userData.transitions[i].interval);
+							me._map_phone.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_alpha = {};
+					transition_alpha.property = 'alpha';
+					transition_alpha.startTime = Date.now();
+					transition_alpha.startAlpha = me._map_phone.material ? me._map_phone.material.opacity : me._map_phone.userData.opacity;
+					transition_alpha.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_alpha.startTime) / 500;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._map_phone.userData.setOpacity(transition_alpha.startAlpha + (me._map_phone.userData.transitionValue_alpha - transition_alpha.startAlpha) * tfval);
+						if (percentDone >= 1.0) {
+							clearInterval(transition_alpha.interval);
+							me._map_phone.userData.transitions.splice(me._map_phone.userData.transitions.indexOf(transition_alpha), 1);
+						}
+					}, 20);
+					me._map_phone.userData.transitions.push(transition_alpha);
+				}
+			}
+		}
+		me._map_phone.logicBlock_alpha();
+		me._map_phone.userData.ggUpdatePosition=function (useTransition) {
+		}
+		el = new THREE.Group();
+		el.userData.setOpacityInternal = function(v) {};
+		el.translateX(0);
+		el.translateY(2.6);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 800;
+		el.userData.height = 80;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'close_popup_phone';
+		el.userData.x = 0;
+		el.userData.y = 2.6;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.150);
+		el.renderOrder = 15;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._close_popup_phone.material) me._close_popup_phone.material.opacity = v;
+			me._close_popup_phone.visible = (v>0 && me._close_popup_phone.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._close_popup_phone.visible
+			let parentEl = me._close_popup_phone.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._close_popup_phone.userData.opacity = v;
+			v = v * me._close_popup_phone.userData.parentOpacity;
+			me._close_popup_phone.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._close_popup_phone.children.length; i++) {
+				let child = me._close_popup_phone.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._close_popup_phone.userData.parentOpacity = v;
+			v = v * me._close_popup_phone.userData.opacity
+			me._close_popup_phone.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._close_popup_phone.children.length; i++) {
+				let child = me._close_popup_phone.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._close_popup_phone = el;
+		el.userData.ggPermeable=false;
+		el.userData.ggId="close_popup_phone";
+		me._close_popup_phone.userData.onclick=function (e) {
+			player.setVariableValue('vis_floorplan_1', false);
+			player.setVariableValue('vis_map_1', false);
+		}
+		me._close_popup_phone.userData.onmouseenter=function (e) {
+			me.elementMouseOver['close_popup_phone']=true;
+			me._btn_close_popup_phone.logicBlock_visible();
+			me._btn_close_popup_phone_active.logicBlock_visible();
+		}
+		me._close_popup_phone.userData.onmouseleave=function (e) {
+			me.elementMouseOver['close_popup_phone']=false;
+			me._btn_close_popup_phone.logicBlock_visible();
+			me._btn_close_popup_phone_active.logicBlock_visible();
+		}
+		me._close_popup_phone.userData.ggUpdatePosition=function (useTransition) {
+		}
+		geometry = new THREE.PlaneGeometry(0.4, 0.4, 5, 5 );
+		geometry.name = 'btn_close_popup_phone_geometry';
+		loader = new THREE.TextureLoader();
+		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAACKklEQVR4nO3bQW7aQBiG4deFWOzKXZCQukQiytYseo72BiHn6cJso1TyPhJ3obvIELmLQOsiHJHOPzP/4nuWJBrGb8CQGRtERERERERERERERFIorAb6+vT0ed9OHgBoD+vNarGzGttCVTdTyvEa4KZ8uf9xe/vLYtyxxSAA+3by0NF9A6Acfanq5s5LxKpupl05eoRuDrBvJwDfLcb+ZDHIBfOuHD1WdTONNP7V/sZjHmN8u4DtYQ089x7JHnEg3vNxribMzoEwPOGifU3+dk41F9OA4CNiyjmYB4S8EVM/d5SAkCdijueMFhDSHlCuV33UgJDmwHKeMqIHhLgHmPtDK0lAiHOgueNBwoBge8Ae4kHigGBz4F7iQYaAEBbAUzzIFBD+L4S3eJAxIH'+
+	'wsiMd4kDkgXBfGazxwEBDeDwTgNR44CQhDEYstdACz3q+6iQeOAsJVq8eu4oGzgHCKOP4J3ezsR9uifV16igfx9kQCdRcec/e3BpwF7L2Fz199QDfLvcdyiZuAA+e/7dsHyR/ZN6rOuQj4zteYZdEeljjb7evLfmLRF+kA+lcugBYTAmg5K4AWVANoST+ANpUCaFszgDbWA+jSjgC6uCiALm8LkPuknnoOusQ3kFlAT/FSzsluPfDtJhY38QA2q8XuuDX6z3ri6YYbC7EWVLPHOxmIaMbsTqWb8uX+eAeQu1u9NqvFrqqbu/6tXnlnJCIiIiIiIiIiIiLyUb8B/yCwlWm0XSQAAAAASUVORK5CYII=');
+		texture.colorSpace = player.getVRTextureColorSpace();
+		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
+		material.name = 'btn_close_popup_phone_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.materialNormal = material;
+		el.translateX(3.6);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 40;
+		el.userData.height = 40;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'btn_close_popup_phone';
+		el.userData.x = 3.6;
+		el.userData.y = 0;
+		el.userData.hanchor = 2;
+		el.userData.vanchor = 0;
+		el.translateZ(0.160);
+		el.renderOrder = 16;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._btn_close_popup_phone.material) me._btn_close_popup_phone.material.opacity = v;
+			me._btn_close_popup_phone.visible = (v>0 && me._btn_close_popup_phone.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._btn_close_popup_phone.visible
+			let parentEl = me._btn_close_popup_phone.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._btn_close_popup_phone.userData.opacity = v;
+			v = v * me._btn_close_popup_phone.userData.parentOpacity;
+			me._btn_close_popup_phone.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._btn_close_popup_phone.children.length; i++) {
+				let child = me._btn_close_popup_phone.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._btn_close_popup_phone.userData.parentOpacity = v;
+			v = v * me._btn_close_popup_phone.userData.opacity
+			me._btn_close_popup_phone.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._btn_close_popup_phone.children.length; i++) {
+				let child = me._btn_close_popup_phone.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._btn_close_popup_phone = el;
+		el.userData.ggId="btn_close_popup_phone";
+		me._btn_close_popup_phone.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.elementMouseOver['close_popup_phone'] == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._btn_close_popup_phone.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._btn_close_popup_phone.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._btn_close_popup_phone.ggCurrentLogicStateVisible == 0) {
+			me._btn_close_popup_phone.visible=false;
+			me._btn_close_popup_phone.userData.visible=false;
+				}
+				else {
+			me._btn_close_popup_phone.visible=((!me._btn_close_popup_phone.material && Number(me._btn_close_popup_phone.userData.opacity>0)) || Number(me._btn_close_popup_phone.material.opacity)>0)?true:false;
+			me._btn_close_popup_phone.userData.visible=true;
+				}
+			}
+		}
+		me._btn_close_popup_phone.logicBlock_visible();
+		me._btn_close_popup_phone.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._close_popup_phone.add(me._btn_close_popup_phone);
+		geometry = new THREE.PlaneGeometry(0.4, 0.4, 5, 5 );
+		geometry.name = 'btn_close_popup_phone_active_geometry';
+		loader = new THREE.TextureLoader();
+		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAABYUlEQVR4nO3b0U0DMRBF0VkaSKqhhbSXdlJCEMXQwfARjxQMDt61vZ6175HyG725bAQSiggAAAAAAAAAAIeiqidVvYbXufeemKqen/adeu/5JQwzd08RQ7z7075rrfd+q/VGkXcRuXmIGDbc5LHJrz9+yt2fRI+bXvI02NOWVTwM97ChSM8DDh/P9DhkmHhmz4OGi2f2OGzYeKblgcPHMy0OnSaeqXnwdPFMjcOnjWdKAkwfz2wJQbzImiDES8gJQ7x/vApEvEyJUJ/hRbwciYjEWyNEjJ86exrdxWv1PxH0wEe4AL9ECiTi8WdMjpxARExYE4aIkS1BiBiUhJg+Yo0A00asefh0EVscPE3ElocOH3GPA4eNuOdhw0XscdAwEXsecviIHg7wsGETT8'+
+	'M9bcnicbDHTUn683siboYmIrr/nsiHiFyWZflq9P7ZwoaLPDb5pXzVCwAAAAAAAACAhr4BBei8DFCe9LkAAAAASUVORK5CYII=');
+		texture.colorSpace = player.getVRTextureColorSpace();
+		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
+		material.name = 'btn_close_popup_phone_active_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.materialNormal = material;
+		el.translateX(3.6);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 40;
+		el.userData.height = 40;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'btn_close_popup_phone_active';
+		el.userData.x = 3.6;
+		el.userData.y = 0;
+		el.userData.hanchor = 2;
+		el.userData.vanchor = 0;
+		el.translateZ(0.170);
+		el.renderOrder = 17;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._btn_close_popup_phone_active.material) me._btn_close_popup_phone_active.material.opacity = v;
+			me._btn_close_popup_phone_active.visible = (v>0 && me._btn_close_popup_phone_active.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._btn_close_popup_phone_active.visible
+			let parentEl = me._btn_close_popup_phone_active.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._btn_close_popup_phone_active.userData.opacity = v;
+			v = v * me._btn_close_popup_phone_active.userData.parentOpacity;
+			me._btn_close_popup_phone_active.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._btn_close_popup_phone_active.children.length; i++) {
+				let child = me._btn_close_popup_phone_active.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._btn_close_popup_phone_active.userData.parentOpacity = v;
+			v = v * me._btn_close_popup_phone_active.userData.opacity
+			me._btn_close_popup_phone_active.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._btn_close_popup_phone_active.children.length; i++) {
+				let child = me._btn_close_popup_phone_active.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._btn_close_popup_phone_active = el;
+		el.userData.ggId="btn_close_popup_phone_active";
+		me._btn_close_popup_phone_active.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.elementMouseOver['close_popup_phone'] == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._btn_close_popup_phone_active.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._btn_close_popup_phone_active.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._btn_close_popup_phone_active.ggCurrentLogicStateVisible == 0) {
+			me._btn_close_popup_phone_active.visible=((!me._btn_close_popup_phone_active.material && Number(me._btn_close_popup_phone_active.userData.opacity>0)) || Number(me._btn_close_popup_phone_active.material.opacity)>0)?true:false;
+			me._btn_close_popup_phone_active.userData.visible=true;
+				}
+				else {
+			me._btn_close_popup_phone_active.visible=false;
+			me._btn_close_popup_phone_active.userData.visible=false;
+				}
+			}
+		}
+		me._btn_close_popup_phone_active.logicBlock_visible();
+		me._btn_close_popup_phone_active.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._close_popup_phone.add(me._btn_close_popup_phone_active);
+		me._map_phone.add(me._close_popup_phone);
+		el = new THREE.Group();
+		el.translateX(-0.15);
+		el.translateY(-0.05);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 720;
+		el.userData.height = 450;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_el_phone';
+		el.userData.x = -0.15;
+		el.userData.y = -0.05;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.160);
+		el.renderOrder = 16;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.isVisible = function() {
+			let vis = me._map_el_phone.visible
+			let parentEl = me._map_el_phone.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_el_phone.userData.opacity = v;
+			v = v * me._map_el_phone.userData.parentOpacity;
+			me._map_el_phone.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_el_phone.children.length; i++) {
+				let child = me._map_el_phone.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_el_phone.userData.parentOpacity = v;
+			v = v * me._map_el_phone.userData.opacity
+			me._map_el_phone.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_el_phone.children.length; i++) {
+				let child = me._map_el_phone.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_el_phone = el;
+		el.userData.ggId="map_el_phone";
+		me._map_el_phone.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((player.getVariableValue('vis_map_1') == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._map_el_phone.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._map_el_phone.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._map_el_phone.ggCurrentLogicStateVisible == 0) {
+			me._map_el_phone.visible=((!me._map_el_phone.material && Number(me._map_el_phone.userData.opacity>0)) || Number(me._map_el_phone.material.opacity)>0)?true:false;
+			me._map_el_phone.userData.visible=true;
+				}
+				else {
+			me._map_el_phone.visible=false;
+			me._map_el_phone.userData.visible=false;
+				}
+			}
+		}
+		me._map_el_phone.logicBlock_visible();
+		me._map_el_phone.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map_phone.add(me._map_el_phone);
+		el = new THREE.Group();
+		el.translateX(-0.15);
+		el.translateY(-0.05);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 720;
+		el.userData.height = 450;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'floorplan_el_phone';
+		el.userData.x = -0.15;
+		el.userData.y = -0.05;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.170);
+		el.renderOrder = 17;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.isVisible = function() {
+			let vis = me._floorplan_el_phone.visible
+			let parentEl = me._floorplan_el_phone.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._floorplan_el_phone.userData.opacity = v;
+			v = v * me._floorplan_el_phone.userData.parentOpacity;
+			me._floorplan_el_phone.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._floorplan_el_phone.children.length; i++) {
+				let child = me._floorplan_el_phone.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._floorplan_el_phone.userData.parentOpacity = v;
+			v = v * me._floorplan_el_phone.userData.opacity
+			me._floorplan_el_phone.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._floorplan_el_phone.children.length; i++) {
+				let child = me._floorplan_el_phone.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._floorplan_el_phone = el;
+		el.userData.ggId="floorplan_el_phone";
+		me._floorplan_el_phone.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((player.getVariableValue('vis_floorplan_1') == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._floorplan_el_phone.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._floorplan_el_phone.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._floorplan_el_phone.ggCurrentLogicStateVisible == 0) {
+			me._floorplan_el_phone.visible=((!me._floorplan_el_phone.material && Number(me._floorplan_el_phone.userData.opacity>0)) || Number(me._floorplan_el_phone.material.opacity)>0)?true:false;
+			me._floorplan_el_phone.userData.visible=true;
+				}
+				else {
+			me._floorplan_el_phone.visible=false;
+			me._floorplan_el_phone.userData.visible=false;
+				}
+			}
+		}
+		me._floorplan_el_phone.logicBlock_visible();
+		me._floorplan_el_phone.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map_phone.add(me._floorplan_el_phone);
+		me.skinGroup.add(me._map_phone);
+		el = new THREE.Group();
+		el.translateX(-3.5);
+		el.translateY(2.9);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 100;
+		el.userData.height = 20;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_code';
+		el.userData.x = -3.5;
+		el.userData.y = 2.9;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.150);
+		el.renderOrder = 15;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._map_code.material) me._map_code.material.opacity = v;
+			me._map_code.visible = (v>0 && me._map_code.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._map_code.visible
+			let parentEl = me._map_code.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_code.userData.opacity = v;
+			v = v * me._map_code.userData.parentOpacity;
+			me._map_code.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_code.children.length; i++) {
+				let child = me._map_code.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_code.userData.parentOpacity = v;
+			v = v * me._map_code.userData.opacity
+			me._map_code.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_code.children.length; i++) {
+				let child = me._map_code.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_code = el;
+		el.userData.ggId="map_code";
+		me._map_code.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me.skinGroup.add(me._map_code);
 		me._variable_vis_skin = {};
 		me._variable_vis_skin.ggCurrentLogicState = -1;
 		me._variable_vis_skin.logicBlock = function() {
@@ -7291,6 +10454,75 @@ function pano2vrVrSkin(player,base) {
 				}
 			}
 		}
+		me._variable_opt_maps = {};
+		me._variable_opt_maps.ggCurrentLogicState = -1;
+		me._variable_opt_maps.logicBlock = function() {
+			var newLogicState_opt_maps;
+			if (
+				((player.hasMap() == true))
+			)
+			{
+				newLogicState_opt_maps = 0;
+			}
+			else {
+				newLogicState_opt_maps = -1;
+			}
+			if (me._variable_opt_maps.ggCurrentLogicState != newLogicState_opt_maps) {
+				me._variable_opt_maps.ggCurrentLogicState = newLogicState_opt_maps;
+				if (me._variable_opt_maps.ggCurrentLogicState == 0) {
+					player.setVariableValue('opt_maps', true);
+				}
+				else {
+					player.setVariableValue('opt_maps', false);
+				}
+			}
+		}
+		me._variable_opt_floorplans = {};
+		me._variable_opt_floorplans.ggCurrentLogicState = -1;
+		me._variable_opt_floorplans.logicBlock = function() {
+			var newLogicState_opt_floorplans;
+			if (
+				((player.hasFloorplan() == true))
+			)
+			{
+				newLogicState_opt_floorplans = 0;
+			}
+			else {
+				newLogicState_opt_floorplans = -1;
+			}
+			if (me._variable_opt_floorplans.ggCurrentLogicState != newLogicState_opt_floorplans) {
+				me._variable_opt_floorplans.ggCurrentLogicState = newLogicState_opt_floorplans;
+				if (me._variable_opt_floorplans.ggCurrentLogicState == 0) {
+					player.setVariableValue('opt_floorplans', true);
+				}
+				else {
+					player.setVariableValue('opt_floorplans', false);
+				}
+			}
+		}
+		me._variable_resp_phone_1 = {};
+		me._variable_resp_phone_1.ggCurrentLogicState = -1;
+		me._variable_resp_phone_1.logicBlock = function() {
+			var newLogicState_resp_phone_1;
+			if (
+				((player.getViewerSize(true).width <= 1024))
+			)
+			{
+				newLogicState_resp_phone_1 = 0;
+			}
+			else {
+				newLogicState_resp_phone_1 = -1;
+			}
+			if (me._variable_resp_phone_1.ggCurrentLogicState != newLogicState_resp_phone_1) {
+				me._variable_resp_phone_1.ggCurrentLogicState = newLogicState_resp_phone_1;
+				if (me._variable_resp_phone_1.ggCurrentLogicState == 0) {
+					player.setVariableValue('resp_phone_1', true);
+				}
+				else {
+					player.setVariableValue('resp_phone_1', false);
+				}
+			}
+		}
 		me._thumbnails.logicBlock_visible();
 		me._thumbnails.userData.setOpacity(1.00);
 		me._node_cloner_vr.userData.setOpacity(1.00);
@@ -7305,6 +10537,10 @@ function pano2vrVrSkin(player,base) {
 		me._page_down_bg.userData.setOpacity(1.00);
 		me.elementMouseOver['page_down_bg']=false;
 		me._page_down.userData.setOpacity(1.00);
+		me._floorplan_btn.logicBlock_position();
+		me._floorplan_btn.logicBlock_alpha();
+		me._floorplan_btn.userData.setOpacity(0.00);
+		me.elementMouseOver['floorplan_btn']=false;
 		me._exit_vr.logicBlock_scaling();
 		me._exit_vr.userData.setOpacity(1.00);
 		me.elementMouseOver['exit_vr']=false;
@@ -7362,11 +10598,11 @@ function pano2vrVrSkin(player,base) {
 		me._ht_pdf_popup_title.userData.setOpacity(1.00);
 		me._screentint_phone.logicBlock_alpha();
 		me._screentint_phone.userData.setOpacity(0.00);
-		me._close_popup_phone.userData.setOpacity(1.00);
-		me.elementMouseOver['close_popup_phone']=false;
-		me._btn_close_popup_phone.logicBlock_visible();
-		me._btn_close_popup_phone.userData.setOpacity(1.00);
-		me.elementMouseOver['btn_close_popup_phone']=false;
+		me._close_popup_phone_1.userData.setOpacity(1.00);
+		me.elementMouseOver['close_popup_phone_1']=false;
+		me._btn_close_popup_phone_1.logicBlock_visible();
+		me._btn_close_popup_phone_1.userData.setOpacity(1.00);
+		me.elementMouseOver['btn_close_popup_phone_1']=false;
 		me._info_popup_phone.logicBlock_visible();
 		me._info_popup_phone.userData.setOpacity(1.00);
 		me._info_popup_text_phone.userData.setOpacity(1.00);
@@ -7406,6 +10642,54 @@ function pano2vrVrSkin(player,base) {
 		el = me._code_element_feather_box_hotspot_component;
 		;
 		me._code_element_feather_box_hotspot_component.userData.setOpacity(1.00);
+		me._map_toggle.logicBlock_visible();
+		me._map_toggle.logicBlock_alpha();
+		me._map_toggle.userData.setOpacity(1.00);
+		me.elementMouseOver['map_toggle']=false;
+		me._map_icon.logicBlock_visible();
+		me._map_icon.userData.setOpacity(1.00);
+		me._map_icon_active.logicBlock_visible();
+		me._map_icon_active.userData.setOpacity(1.00);
+		me._floorplan_icon.logicBlock_visible();
+		me._floorplan_icon.userData.setOpacity(1.00);
+		me._floorplan_icon_active.logicBlock_visible();
+		me._floorplan_icon_active.userData.setOpacity(1.00);
+		me._map.logicBlock_alpha();
+		me._map.userData.setOpacity(0.00);
+		me._map_bg.userData.setOpacity(1.00);
+		me._map_el.logicBlock_position();
+		me._map_el.logicBlock_size();
+		me._map_el.logicBlock_visible();
+		me._map_el.userData.setOpacity(1.00);
+		me._floorplan_el.logicBlock_position();
+		me._floorplan_el.logicBlock_size();
+		me._floorplan_el.logicBlock_visible();
+		me._floorplan_el.userData.setOpacity(1.00);
+		me._map_node_description.logicBlock_visible();
+		me._map_node_description.userData.setOpacity(1.00);
+		me._map_node_title.userData.setOpacity(1.00);
+		me._map_top.userData.setOpacity(1.00);
+		me.elementMouseOver['map_top']=false;
+		me._map_close_btn.logicBlock_visible();
+		me._map_close_btn.userData.setOpacity(1.00);
+		me._map_close_btn_active.logicBlock_visible();
+		me._map_close_btn_active.userData.setOpacity(1.00);
+		me._reset_info.userData.setOpacity(1.00);
+		me._map_phone.logicBlock_alpha();
+		me._map_phone.userData.setOpacity(0.00);
+		me._close_popup_phone.userData.setOpacity(1.00);
+		me.elementMouseOver['close_popup_phone']=false;
+		me._btn_close_popup_phone.logicBlock_visible();
+		me._btn_close_popup_phone.userData.setOpacity(1.00);
+		me._btn_close_popup_phone_active.logicBlock_visible();
+		me._btn_close_popup_phone_active.userData.setOpacity(1.00);
+		me._map_el_phone.logicBlock_visible();
+		me._map_el_phone.userData.setOpacity(1.00);
+		me._floorplan_el_phone.logicBlock_visible();
+		me._floorplan_el_phone.userData.setOpacity(1.00);
+		el = me._map_code;
+		;
+		me._map_code.userData.setOpacity(1.00);
 		me.eventactivehotspotchangedCallback = function() {
 			for(var i = 0; i < me._node_cloner_vr.userData.ggInstances.length; i++) {
 				me._node_cloner_vr.userData.ggInstances[i].ggEvent_activehotspotchanged();
@@ -7549,6 +10833,8 @@ function pano2vrVrSkin(player,base) {
 			me.skin_nodechangeCallback();
 			me._page_up_bg.logicBlock_visible();
 			me._page_down_bg.logicBlock_visible();
+			me._floorplan_btn.logicBlock_position();
+			me._floorplan_btn.logicBlock_alpha();
 			me._screen_tint.logicBlock_alpha();
 			me._ht_url_popup.logicBlock_visible();
 			me._ht_video_popup.logicBlock_visible();
@@ -7572,6 +10858,20 @@ function pano2vrVrSkin(player,base) {
 			me._video_file_popup_phone_play.logicBlock_visible();
 			me._video_url_popup_phone.logicBlock_visible();
 			me._video_url_popup_phone_play.logicBlock_visible();
+			me._map_toggle.logicBlock_alpha();
+			me._map.logicBlock_alpha();
+			me._map_el.logicBlock_position();
+			me._map_el.logicBlock_size();
+			me._map_el.logicBlock_visible();
+			me._floorplan_el.logicBlock_position();
+			me._floorplan_el.logicBlock_size();
+			me._floorplan_el.logicBlock_visible();
+				me._map_node_description.userData.ggUpdateText();
+			me._map_node_description.logicBlock_visible();
+				me._map_node_title.userData.ggUpdateText();
+			me._map_phone.logicBlock_alpha();
+			me._map_el_phone.logicBlock_visible();
+			me._floorplan_el_phone.logicBlock_visible();
 			me._variable_vis_skin.logicBlock();
 		};
 		player.addListener('changenode', me.eventchangenodeCallback);
@@ -7660,6 +10960,8 @@ function pano2vrVrSkin(player,base) {
 			me._thumbnails.logicBlock_visible();
 			me._page_up_bg.logicBlock_visible();
 			me._page_down_bg.logicBlock_visible();
+			me._floorplan_btn.logicBlock_position();
+			me._floorplan_btn.logicBlock_alpha();
 			me._screen_tint.logicBlock_alpha();
 			me._ht_url_popup.logicBlock_visible();
 			me._ht_video_popup.logicBlock_visible();
@@ -7683,7 +10985,26 @@ function pano2vrVrSkin(player,base) {
 			me._video_file_popup_phone_play.logicBlock_visible();
 			me._video_url_popup_phone.logicBlock_visible();
 			me._video_url_popup_phone_play.logicBlock_visible();
+			me._map_toggle.logicBlock_visible();
+			me._map_toggle.logicBlock_alpha();
+			me._map_icon.logicBlock_visible();
+			me._map_icon_active.logicBlock_visible();
+			me._floorplan_icon.logicBlock_visible();
+			me._floorplan_icon_active.logicBlock_visible();
+			me._map.logicBlock_alpha();
+			me._map_el.logicBlock_position();
+			me._map_el.logicBlock_size();
+			me._map_el.logicBlock_visible();
+			me._floorplan_el.logicBlock_position();
+			me._floorplan_el.logicBlock_size();
+			me._floorplan_el.logicBlock_visible();
+			me._map_node_description.logicBlock_visible();
+			me._map_phone.logicBlock_alpha();
+			me._map_el_phone.logicBlock_visible();
+			me._floorplan_el_phone.logicBlock_visible();
 			me._variable_vis_skin.logicBlock();
+			me._variable_opt_maps.logicBlock();
+			me._variable_opt_floorplans.logicBlock();
 		};
 		player.addListener('configloaded', me.eventconfigloadedCallback);
 		me.eventhastouchCallback = function() {
@@ -7736,6 +11057,7 @@ function pano2vrVrSkin(player,base) {
 		player.addListener('hastouch', me.eventhastouchCallback);
 		me.eventsizechangedCallback = function() {
 			me._variable_resp_phone.logicBlock();
+			me._variable_resp_phone_1.logicBlock();
 		};
 		player.addListener('sizechanged', me.eventsizechangedCallback);
 		me.eventvarchanged_node_cloner_vr_hasDownCallback = function() {
@@ -7796,12 +11118,52 @@ function pano2vrVrSkin(player,base) {
 			}
 		};
 		player.addListener('varchanged_open_video_hs', me.eventvarchanged_open_video_hsCallback);
+		me.eventvarchanged_opt_desc_in_mapsCallback = function() {
+			me._map_el.logicBlock_size();
+			me._floorplan_el.logicBlock_size();
+		};
+		player.addListener('varchanged_opt_desc_in_maps', me.eventvarchanged_opt_desc_in_mapsCallback);
+		me.eventvarchanged_opt_desc_in_maps_1Callback = function() {
+			me._map_el.logicBlock_position();
+			me._floorplan_el.logicBlock_position();
+			me._map_node_description.logicBlock_visible();
+		};
+		player.addListener('varchanged_opt_desc_in_maps_1', me.eventvarchanged_opt_desc_in_maps_1Callback);
+		me.eventvarchanged_opt_floorplansCallback = function() {
+			me._floorplan_btn.logicBlock_alpha();
+		};
+		player.addListener('varchanged_opt_floorplans', me.eventvarchanged_opt_floorplansCallback);
+		me.eventvarchanged_opt_mapsCallback = function() {
+			me._floorplan_btn.logicBlock_position();
+		};
+		player.addListener('varchanged_opt_maps', me.eventvarchanged_opt_mapsCallback);
+		me.eventvarchanged_resp_phone_1Callback = function() {
+			me._map_toggle.logicBlock_alpha();
+			me._map_phone.logicBlock_alpha();
+		};
+		player.addListener('varchanged_resp_phone_1', me.eventvarchanged_resp_phone_1Callback);
+		me.eventvarchanged_vis_floorplan_1Callback = function() {
+			me._map_toggle.logicBlock_alpha();
+			me._map.logicBlock_alpha();
+			me._floorplan_el.logicBlock_visible();
+			me._map_phone.logicBlock_alpha();
+			me._floorplan_el_phone.logicBlock_visible();
+		};
+		player.addListener('varchanged_vis_floorplan_1', me.eventvarchanged_vis_floorplan_1Callback);
 		me.eventvarchanged_vis_image_popupCallback = function() {
 			me._screen_tint.logicBlock_alpha();
 			me._ht_image_popup_fs.logicBlock_visible();
 			me._variable_vis_skin.logicBlock();
 		};
 		player.addListener('varchanged_vis_image_popup', me.eventvarchanged_vis_image_popupCallback);
+		me.eventvarchanged_vis_map_1Callback = function() {
+			me._map_toggle.logicBlock_alpha();
+			me._map.logicBlock_alpha();
+			me._map_el.logicBlock_visible();
+			me._map_phone.logicBlock_alpha();
+			me._map_el_phone.logicBlock_visible();
+		};
+		player.addListener('varchanged_vis_map_1', me.eventvarchanged_vis_map_1Callback);
 		me.eventvarchanged_vis_pdf_popupCallback = function() {
 			me._screen_tint.logicBlock_alpha();
 			me._ht_pdf_popup.logicBlock_visible();
@@ -8492,6 +11854,473 @@ function pano2vrVrSkin(player,base) {
 			me.ggEvent_configloaded=function() {
 				me._node_title.logicBlock_alpha();
 			};
+	};
+	function SkinElement_map_pin_Class(parentScope,ggParent) {
+		var me=this;
+		var flag=false;
+		me.parentScope=parentScope;
+		me.ggParent=ggParent;
+		var nodeId=ggParent.userData.ggElementNodeId();
+		me.ggNodeId=nodeId;
+		me.ggUserdata=skin.player.getNodeUserdata(nodeId);
+		me.ggUserdata.nodeId=nodeId;
+		me.elementMouseDown={};
+		me.elementMouseOver={};
+		
+		me.findElements=function(id,regex) {
+			return skin.findElements(id,regex);
+		}
+		
+		width = 0.3;
+		height = 0.3;
+		roundedRectShape = new THREE.Shape();
+		roundedRectShape.moveTo((-width / 2.0) + 0.15, (height / 2.0));
+		roundedRectShape.lineTo((width / 2.0) - 0.15, (height / 2.0));
+		roundedRectShape.arc(0, -0.15, 0.15, Math.PI / 2.0, 2.0 * Math.PI, true);
+		roundedRectShape.lineTo((width / 2.0), (-height / 2.0) + 0.15);
+		roundedRectShape.arc(-0.15, 0, 0.15, 2.0 * Math.PI, 3.0 * Math.PI / 2.0, true);
+		roundedRectShape.lineTo((-width / 2.0) + 0.15, (-height / 2.0));
+		roundedRectShape.arc(0, 0.15, 0.15, 3.0 * Math.PI / 2.0, Math.PI, true);
+		roundedRectShape.lineTo((-width / 2.0), (height / 2.0) - 0.15);
+		roundedRectShape.arc(0.15, 0, 0.15, Math.PI, Math.PI / 2.0, true);
+		geometry = new THREE.ShapeGeometry(roundedRectShape);
+		geometry.name = 'map_pin_geometry';
+		geometry.computeBoundingBox();
+		var min = geometry.boundingBox.min;
+		var max = geometry.boundingBox.max;
+		var offset = new THREE.Vector2(0 - min.x, 0 - min.y);
+		var range = new THREE.Vector2(max.x - min.x, max.y - min.y);
+		var vertexPositions = geometry.getAttribute('position');
+		var vertexUVs = geometry.getAttribute('uv');
+		for (var i = 0; i < vertexPositions.count; i++) {
+			var v1 = vertexPositions.getX(i);
+			var	v2 = vertexPositions.getY(i);
+			vertexUVs.setX(i, (v1 + offset.x) / range.x);
+			vertexUVs.setY(i, (v2 + offset.y) / range.y);
+		}
+		geometry.uvsNeedUpdate = true;
+		material = new THREE.MeshBasicMaterial( { color: new THREE.Color(0.309804, 0.709804, 0.760784).convertSRGBToLinear(), side : THREE.DoubleSide, transparent : true } ); 
+		material.name = 'map_pin_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.backgroundColorAlpha = 1;
+		el.userData.borderColorAlpha = 1;
+		el.userData.setOpacityInternal = function(v) {
+			me._map_pin.material.opacity = v * me._map_pin.userData.backgroundColorAlpha;
+			if (me._map_pin.userData.ggSubElement) {
+				me._map_pin.userData.ggSubElement.material.opacity = v
+				me._map_pin.userData.ggSubElement.visible = (v>0 && me._map_pin.userData.visible);
+			}
+			me._map_pin.visible = (v>0 && me._map_pin.userData.visible);
+		}
+		el.userData.setBackgroundColor = function(v) {
+			me._map_pin.material.color = v;
+		}
+		el.userData.setBackgroundColorAlpha = function(v) {
+			me._map_pin.userData.backgroundColorAlpha = v;
+			me._map_pin.userData.setOpacity(me._map_pin.userData.opacity);
+		}
+		el.translateX(0);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 30;
+		el.userData.height = 30;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_pin';
+		el.userData.x = 0;
+		el.userData.y = 0;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
+		el.translateZ(0.020);
+		el.renderOrder = 2;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.isVisible = function() {
+			let vis = me._map_pin.visible
+			let parentEl = me._map_pin.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_pin.userData.opacity = v;
+			v = v * me._map_pin.userData.parentOpacity;
+			me._map_pin.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_pin.children.length; i++) {
+				let child = me._map_pin.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_pin.userData.parentOpacity = v;
+			v = v * me._map_pin.userData.opacity
+			me._map_pin.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_pin.children.length; i++) {
+				let child = me._map_pin.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_pin = el;
+		el.userData.ggId="map_pin";
+		me._map_pin.logicBlock_scaling = function() {
+			var newLogicStateScaling;
+			if (
+				((me.elementMouseOver['map_pin'] == true))
+			)
+			{
+				newLogicStateScaling = 0;
+			}
+			else {
+				newLogicStateScaling = -1;
+			}
+			if (me._map_pin.ggCurrentLogicStateScaling != newLogicStateScaling) {
+				me._map_pin.ggCurrentLogicStateScaling = newLogicStateScaling;
+				if (me._map_pin.ggCurrentLogicStateScaling == 0) {
+					me._map_pin.userData.transitionValue_scale = {x: 1.3, y: 1.3, z: 1.0};
+					for (var i = 0; i < me._map_pin.userData.transitions.length; i++) {
+						if (me._map_pin.userData.transitions[i].property == 'scale') {
+							clearInterval(me._map_pin.userData.transitions[i].interval);
+							me._map_pin.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_scale = {};
+					transition_scale.property = 'scale';
+					transition_scale.startTime = Date.now();
+					transition_scale.startScale = structuredClone(me._map_pin.scale);
+					transition_scale.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_scale.startTime) / 200;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._map_pin.scale.set(transition_scale.startScale.x + (me._map_pin.userData.transitionValue_scale.x - transition_scale.startScale.x) * tfval, transition_scale.startScale.y + (me._map_pin.userData.transitionValue_scale.y - transition_scale.startScale.y) * tfval, 1.0);
+					var scaleOffX = 0;
+					var scaleOffY = 0;
+						me._map_pin.position.x = (me._map_pin.position.x - me._map_pin.userData.curScaleOffX) + scaleOffX;
+						me._map_pin.userData.curScaleOffX = scaleOffX;
+						me._map_pin.position.y = (me._map_pin.position.y - me._map_pin.userData.curScaleOffY) + scaleOffY;
+						me._map_pin.userData.curScaleOffY = scaleOffY;
+						if (percentDone >= 1.0) {
+							clearInterval(transition_scale.interval);
+							me._map_pin.userData.transitions.splice(me._map_pin.userData.transitions.indexOf(transition_scale), 1);
+						}
+					}, 20);
+					me._map_pin.userData.transitions.push(transition_scale);
+				}
+				else {
+					me._map_pin.userData.transitionValue_scale = {x: 1, y: 1, z: 1.0};
+					for (var i = 0; i < me._map_pin.userData.transitions.length; i++) {
+						if (me._map_pin.userData.transitions[i].property == 'scale') {
+							clearInterval(me._map_pin.userData.transitions[i].interval);
+							me._map_pin.userData.transitions.splice(i, 1);
+							break;
+						}
+					}
+					let transition_scale = {};
+					transition_scale.property = 'scale';
+					transition_scale.startTime = Date.now();
+					transition_scale.startScale = structuredClone(me._map_pin.scale);
+					transition_scale.interval = setInterval(() => {
+						let currentTime = Date.now() - 0;
+						let percentDone = 1.0 * (currentTime - transition_scale.startTime) / 200;
+						percentDone = Math.max(percentDone, 0.0);
+						percentDone = Math.min(percentDone, 1.0);
+						let tfval = -(Math.cos(Math.PI * percentDone) - 1) / 2;
+						me._map_pin.scale.set(transition_scale.startScale.x + (me._map_pin.userData.transitionValue_scale.x - transition_scale.startScale.x) * tfval, transition_scale.startScale.y + (me._map_pin.userData.transitionValue_scale.y - transition_scale.startScale.y) * tfval, 1.0);
+					var scaleOffX = 0;
+					var scaleOffY = 0;
+						me._map_pin.position.x = (me._map_pin.position.x - me._map_pin.userData.curScaleOffX) + scaleOffX;
+						me._map_pin.userData.curScaleOffX = scaleOffX;
+						me._map_pin.position.y = (me._map_pin.position.y - me._map_pin.userData.curScaleOffY) + scaleOffY;
+						me._map_pin.userData.curScaleOffY = scaleOffY;
+						if (percentDone >= 1.0) {
+							clearInterval(transition_scale.interval);
+							me._map_pin.userData.transitions.splice(me._map_pin.userData.transitions.indexOf(transition_scale), 1);
+						}
+					}, 20);
+					me._map_pin.userData.transitions.push(transition_scale);
+				}
+			}
+		}
+		me._map_pin.logicBlock_scaling();
+		me._map_pin.userData.onclick=function (e) {
+			player.openNext("{"+me.ggNodeId+"}","");
+			if (
+				(
+					((player.getVariableValue('resp_phone_1') == true))
+				)
+			) {
+				player.setVariableValue('vis_floorplan_1', false);
+			}
+			if (
+				(
+					((player.getVariableValue('resp_phone_1') == true))
+				)
+			) {
+				player.setVariableValue('vis_map_1', false);
+			}
+		}
+		me._map_pin.userData.onmouseenter=function (e) {
+				skin._map_node_title.userData.ggUpdateText=function(force) {
+					var params = [];
+					params.push(player._(String(player._(me.ggUserdata.title))));
+					var hs = player._("%1", params);
+					if (hs!=this.ggText || force) {
+						this.ggText=skin._map_node_title.userData.ggStripTags(hs);
+						this.ggRenderText();
+					}
+				}
+			skin._map_node_title.userData.ggUpdateText();
+				skin._map_node_description.userData.ggUpdateText=function(force) {
+					var params = [];
+					params.push(player._(String(player._(me.ggUserdata.description))));
+					var hs = player._("%1", params);
+					if (hs!=this.ggText || force) {
+						this.ggText=skin._map_node_description.userData.ggStripTags(hs);
+						this.ggRenderText();
+					}
+				}
+			skin._map_node_description.userData.ggUpdateText();
+			me.elementMouseOver['map_pin']=true;
+			me._map_pin_icon.logicBlock_visible();
+			me._map_pin_icon_active.logicBlock_visible();
+			me._map_pin.logicBlock_scaling();
+		}
+		me._map_pin.userData.ontouchend=function (e) {
+			me._map_pin.logicBlock_scaling();
+		}
+		me._map_pin.userData.onmouseleave=function (e) {
+			skin._reset_info.onclick.call(skin._reset_info);
+			me.elementMouseOver['map_pin']=false;
+			me._map_pin_icon.logicBlock_visible();
+			me._map_pin_icon_active.logicBlock_visible();
+			me._map_pin.logicBlock_scaling();
+		}
+		me._map_pin.userData.ggUpdatePosition=function (useTransition) {
+		}
+		geometry = new THREE.PlaneGeometry(0.2, 0.2, 5, 5 );
+		geometry.name = 'map_pin_icon_geometry';
+		loader = new THREE.TextureLoader();
+		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAADUElEQVRYhc2YPUxUQRSFvwUWEkEg+AdqokQr4x+BThsRIo3auDZYqyRU2kBMRC2URjsVtPEHK60wYqEF0UAjECQEO4OQaCCaVTQkGGEt7llZyLJv3tsH8SQvmTdz7rn3zcybOzMRwkM+UKHyF+B3iNqBsB1oBl4D00Bi2TOttmZxAyESwGYP0A4c1/tPYBD4jPUcWE9uBaqB9ap7DrQAY0GD9UIR0AnMY8PXCdRjQ7sS8sXplM28ykVhB7cDeI8NXRdQGUCjUrYJYFiaoeAANp9mgVgIejFpTUk7K5QDE1iAVdmKpaBKmhPAlqAiBUA/NncOhRPXEhyWdr98+cZFbL6cDTGo5TgnHxf8GpYBceAdwZYiV0SAAfkq82PYjn3ZUR82ecBuPXk+7Ork64'+
+	'arQQT4BIw48qNAG9YLySwSBy6rzQUjwDiOo3VQTq46cCuwLJIAhoAOPUOqG2QxP2fCNfGdlp1WkWs8eBHgJTAHNLL06yOqmwN68O6ZGvlsdQnwvsjrPHhnxGvJwEl+bKOHVqF491wC7AF+OPC6JVqcgVMsTreD3gzwYnllThpiObbKe6ESmJRwJqeTwE4HvSn5XoJ0Ac7iPbxgf+pmMi8pUXG+O+gVyrdngF+BTSu0paIXS1G1GThHxOn10MqRz28ePMAWzASw14NXiiX7j6RfSirUNgGUeGjtk8/rLgGeFPm8A7cWW0riwCUsK9SpHFdbph5Ookk+T7gEWAL8AvpcyMB+Fjezqc8w1jMu6JdPr57+hw45qXbkR4EGbN1rVdk1zSUX6buuwYH1SgJ44McoIB7Kl2tv/8NbbA655NKgqJCPN0GMG7AvexpmRMvwTD6O'+
+	'BRV4LIFTYUWUgpi0H2UjshFLe1Mqh4VU3Q3Zip1mMeHnZismjeRGI4xjLBFsG5QAboagd0tanYR43oliF0GuGWYlJDPGK9zXSWeUAh+APwT7aWKyHZPWqqASO9ws4K8nm2QzTrB7HV/YBoxiQ9VG5nkUAa6IOyrbNUEZluATwG3S/925wB1x+vB5MA8Dhdj5JZltUu9XClSXEMdlh74qiAJPFMgAsAu7WUielbtYhb/VL3KwQ/4Ci3vBBdV5HRvWFPXYffUMtqv+L1GCj12xC/4CGxDO38riU6gAAAAASUVORK5CYII=');
+		texture.colorSpace = player.getVRTextureColorSpace();
+		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
+		material.name = 'map_pin_icon_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.materialNormal = material;
+		el.translateX(0);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 20;
+		el.userData.height = 20;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_pin_icon';
+		el.userData.x = 0;
+		el.userData.y = 0;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
+		el.translateZ(0.010);
+		el.renderOrder = 1;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._map_pin_icon.material) me._map_pin_icon.material.opacity = v;
+			me._map_pin_icon.visible = (v>0 && me._map_pin_icon.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._map_pin_icon.visible
+			let parentEl = me._map_pin_icon.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_pin_icon.userData.opacity = v;
+			v = v * me._map_pin_icon.userData.parentOpacity;
+			me._map_pin_icon.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_pin_icon.children.length; i++) {
+				let child = me._map_pin_icon.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_pin_icon.userData.parentOpacity = v;
+			v = v * me._map_pin_icon.userData.opacity
+			me._map_pin_icon.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_pin_icon.children.length; i++) {
+				let child = me._map_pin_icon.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_pin_icon = el;
+		el.userData.ggId="map_pin_icon";
+		me._map_pin_icon.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.elementMouseOver['map_pin'] == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._map_pin_icon.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._map_pin_icon.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._map_pin_icon.ggCurrentLogicStateVisible == 0) {
+			me._map_pin_icon.visible=false;
+			me._map_pin_icon.userData.visible=false;
+				}
+				else {
+			me._map_pin_icon.visible=((!me._map_pin_icon.material && Number(me._map_pin_icon.userData.opacity>0)) || Number(me._map_pin_icon.material.opacity)>0)?true:false;
+			me._map_pin_icon.userData.visible=true;
+				}
+			}
+		}
+		me._map_pin_icon.logicBlock_visible();
+		me._map_pin_icon.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map_pin.add(me._map_pin_icon);
+		geometry = new THREE.PlaneGeometry(0.2, 0.2, 5, 5 );
+		geometry.name = 'map_pin_icon_active_geometry';
+		loader = new THREE.TextureLoader();
+		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAADqUlEQVRYhcWYX2hWZRzHv8+yV9HNi4m4rakYWF2pU5okpF0leqfXFQa1K4NYQuSfi0KjQRfZBINkXWV1Yd2ptUUXQkstMNKbQLQmkjKdmws1YR8v3q/ssL3ve57zR/vBYdt5ft8/z3me83t+O0ElBdAiqcN/Xg0h3C6LO1cAK4Be4BQwweyY8FgvsCKvTshhbLWkPkmbfeumpDOSrki66nsdkjoldUtq9b3vJb0bQvg9r9k0Yy3AADAF3AX6gY3AnAaYOc7pN2bKHC1lm3saOO+lGwCW5uBYaizAH0WWfSbxWmAUmAS2lcC3zVyjQFdRsnbgCvAPsKqouQTvKuAaMAK05yWZC5wG7gEvlGUuwb8B+A/4BZibh2CX98sbZZtLaLxpjXeyAluBMT/BzK'+
+	'Uog06wxhjQmo6YBn7omW3KgKkAz/iqZMC9ZK0DsYAAXAbORebPA/qA8cQpMu578yI5zgGXolYL6LLI+xG5na5p+Fj72NepRL3rjOD5wPlrYgzucfLzKXlNwBBwB9heY3y7xwaBphSubmvujjF4xMnNKXmvOq+3QU6vc15J4Wpx3ucxBk8A4xF531E9W+tOxMJTwLcRfBPA8Zn3az36JZKupxFKWiZpJIQwWS/BPeGIpOURfNcktcUY/FfSggjCm5LagCfrJbjctEm6EcHXLGnWZGsZHJW0GHgihXBIUkXTfWGt2OycHxsRWWuxYiYCHPCGXZ2S1wxcpHrgz1pCYLnHLka8cGusuX/mWK1mc9g/X5RUt/sNIUwCr0n6QdJ54BNJpz28XtLbqq7Qy432aUIrqV0//GTGgV9jKjuwEhhmdgwDKyPwAfjNmg2fdBL0qUWi'+
+	'2iwX7fVAj6/utOKcwG6w1sEocwY9Z9DRaFDOAL6y1rNZgUPA/VovQFnhF+k+MJgHvMkzOxGzF3PwB+CkNaLbupkkn5lgR7n2JOB1cx8uQrLQtWwM6EhHRPM+BdwC/gYWFiXb6pn+RIZOuQFfxVwAW4ryPSTtM+FAkf3offeFuT4qxZyJm4BjJn6vAM9ucxyLrZNZyOcDZy3QkwPfY+xZYH6p5hIi7cAFC+2NWW4v6z5jLpD3S0IGk4uYPnv7Gy2Vt8Yh5/5Mlv99C5pc4AIO8DU1Pl1Q/XTyjXOOAzFNcKkmK8BRGxgk8c3P9XPIY1/SoOt+1CabmO58/qTaeHb5d4CDpb+tOUwG4C2qX8Eexj1gZ8xL9NgCWEf16PoLWPd/+6kZ3peFj8NkPADAnKg2xjePKQAAAABJRU5ErkJggg==');
+		texture.colorSpace = player.getVRTextureColorSpace();
+		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
+		material.name = 'map_pin_icon_active_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.materialNormal = material;
+		el.translateX(0);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 20;
+		el.userData.height = 20;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'map_pin_icon_active';
+		el.userData.x = 0;
+		el.userData.y = 0;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
+		el.translateZ(0.020);
+		el.renderOrder = 2;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._map_pin_icon_active.material) me._map_pin_icon_active.material.opacity = v;
+			me._map_pin_icon_active.visible = (v>0 && me._map_pin_icon_active.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._map_pin_icon_active.visible
+			let parentEl = me._map_pin_icon_active.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._map_pin_icon_active.userData.opacity = v;
+			v = v * me._map_pin_icon_active.userData.parentOpacity;
+			me._map_pin_icon_active.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_pin_icon_active.children.length; i++) {
+				let child = me._map_pin_icon_active.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._map_pin_icon_active.userData.parentOpacity = v;
+			v = v * me._map_pin_icon_active.userData.opacity
+			me._map_pin_icon_active.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._map_pin_icon_active.children.length; i++) {
+				let child = me._map_pin_icon_active.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._map_pin_icon_active = el;
+		el.userData.ggId="map_pin_icon_active";
+		me._map_pin_icon_active.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.elementMouseOver['map_pin'] == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._map_pin_icon_active.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._map_pin_icon_active.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._map_pin_icon_active.ggCurrentLogicStateVisible == 0) {
+			me._map_pin_icon_active.visible=((!me._map_pin_icon_active.material && Number(me._map_pin_icon_active.userData.opacity>0)) || Number(me._map_pin_icon_active.material.opacity)>0)?true:false;
+			me._map_pin_icon_active.userData.visible=true;
+				}
+				else {
+			me._map_pin_icon_active.visible=false;
+			me._map_pin_icon_active.userData.visible=false;
+				}
+			}
+		}
+		me._map_pin_icon_active.logicBlock_visible();
+		me._map_pin_icon_active.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._map_pin.add(me._map_pin_icon_active);
+		me._map_pin.logicBlock_scaling();
+		me._map_pin.userData.setOpacity(1.00);
+		me.elementMouseOver['map_pin']=false;
+		me._map_pin_icon.logicBlock_visible();
+		me._map_pin_icon.userData.setOpacity(1.00);
+		me._map_pin_icon_active.logicBlock_visible();
+		me._map_pin_icon_active.userData.setOpacity(1.00);
 	};
 	function SkinHotspotClass_ht_url(parentScope,hotspot) {
 		var me=this;
