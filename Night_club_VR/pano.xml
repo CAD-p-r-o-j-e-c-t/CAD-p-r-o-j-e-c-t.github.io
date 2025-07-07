@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour hassounds="1" appversion="7.1.8" apprev="20986" start="node8">
+  <panorama id="node8">
+    <input leveltilesize="510" levelingpitch="0" levelingroll="0" width="1000" levelbias="0.400" overlap="1" height="1000" leveltileurl="tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000">
+      <level height="1000" width="1000" preload="0" predecode="0"/>
+      <level height="500" width="500" preload="1" predecode="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fov="140" scaletofit="1" tilt="90" fovstereographic="330" fovfisheye="360"/>
+    </view>
+    <userdata copyright="" nodeid="node8" description="" author="" heading="0" customnodeid="" latitude="" title="Входная группа" source="" comment="" longitude="" info="" tags="TelegramDesktop" datetime=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label backgroundcolor="0xffffff" wordwrap="1" textalpha="1" width="180" border="1" enabled="1" bordercolor="0x000000" height="20" backgroundalpha="1" textcolor="0x000000" borderalpha="1" borderradius="1" background="1"/>
+      <polystyle backgroundcolor="0x0000ff" handcursor="1" mode="0" bordercolor="0x0000ff" backgroundalpha="0.25098" borderalpha="1"/>
+      <hotspot target="" pan="-250.83" description="" skinid="ht_node" url="{node7}" tilt="-13.93" title="БАР и DJ" id="Point01"/>
+      <hotspot target="" pan="-338.89" description="" skinid="ht_node" url="{node12}" tilt="-15.08" title="Санузел" id="Point02"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" pansize="10.000" field="90.000" ambientlevel="0.000" loop="3" level="0.500" id="_background" tiltsize="10.000" mode="0" nodechangekeep="1" startmutedmobile="0" tilt="-1.000">
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare alpha="80.000" pan="-342.720" blinding="50.000" color="0xffffff" tilt="34.750" type="3" id="Lensflare01"/>
+      <lensflare alpha="80.000" pan="-254.630" blinding="5.000" color="0xffffff" tilt="21.720" type="8" id="Lensflare02"/>
+      <lensflare alpha="80.000" pan="-257.980" blinding="15.000" color="0xffffff" tilt="4.460" type="6" id="Lensflare03"/>
+      <lensflare alpha="80.000" pan="-94.880" blinding="20.000" color="0xffffff" tilt="49.190" type="8" id="Lensflare04"/>
+      <lensflare alpha="80.000" pan="-244.010" blinding="30.000" color="0xffffff" tilt="51.330" type="8" id="Lensflare05"/>
+      <lensflare alpha="80.000" pan="-166.160" blinding="50.000" color="0xffffff" tilt="76.870" type="8" id="Lensflare06"/>
+      <lensflare alpha="80.000" pan="-252.300" blinding="20.000" color="0xffffff" tilt="32.530" type="8" id="Lensflare07"/>
+      <lensflare alpha="80.000" pan="-88.170" blinding="10.000" color="0xffffff" tilt="30.720" type="8" id="Lensflare08"/>
+      <lensflare alpha="80.000" pan="-287.430" blinding="30.000" color="0xffffff" tilt="-52.140" type="6" id="Lensflare09"/>
+      <lensflare alpha="80.000" pan="-353.160" blinding="30.000" color="0xffffff" tilt="-37.660" type="6" id="Lensflare10"/>
+    </media>
+    <transition zoomout="3" zoomfov="40" blendtime="1" zoomafterinfov="140" blendcolor="0x000000" softedge="0" zoomspeed="2" type="crossdissolve" zoomafteroutfov="40" enabled="1" delay="none" zoomoutpause="0" zoomin="6"/>
+    <animation useinautorotation="0" clipsrandom="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control sensitivity="8" rubberband="1" dblclickfullscreen="1" invertwheel="0" speedwheel="1" zoomcentercursor="1" simulatemass="1" lockedmouse="0" lockedkeyboard="0" contextfullscreen="1" hideabout="0" contextvr="1" invertcontrol="1" contextprojections="0" lockedkeyboardzoom="0" lockedwheel="0"/>
+    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node7">
+    <input leveltilesize="510" levelingpitch="0" levelingroll="0" width="1000" levelbias="0.400" overlap="1" height="1000" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000">
+      <level height="1000" width="1000" preload="0" predecode="0"/>
+      <level height="500" width="500" preload="1" predecode="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fov="140" scaletofit="1" tilt="90" fovstereographic="330" fovfisheye="360"/>
+    </view>
+    <userdata copyright="" nodeid="node7" description="" author="" heading="0" customnodeid="" latitude="" title="БАР и DJ" source="" comment="" longitude="" info="" tags="" datetime=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label backgroundcolor="0xffffff" wordwrap="1" textalpha="1" width="180" border="1" enabled="1" bordercolor="0x000000" height="20" backgroundalpha="1" textcolor="0x000000" borderalpha="1" borderradius="1" background="1"/>
+      <polystyle backgroundcolor="0x0000ff" handcursor="1" mode="0" bordercolor="0x0000ff" backgroundalpha="0.25098" borderalpha="1"/>
+      <hotspot target="" pan="-22.19" description="" skinid="ht_node" url="{node6}" tilt="-8.81" title="Второй Бар и VIP" id="Point01"/>
+      <hotspot target="" pan="-167.04" description="" skinid="ht_node" url="{node8}" tilt="-8.58" title="Входная группа" id="Point02"/>
+      <hotspot target="" pan="-113.34" description="" skinid="ht_node" url="{node12}" tilt="-6.82" title="Санузел" id="Point03"/>
+    </hotspots>
+    <media>
+      <sound pan="-354.250" pansize="10.000" field="52.000" ambientlevel="0.000" loop="1" level="0.400" id="Element01" tiltsize="10.000" mode="5" nodechangekeep="0" startmutedmobile="0" tilt="-6.200">
+        <source url="media/c530bf31bbb1cf.mp3" mono="0"/>
+      </sound>
+      <sound pan="-1.000" pansize="10.000" field="90.000" ambientlevel="0.000" loop="3" level="0.500" id="_background" tiltsize="10.000" mode="0" nodechangekeep="1" startmutedmobile="0" tilt="-1.000">
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare alpha="80.000" pan="-352.290" blinding="20.000" color="0xffffff" tilt="10.710" type="6" id="Lensflare01"/>
+      <lensflare alpha="80.000" pan="-266.910" blinding="15.000" color="0xffffff" tilt="-35.700" type="6" id="Lensflare02"/>
+      <lensflare alpha="80.000" pan="-23.050" blinding="10.000" color="0xffffff" tilt="31.390" type="8" id="Lensflare03"/>
+      <lensflare alpha="80.000" pan="-318.530" blinding="10.000" color="0xffffff" tilt="27.830" type="8" id="Lensflare04"/>
+      <lensflare alpha="80.000" pan="-4.030" blinding="50.000" color="0xffffff" tilt="69.580" type="9" id="Lensflare05"/>
+      <lensflare alpha="80.000" pan="-50.710" blinding="20.000" color="0xffffff" tilt="46.130" type="8" id="Lensflare06"/>
+      <lensflare alpha="80.000" pan="-109.970" blinding="50.000" color="0xffffff" tilt="47.560" type="8" id="Lensflare07"/>
+      <lensflare alpha="80.000" pan="-141.480" blinding="30.000" color="0xffffff" tilt="32.670" type="8" id="Lensflare08"/>
+      <lensflare alpha="80.000" pan="-293.300" blinding="20.000" color="0xffffff" tilt="36.530" type="8" id="Lensflare09"/>
+      <lensflare alpha="80.000" pan="-251.540" blinding="30.000" color="0xffffff" tilt="37.820" type="8" id="Lensflare10"/>
+      <lensflare alpha="80.000" pan="-219.380" blinding="30.000" color="0xffffff" tilt="29.390" type="8" id="Lensflare11"/>
+      <lensflare alpha="80.000" pan="-202.990" blinding="10.000" color="0xffffff" tilt="21.540" type="8" id="Lensflare12"/>
+      <lensflare alpha="80.000" pan="-153.480" blinding="10.000" color="0xffffff" tilt="22.330" type="8" id="Lensflare13"/>
+      <lensflare alpha="80.000" pan="-15.550" blinding="5.000" color="0xffffff" tilt="14.420" type="7" id="Lensflare14"/>
+      <lensflare alpha="80.000" pan="-39.240" blinding="5.000" color="0xffffff" tilt="-36.480" type="6" id="Lensflare15"/>
+      <lensflare alpha="80.000" pan="-139.050" blinding="5.000" color="0xffffff" tilt="-30.290" type="6" id="Lensflare16"/>
+    </media>
+    <transition zoomout="3" zoomfov="40" blendtime="1" zoomafterinfov="140" blendcolor="0x000000" softedge="0" zoomspeed="2" type="crossdissolve" zoomafteroutfov="40" enabled="1" delay="none" zoomoutpause="0" zoomin="6"/>
+    <animation useinautorotation="0" clipsrandom="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control sensitivity="8" rubberband="1" dblclickfullscreen="1" invertwheel="0" speedwheel="1" zoomcentercursor="1" simulatemass="1" lockedmouse="0" lockedkeyboard="0" contextfullscreen="1" hideabout="0" contextvr="1" invertcontrol="1" contextprojections="0" lockedkeyboardzoom="0" lockedwheel="0"/>
+    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node6">
+    <input leveltilesize="510" levelingpitch="0" levelingroll="0" width="1000" levelbias="0.400" overlap="1" height="1000" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000">
+      <level height="1000" width="1000" preload="0" predecode="0"/>
+      <level height="500" width="500" preload="1" predecode="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fov="140" scaletofit="1" tilt="90" fovstereographic="330" fovfisheye="360"/>
+    </view>
+    <userdata copyright="" nodeid="node6" description="" author="" heading="0" customnodeid="" latitude="" title="Второй Бар и VIP" source="" comment="" longitude="" info="" tags="TelegramDesktop" datetime=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label backgroundcolor="0xffffff" wordwrap="1" textalpha="1" width="180" border="1" enabled="1" bordercolor="0x000000" height="20" backgroundalpha="1" textcolor="0x000000" borderalpha="1" borderradius="1" background="1"/>
+      <polystyle backgroundcolor="0x0000ff" handcursor="1" mode="0" bordercolor="0x0000ff" backgroundalpha="0.25098" borderalpha="1"/>
+      <hotspot target="" pan="-206.38" description="" skinid="ht_node" url="{node7}" tilt="-2.53" title="БАР и DJ" id="Point01"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" pansize="10.000" field="90.000" ambientlevel="0.000" loop="3" level="0.500" id="_background" tiltsize="10.000" mode="0" nodechangekeep="1" startmutedmobile="0" tilt="-1.000">
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare alpha="80.000" pan="-61.860" blinding="20.000" color="0xffffff" tilt="26.680" type="6" id="Lensflare01"/>
+      <lensflare alpha="80.000" pan="-68.030" blinding="20.000" color="0xffffff" tilt="-68.070" type="8" id="Lensflare02"/>
+      <lensflare alpha="80.000" pan="-103.690" blinding="50.000" color="0xffffff" tilt="79.660" type="10" id="Lensflare03"/>
+      <lensflare alpha="80.000" pan="-258.220" blinding="20.000" color="0xffffff" tilt="18.660" type="7" id="Lensflare04"/>
+      <lensflare alpha="80.000" pan="-216.910" blinding="30.000" color="0xffffff" tilt="-23.410" type="6" id="Lensflare05"/>
+    </media>
+    <transition zoomout="3" zoomfov="40" blendtime="1" zoomafterinfov="140" blendcolor="0x000000" softedge="0" zoomspeed="2" type="crossdissolve" zoomafteroutfov="40" enabled="1" delay="none" zoomoutpause="0" zoomin="6"/>
+    <animation useinautorotation="0" clipsrandom="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control sensitivity="8" rubberband="1" dblclickfullscreen="1" invertwheel="0" speedwheel="1" zoomcentercursor="1" simulatemass="1" lockedmouse="0" lockedkeyboard="0" contextfullscreen="1" hideabout="0" contextvr="1" invertcontrol="1" contextprojections="0" lockedkeyboardzoom="0" lockedwheel="0"/>
+    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node12">
+    <input leveltilesize="510" levelingpitch="0" levelingroll="0" width="1000" levelbias="0.400" overlap="1" height="1000" leveltileurl="tiles/node12/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000">
+      <level height="1000" width="1000" preload="0" predecode="0"/>
+      <level height="500" width="500" preload="1" predecode="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start pan="0" fov="100" tilt="0" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fov="140" scaletofit="1" tilt="90" fovstereographic="330" fovfisheye="360"/>
+    </view>
+    <userdata copyright="" nodeid="node12" description="" author="" heading="0" customnodeid="" latitude="" title="Санузел" source="" comment="" longitude="" info="" tags="TelegramDesktop" datetime="07.07.2025 7:52"/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label backgroundcolor="0xffffff" wordwrap="1" textalpha="1" width="180" border="1" enabled="1" bordercolor="0x000000" height="20" backgroundalpha="1" textcolor="0x000000" borderalpha="1" borderradius="1" background="1"/>
+      <polystyle backgroundcolor="0x0000ff" handcursor="1" mode="0" bordercolor="0x0000ff" backgroundalpha="0.25098" borderalpha="1"/>
+      <hotspot target="" pan="-261.99" description="" skinid="ht_node" url="{node8}" tilt="-12.89" title="Входная группа" id="Point01"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" pansize="10.000" field="90.000" ambientlevel="0.000" loop="3" level="0.500" id="_background" tiltsize="10.000" mode="0" nodechangekeep="1" startmutedmobile="0" tilt="-1.000">
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare alpha="80.000" pan="-125.450" blinding="50.000" color="0xffffff" tilt="51.400" type="7" id="Lensflare01"/>
+      <lensflare alpha="80.000" pan="-214.590" blinding="50.000" color="0xffffff" tilt="54.570" type="8" id="Lensflare02"/>
+      <lensflare alpha="80.000" pan="-127.510" blinding="20.000" color="0xffffff" tilt="-47.860" type="7" id="Lensflare03"/>
+      <lensflare alpha="80.000" pan="-214.620" blinding="20.000" color="0xffffff" tilt="-51.410" type="8" id="Lensflare04"/>
+      <lensflare alpha="80.000" pan="-14.360" blinding="20.000" color="0xffffff" tilt="27.500" type="7" id="Lensflare05"/>
+      <lensflare alpha="80.000" pan="-350.000" blinding="20.000" color="0xffffff" tilt="-56.530" type="6" id="Lensflare06"/>
+    </media>
+    <transition zoomout="3" zoomfov="40" blendtime="1" zoomafterinfov="140" blendcolor="0x000000" softedge="0" zoomspeed="2" type="crossdissolve" zoomafteroutfov="40" enabled="1" delay="none" zoomoutpause="0" zoomin="6"/>
+    <animation useinautorotation="0" clipsrandom="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control sensitivity="8" rubberband="1" dblclickfullscreen="1" invertwheel="0" speedwheel="1" zoomcentercursor="1" simulatemass="1" lockedmouse="0" lockedkeyboard="0" contextfullscreen="1" hideabout="0" contextvr="1" invertcontrol="1" contextprojections="0" lockedkeyboardzoom="0" lockedwheel="0"/>
+    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+  </panorama>
+  <masternode>
+    <userdata copyright="" description="ул. Калинина, бывшая кальянная ОККО" author="Корпорация Архитектуры и Дизайна" tags="" title="NIGHT CLUB__THE RUBICON" comment=""/>
+    <animationsequences>
+      <sequence title="Animation01"/>
+    </animationsequences>
+  </masternode>
+  <map floorplannorth="358.67" tileformat="png" width="0" type="file" title="План 1-го этажа" id="FloorPlan01" transparent="0" zoomlevels="1" height="0" crispedges="0" index="0" bgcolor="rgba(182, 177, 171, 0.627451)"/>
+</tour>
