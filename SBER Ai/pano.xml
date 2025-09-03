@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node13" hassounds="1" appversion="7.1.8" apprev="20986">
+  <panorama id="node13">
+    <input leveltileurl="tiles/node13/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" leveltilesize="510" levelbiashidpi="1.000" width="2000" levelbias="0.400" overlap="1" levelingroll="0" height="2000">
+      <level predecode="0" width="2000" height="2000" preload="0"/>
+      <level predecode="0" width="1000" height="1000" preload="0"/>
+      <level predecode="1" width="500" height="500" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start fov="100" pan="0" projection="4" tilt="0"/>
+      <flyin fov="170" pan="0" projection="9" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fov="140" scaletofit="1" fovfisheye="360" pan="360" fovstereographic="330" tilt="90"/>
+    </view>
+    <userdata description="" customnodeid="" datetime="03.09.2025 11:40" copyright="" tags="TelegramDesktop" heading="0" comment="" latitude="" info="" title="1. Рецепция" source="" author="" longitude="" nodeid="node13"/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label textalpha="1" bordercolor="0x000000" width="180" backgroundcolor="0xffffff" background="1" wordwrap="1" enabled="1" border="1" borderradius="1" textcolor="0x000000" backgroundalpha="1" height="20" borderalpha="1"/>
+      <polystyle handcursor="1" bordercolor="0x0000ff" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0" borderalpha="1"/>
+      <hotspot id="Point01" description="Вперед ➯" pan="-339.6" title="2. Переговорки" url="{node15}" skinid="ht_node" target="" tilt="-11.27"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" ambientlevel="0.000" tilt="-1.000" id="_background" field="90.000" tiltsize="10.000" nodechangekeep="1" pansize="10.000" loop="3" mode="0" startmutedmobile="0">
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare id="Lensflare01" type="6" blinding="50.000" pan="-303.850" color="0xffffff" alpha="80.000" tilt="16.350"/>
+      <lensflare id="Lensflare02" type="6" blinding="15.000" pan="-183.270" color="0xffffff" alpha="80.000" tilt="41.690"/>
+      <lensflare id="Lensflare03" type="6" blinding="20.000" pan="-331.460" color="0xffffff" alpha="80.000" tilt="37.720"/>
+    </media>
+    <transition type="crossdissolve" zoomfov="40" blendtime="1" zoomoutpause="0" blendcolor="0x000000" enabled="1" zoomin="6" zoomafterinfov="140" delay="none" zoomspeed="2" zoomout="3" zoomafteroutfov="40" softedge="0"/>
+    <animation clipsrandom="0" animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control invertwheel="0" contextprojections="0" invertcontrol="1" simulatemass="1" zoomcentercursor="1" lockedkeyboard="0" rubberband="1" lockedkeyboardzoom="0" speedwheel="1" lockedwheel="0" lockedmouse="0" dblclickfullscreen="1" contextvr="1" hideabout="0" contextfullscreen="1" sensitivity="8"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node15">
+    <input leveltileurl="tiles/node15/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" leveltilesize="510" levelbiashidpi="1.000" width="2000" levelbias="0.400" overlap="1" levelingroll="0" height="2000">
+      <level predecode="0" width="2000" height="2000" preload="0"/>
+      <level predecode="0" width="1000" height="1000" preload="0"/>
+      <level predecode="1" width="500" height="500" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start fov="100" pan="0" projection="4" tilt="0"/>
+      <flyin fov="170" pan="0" projection="9" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fov="140" scaletofit="1" fovfisheye="360" pan="360" fovstereographic="330" tilt="90"/>
+    </view>
+    <userdata description="" customnodeid="" datetime="03.09.2025 11:40" copyright="" tags="TelegramDesktop" heading="0" comment="" latitude="" info="" title="2. Переговорки" source="" author="" longitude="" nodeid="node15"/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label textalpha="1" bordercolor="0x000000" width="180" backgroundcolor="0xffffff" background="1" wordwrap="1" enabled="1" border="1" borderradius="1" textcolor="0x000000" backgroundalpha="1" height="20" borderalpha="1"/>
+      <polystyle handcursor="1" bordercolor="0x0000ff" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0" borderalpha="1"/>
+      <hotspot id="Point01" description="Вперед ➯" pan="-144.24" title="1. Рецепция" url="{node13}" skinid="ht_node" target="" tilt="-14.44"/>
+    </hotspots>
+    <media>
+      <sound pan="-1.000" level="0.500" ambientlevel="0.000" tilt="-1.000" id="_background" field="90.000" tiltsize="10.000" nodechangekeep="1" pansize="10.000" loop="3" mode="0" startmutedmobile="0">
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare id="Lensflare01" type="6" blinding="5.000" pan="-344.280" color="0xffffff" alpha="20.000" tilt="28.770"/>
+      <lensflare id="Lensflare02" type="1" blinding="50.000" pan="-95.570" color="0xffffff" alpha="80.000" tilt="82.700"/>
+      <lensflare id="Lensflare03" type="1" blinding="50.000" pan="-123.060" color="0xffffff" alpha="80.000" tilt="31.770"/>
+      <lensflare id="Lensflare04" type="1" blinding="2.000" pan="-80.700" color="0xffffff" alpha="10.000" tilt="0.230"/>
+    </media>
+    <transition type="crossdissolve" zoomfov="40" blendtime="1" zoomoutpause="0" blendcolor="0x000000" enabled="1" zoomin="6" zoomafterinfov="140" delay="none" zoomspeed="2" zoomout="3" zoomafteroutfov="40" softedge="0"/>
+    <animation clipsrandom="0" animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control invertwheel="0" contextprojections="0" invertcontrol="1" simulatemass="1" zoomcentercursor="1" lockedkeyboard="0" rubberband="1" lockedkeyboardzoom="0" speedwheel="1" lockedwheel="0" lockedmouse="0" dblclickfullscreen="1" contextvr="1" hideabout="0" contextfullscreen="1" sensitivity="8"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <masternode>
+    <userdata description="" comment="" title="SBER_Ai" copyright="" author="Корпорация Архитектуры и Дизайна" tags=""/>
+    <animationsequences>
+      <sequence title="Animation01"/>
+    </animationsequences>
+  </masternode>
+</tour>
