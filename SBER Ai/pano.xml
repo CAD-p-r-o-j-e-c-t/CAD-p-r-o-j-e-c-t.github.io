@@ -25,7 +25,7 @@
         <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
       </sound>
       <lensflare id="Lensflare01" type="6" blinding="50.000" pan="-303.850" color="0xffffff" alpha="80.000" tilt="16.350"/>
-      <lensflare id="Lensflare02" type="6" blinding="15.000" pan="-183.270" color="0xffffff" alpha="80.000" tilt="41.690"/>
+      <lensflare id="Lensflare02" type="6" blinding="15.000" pan="-140.340" color="0xffffff" alpha="80.000" tilt="51.220"/>
       <lensflare id="Lensflare03" type="6" blinding="20.000" pan="-331.460" color="0xffffff" alpha="80.000" tilt="37.720"/>
     </media>
     <transition type="crossdissolve" zoomfov="40" blendtime="1" zoomoutpause="0" blendcolor="0x000000" enabled="1" zoomin="6" zoomafterinfov="140" delay="none" zoomspeed="2" zoomout="3" zoomafteroutfov="40" softedge="0"/>
@@ -57,7 +57,6 @@
         <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
         <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
       </sound>
-      <lensflare id="Lensflare01" type="6" blinding="5.000" pan="-344.280" color="0xffffff" alpha="20.000" tilt="28.770"/>
       <lensflare id="Lensflare02" type="1" blinding="50.000" pan="-95.570" color="0xffffff" alpha="80.000" tilt="82.700"/>
       <lensflare id="Lensflare03" type="1" blinding="50.000" pan="-123.060" color="0xffffff" alpha="80.000" tilt="31.770"/>
       <lensflare id="Lensflare04" type="1" blinding="2.000" pan="-80.700" color="0xffffff" alpha="10.000" tilt="0.230"/>
