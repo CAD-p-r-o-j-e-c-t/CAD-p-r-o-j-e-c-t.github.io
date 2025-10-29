@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node20" appversion="7.1.8" hassounds="1" apprev="20986">
+  <panorama id="node20">
+    <input height="2000" levelbias="0.400" overlap="1" levelingroll="0" width="2000" levelbiashidpi="1.000" leveltilesize="510" leveltileurl="tiles/node20/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0">
+      <level height="2000" width="2000" preload="0" predecode="0"/>
+      <level height="1000" width="1000" preload="0" predecode="0"/>
+      <level height="500" width="500" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start projection="4" fov="126.142" tilt="-0.992446" pan="41.2794"/>
+      <flyin projection="9" fov="170" tilt="-90" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max scaletofit="1" fov="140" tilt="90" fovstereographic="330" fovfisheye="360" pan="360"/>
+    </view>
+    <userdata title="Прихожая" longitude="" copyright="" comment="" datetime="" info="" nodeid="node20" source="" author="" heading="0" customnodeid="" tags="TelegramDesktop" description="" latitude=""/>
+    <hotspots smoothmovement="0" height="20" width="180" wordwrap="1">
+      <label backgroundcolor="0xffffff" textalpha="1" height="20" borderalpha="1" width="180" bordercolor="0x000000" wordwrap="1" enabled="1" background="1" textcolor="0x000000" border="1" backgroundalpha="1" borderradius="1"/>
+      <polystyle backgroundcolor="0x0000ff" mode="0" borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot id="Кухня" title="" skinid="ht_node" url="{node21}" target="" description="" tilt="-12.47" pan="-328.42"/>
+    </hotspots>
+    <media>
+      <sound tiltsize="10.000" loop="3" level="0.500" startmutedmobile="0" pansize="10.000" field="90.000" tilt="-1.000" mode="0" id="_background" nodechangekeep="1" ambientlevel="0.000" pan="-1.000">
+        <source url="media/OST Khodyachiy zamok.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare type="6" id="Lensflare01" blinding="40.000" color="0xffffff" alpha="70.000" tilt="50.790" pan="-301.960"/>
+      <lensflare type="6" id="Lensflare02" blinding="40.000" color="0xffffff" alpha="70.000" tilt="46.240" pan="-134.910"/>
+    </media>
+    <transition blendcolor="0x000000" zoomafteroutfov="40" softedge="0" zoomfov="40" delay="none" zoomout="3" enabled="1" type="crossdissolve" zoomspeed="2" zoomoutpause="0" blendtime="1" zoomafterinfov="140" zoomin="6"/>
+    <animation clipsrandom="0" animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextprojections="0" hideabout="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="1" contextvr="1" dblclickfullscreen="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="1" lockedmouse="0" invertcontrol="1" lockedkeyboard="0" sensitivity="8" speedwheel="1" invertwheel="0"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node21">
+    <input height="2000" levelbias="0.400" overlap="1" levelingroll="0" width="2000" levelbiashidpi="1.000" leveltilesize="510" leveltileurl="tiles/node21/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0">
+      <level height="2000" width="2000" preload="0" predecode="0"/>
+      <level height="1000" width="1000" preload="0" predecode="0"/>
+      <level height="500" width="500" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start projection="4" fov="92.7265" tilt="-3.08693" pan="-30.7685"/>
+      <flyin projection="9" fov="170" tilt="-90" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max scaletofit="1" fov="140" tilt="90" fovstereographic="330" fovfisheye="360" pan="360"/>
+    </view>
+    <userdata title="Кухня" longitude="" copyright="" comment="" datetime="" info="" nodeid="node21" source="" author="" heading="0" customnodeid="" tags="TelegramDesktop" description="" latitude=""/>
+    <hotspots smoothmovement="0" height="20" width="180" wordwrap="1">
+      <label backgroundcolor="0xffffff" textalpha="1" height="20" borderalpha="1" width="180" bordercolor="0x000000" wordwrap="1" enabled="1" background="1" textcolor="0x000000" border="1" backgroundalpha="1" borderradius="1"/>
+      <polystyle backgroundcolor="0x0000ff" mode="0" borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot id="Прихожая" title="" skinid="ht_node" url="{node20}" target="" description="" tilt="-16.36" pan="-109.07"/>
+      <hotspot id="Гостиная" title="" skinid="ht_node" url="{node22}" target="" description="" tilt="-6.08" pan="-3.05"/>
+    </hotspots>
+    <media>
+      <sound tiltsize="10.000" loop="3" level="0.500" startmutedmobile="0" pansize="10.000" field="90.000" tilt="-1.000" mode="0" id="_background" nodechangekeep="1" ambientlevel="0.000" pan="-1.000">
+        <source url="media/OST Khodyachiy zamok.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare type="6" id="Lensflare01" blinding="50.000" color="0xffffff" alpha="70.000" tilt="31.490" pan="-94.740"/>
+      <lensflare type="3" id="Lensflare02" blinding="30.000" color="0xffffff" alpha="40.000" tilt="14.080" pan="-26.070"/>
+    </media>
+    <transition blendcolor="0x000000" zoomafteroutfov="40" softedge="0" zoomfov="40" delay="none" zoomout="3" enabled="1" type="crossdissolve" zoomspeed="2" zoomoutpause="0" blendtime="1" zoomafterinfov="140" zoomin="6"/>
+    <animation clipsrandom="0" animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextprojections="0" hideabout="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="1" contextvr="1" dblclickfullscreen="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="1" lockedmouse="0" invertcontrol="1" lockedkeyboard="0" sensitivity="8" speedwheel="1" invertwheel="0"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node22">
+    <input height="2000" levelbias="0.400" overlap="1" levelingroll="0" width="2000" levelbiashidpi="1.000" leveltilesize="510" leveltileurl="tiles/node22/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0">
+      <level height="2000" width="2000" preload="0" predecode="0"/>
+      <level height="1000" width="1000" preload="0" predecode="0"/>
+      <level height="500" width="500" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start projection="4" fov="126.142" tilt="3.24921" pan="0.116273"/>
+      <flyin projection="9" fov="170" tilt="-90" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max scaletofit="1" fov="140" tilt="90" fovstereographic="330" fovfisheye="360" pan="360"/>
+    </view>
+    <userdata title="Гостиная" longitude="" copyright="" comment="" datetime="" info="" nodeid="node22" source="" author="" heading="0" customnodeid="" tags="TelegramDesktop" description="" latitude=""/>
+    <hotspots smoothmovement="0" height="20" width="180" wordwrap="1">
+      <label backgroundcolor="0xffffff" textalpha="1" height="20" borderalpha="1" width="180" bordercolor="0x000000" wordwrap="1" enabled="1" background="1" textcolor="0x000000" border="1" backgroundalpha="1" borderradius="1"/>
+      <polystyle backgroundcolor="0x0000ff" mode="0" borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot id="Прихожая" title="Прихожая" skinid="ht_node" url="{node20}" target="" description="" tilt="-3.35" pan="-167.43"/>
+      <hotspot id="Лестница1" title="Лестница" skinid="ht_node" url="{node23}" target="" description="" tilt="18.95" pan="-265.66"/>
+    </hotspots>
+    <media>
+      <sound tiltsize="10.000" loop="3" level="0.500" startmutedmobile="0" pansize="10.000" field="90.000" tilt="-1.000" mode="0" id="_background" nodechangekeep="1" ambientlevel="0.000" pan="-1.000">
+        <source url="media/OST Khodyachiy zamok.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare type="6" id="Lensflare01" blinding="50.000" color="0xffffff" alpha="70.000" tilt="23.800" pan="-120.600"/>
+      <lensflare type="3" id="Lensflare02" blinding="20.000" color="0xffffff" alpha="40.000" tilt="13.600" pan="-26.030"/>
+    </media>
+    <transition blendcolor="0x000000" zoomafteroutfov="40" softedge="0" zoomfov="40" delay="none" zoomout="3" enabled="1" type="crossdissolve" zoomspeed="2" zoomoutpause="0" blendtime="1" zoomafterinfov="140" zoomin="6"/>
+    <animation clipsrandom="0" animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextprojections="0" hideabout="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="1" contextvr="1" dblclickfullscreen="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="1" lockedmouse="0" invertcontrol="1" lockedkeyboard="0" sensitivity="8" speedwheel="1" invertwheel="0"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node23">
+    <input height="2000" levelbias="0.400" overlap="1" levelingroll="0" width="2000" levelbiashidpi="1.000" leveltilesize="510" leveltileurl="tiles/node23/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0">
+      <level height="2000" width="2000" preload="0" predecode="0"/>
+      <level height="1000" width="1000" preload="0" predecode="0"/>
+      <level height="500" width="500" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start projection="4" fov="126.142" tilt="-6.56642" pan="-69.3736"/>
+      <flyin projection="9" fov="170" tilt="-90" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max scaletofit="1" fov="140" tilt="90" fovstereographic="330" fovfisheye="360" pan="360"/>
+    </view>
+    <userdata title="Лестница" longitude="" copyright="" comment="" datetime="" info="" nodeid="node23" source="" author="" heading="0" customnodeid="" tags="TelegramDesktop" description="" latitude=""/>
+    <hotspots smoothmovement="0" height="20" width="180" wordwrap="1">
+      <label backgroundcolor="0xffffff" textalpha="1" height="20" borderalpha="1" width="180" bordercolor="0x000000" wordwrap="1" enabled="1" background="1" textcolor="0x000000" border="1" backgroundalpha="1" borderradius="1"/>
+      <polystyle backgroundcolor="0x0000ff" mode="0" borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot id="Гостиная 1" title="Гостиная" skinid="ht_node" url="{node22}" target="" description="" tilt="-39.12" pan="-80.97"/>
+      <hotspot id="Балкон 1" title="Балкон" skinid="ht_node" url="{node24}" target="" description="" tilt="22.25" pan="-128.35"/>
+    </hotspots>
+    <media>
+      <sound tiltsize="10.000" loop="3" level="0.500" startmutedmobile="0" pansize="10.000" field="90.000" tilt="-1.000" mode="0" id="_background" nodechangekeep="1" ambientlevel="0.000" pan="-1.000">
+        <source url="media/OST Khodyachiy zamok.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare type="6" id="Lensflare01" blinding="35.000" color="0xffffff" alpha="70.000" tilt="39.930" pan="-61.190"/>
+      <lensflare type="6" id="Lensflare02" blinding="35.000" color="0xffffff" alpha="70.000" tilt="39.760" pan="-124.750"/>
+      <lensflare type="3" id="Lensflare03" blinding="50.000" color="0xffffff" alpha="80.000" tilt="11.510" pan="-3.580"/>
+    </media>
+    <transition blendcolor="0x000000" zoomafteroutfov="40" softedge="0" zoomfov="40" delay="none" zoomout="3" enabled="1" type="crossdissolve" zoomspeed="2" zoomoutpause="0" blendtime="1" zoomafterinfov="140" zoomin="6"/>
+    <animation clipsrandom="0" animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextprojections="0" hideabout="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="1" contextvr="1" dblclickfullscreen="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="1" lockedmouse="0" invertcontrol="1" lockedkeyboard="0" sensitivity="8" speedwheel="1" invertwheel="0"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node24">
+    <input height="2000" levelbias="0.400" overlap="1" levelingroll="0" width="2000" levelbiashidpi="1.000" leveltilesize="510" leveltileurl="tiles/node24/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0">
+      <level height="2000" width="2000" preload="0" predecode="0"/>
+      <level height="1000" width="1000" preload="0" predecode="0"/>
+      <level height="500" width="500" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start projection="4" fov="126.142" tilt="-9.68052" pan="42.8698"/>
+      <flyin projection="9" fov="170" tilt="-90" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max scaletofit="1" fov="140" tilt="90" fovstereographic="330" fovfisheye="360" pan="360"/>
+    </view>
+    <userdata title="Балкон" longitude="" copyright="" comment="" datetime="" info="" nodeid="node24" source="" author="" heading="0" customnodeid="" tags="TelegramDesktop" description="" latitude=""/>
+    <hotspots smoothmovement="0" height="20" width="180" wordwrap="1">
+      <label backgroundcolor="0xffffff" textalpha="1" height="20" borderalpha="1" width="180" bordercolor="0x000000" wordwrap="1" enabled="1" background="1" textcolor="0x000000" border="1" backgroundalpha="1" borderradius="1"/>
+      <polystyle backgroundcolor="0x0000ff" mode="0" borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot id="Лестница 2" title="Лестница" skinid="ht_node" url="{node23}" target="" description="" tilt="-18.74" pan="-276.96"/>
+      <hotspot id="Санузел 1" title="Санузел" skinid="ht_node" url="{node25}" target="" description="" tilt="-9.92" pan="-200.41"/>
+    </hotspots>
+    <media>
+      <sound tiltsize="10.000" loop="3" level="0.500" startmutedmobile="0" pansize="10.000" field="90.000" tilt="-1.000" mode="0" id="_background" nodechangekeep="1" ambientlevel="0.000" pan="-1.000">
+        <source url="media/OST Khodyachiy zamok.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare type="6" id="Lensflare01" blinding="30.000" color="0xffffff" alpha="50.000" tilt="13.850" pan="-345.250"/>
+      <lensflare type="6" id="Lensflare02" blinding="50.000" color="0xffffff" alpha="80.000" tilt="52.810" pan="-165.200"/>
+      <lensflare type="6" id="Lensflare03" blinding="30.000" color="0xffffff" alpha="50.000" tilt="41.330" pan="-290.280"/>
+    </media>
+    <transition blendcolor="0x000000" zoomafteroutfov="40" softedge="0" zoomfov="40" delay="none" zoomout="3" enabled="1" type="crossdissolve" zoomspeed="2" zoomoutpause="0" blendtime="1" zoomafterinfov="140" zoomin="6"/>
+    <animation clipsrandom="0" animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextprojections="0" hideabout="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="1" contextvr="1" dblclickfullscreen="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="1" lockedmouse="0" invertcontrol="1" lockedkeyboard="0" sensitivity="8" speedwheel="1" invertwheel="0"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
+  </panorama>
+  <panorama id="node25">
+    <input height="2000" levelbias="0.400" overlap="1" levelingroll="0" width="2000" levelbiashidpi="1.000" leveltilesize="510" leveltileurl="tiles/node25/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0">
+      <level height="2000" width="2000" preload="0" predecode="0"/>
+      <level height="1000" width="1000" preload="0" predecode="0"/>
+      <level height="500" width="500" preload="1" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start projection="4" fov="126.142" tilt="-3.08891" pan="3.55703"/>
+      <flyin projection="9" fov="170" tilt="-90" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max scaletofit="1" fov="140" tilt="90" fovstereographic="330" fovfisheye="360" pan="360"/>
+    </view>
+    <userdata title="Санузел" longitude="" copyright="" comment="" datetime="" info="" nodeid="node25" source="" author="" heading="0" customnodeid="" tags="TelegramDesktop" description="" latitude=""/>
+    <hotspots smoothmovement="0" height="20" width="180" wordwrap="1">
+      <label backgroundcolor="0xffffff" textalpha="1" height="20" borderalpha="1" width="180" bordercolor="0x000000" wordwrap="1" enabled="1" background="1" textcolor="0x000000" border="1" backgroundalpha="1" borderradius="1"/>
+      <polystyle backgroundcolor="0x0000ff" mode="0" borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot id="Балкон 3" title="Балкон" skinid="ht_node" url="{node24}" target="" description="" tilt="-12.48" pan="-228.51"/>
+    </hotspots>
+    <media>
+      <sound tiltsize="10.000" loop="3" level="0.500" startmutedmobile="0" pansize="10.000" field="90.000" tilt="-1.000" mode="0" id="_background" nodechangekeep="1" ambientlevel="0.000" pan="-1.000">
+        <source url="media/OST Khodyachiy zamok.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare type="6" id="Lensflare01" blinding="40.000" color="0xffffff" alpha="70.000" tilt="37.680" pan="-220.930"/>
+      <lensflare type="6" id="Lensflare02" blinding="40.000" color="0xffffff" alpha="70.000" tilt="29.110" pan="-146.310"/>
+      <lensflare type="3" id="Lensflare03" blinding="50.000" color="0xffffff" alpha="80.000" tilt="47.360" pan="-163.720"/>
+    </media>
+    <transition blendcolor="0x000000" zoomafteroutfov="40" softedge="0" zoomfov="40" delay="none" zoomout="3" enabled="1" type="crossdissolve" zoomspeed="2" zoomoutpause="0" blendtime="1" zoomafterinfov="140" zoomin="6"/>
+    <animation clipsrandom="0" animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextprojections="0" hideabout="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="1" contextvr="1" dblclickfullscreen="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="1" lockedmouse="0" invertcontrol="1" lockedkeyboard="0" sensitivity="8" speedwheel="1" invertwheel="0"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
+  </panorama>
+  <masternode>
+    <userdata title="Сареево" author="Корпорация Архитектуры и Дизайна" copyright="" comment="" tags="" description=""/>
+    <animationsequences>
+      <sequence title="Animation01"/>
+    </animationsequences>
+  </masternode>
+</tour>
