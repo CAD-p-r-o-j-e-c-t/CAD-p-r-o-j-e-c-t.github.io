@@ -1,7 +1,7 @@
 // Garden Gnome Software - VR - Skin
 // Pano2VR 7.1.8/20986
 // Filename: feather_vr_Anatoliy.ggsk
-// Generated 2026-01-16T11:40:29
+// Generated 2026-01-16T11:50:32
 
 function pano2vrVrSkin(player,base) {
 	player.addVariable('node_cloner_vr_hasUp', 2, false, { ignoreInState: 0  });
@@ -10410,8 +10410,8 @@ function pano2vrVrSkin(player,base) {
 		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true, } );
 		material.name = 'Button   2_material';
 		el = new THREE.Mesh( geometry, material );
-		el.translateX(4.22);
-		el.translateY(2.185);
+		el.translateX(-4.26);
+		el.translateY(5.19);
 		el.scale.set(1.00, 1.00, 1.0);
 		el.userData.width = 72;
 		el.userData.height = 69;
@@ -10419,10 +10419,10 @@ function pano2vrVrSkin(player,base) {
 		el.userData.curScaleOffX = 0;
 		el.userData.curScaleOffY = 0;
 		el.name = 'Button   2';
-		el.userData.x = 4.22;
-		el.userData.y = 2.185;
-		el.userData.hanchor = 0;
-		el.userData.vanchor = 0;
+		el.userData.x = -4.26;
+		el.userData.y = 5.19;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
 		el.translateZ(0.160);
 		el.renderOrder = 16;
 		el.rotateZ(0.00);
@@ -10535,8 +10535,8 @@ function pano2vrVrSkin(player,base) {
 		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true, } );
 		material.name = 'Button   1_material';
 		el = new THREE.Mesh( geometry, material );
-		el.translateX(4.22);
-		el.translateY(2.25);
+		el.translateX(-4.26);
+		el.translateY(5.28);
 		el.scale.set(1.00, 1.00, 1.0);
 		el.userData.width = 92;
 		el.userData.height = 94;
@@ -10544,10 +10544,10 @@ function pano2vrVrSkin(player,base) {
 		el.userData.curScaleOffX = 0;
 		el.userData.curScaleOffY = 0;
 		el.name = 'Button   1';
-		el.userData.x = 4.22;
-		el.userData.y = 2.25;
-		el.userData.hanchor = 0;
-		el.userData.vanchor = 0;
+		el.userData.x = -4.26;
+		el.userData.y = 5.28;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
 		el.translateZ(0.170);
 		el.renderOrder = 17;
 		el.rotateZ(0.00);
