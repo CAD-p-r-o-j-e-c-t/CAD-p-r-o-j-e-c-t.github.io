@@ -1,7 +1,7 @@
 // Garden Gnome Software - VR - Skin
 // Pano2VR 7.1.8/20986
 // Filename: feather_vr_Anatoliy.ggsk
-// Generated 2026-01-16T11:26:32
+// Generated 2026-01-16T11:40:29
 
 function pano2vrVrSkin(player,base) {
 	player.addVariable('node_cloner_vr_hasUp', 2, false, { ignoreInState: 0  });
@@ -46,6 +46,7 @@ function pano2vrVrSkin(player,base) {
 	player.addVariable('vis_map_1', 2, false, { ignoreInState: 0  });
 	player.addVariable('opt_desc_in_maps_1', 2, true, { ignoreInState: 1  });
 	player.addVariable('resp_phone_1', 2, false, { ignoreInState: 1  });
+	player.addVariable('switched', 2, false, { ignoreInState: 0  });
 	var me=this;
 	var skin=this;
 	var flag=false;
@@ -10395,6 +10396,262 @@ function pano2vrVrSkin(player,base) {
 		me._map_code.userData.ggUpdatePosition=function (useTransition) {
 		}
 		me.skinGroup.add(me._map_code);
+		geometry = new THREE.PlaneGeometry(0.72, 0.69, 5, 5 );
+		geometry.name = 'Button   2_geometry';
+		loader = new THREE.TextureLoader();
+		texture = loader.load('data:image/png;base64,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');
+		texture.colorSpace = player.getVRTextureColorSpace();
+		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true, } );
+		material.name = 'Button   2_material';
+		el = new THREE.Mesh( geometry, material );
+		el.translateX(4.22);
+		el.translateY(2.185);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 72;
+		el.userData.height = 69;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'Button   2';
+		el.userData.x = 4.22;
+		el.userData.y = 2.185;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.160);
+		el.renderOrder = 16;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._button_2.material) me._button_2.material.opacity = v;
+			me._button_2.visible = (v>0 && me._button_2.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._button_2.visible
+			let parentEl = me._button_2.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._button_2.userData.opacity = v;
+			v = v * me._button_2.userData.parentOpacity;
+			me._button_2.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._button_2.children.length; i++) {
+				let child = me._button_2.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._button_2.userData.parentOpacity = v;
+			v = v * me._button_2.userData.opacity
+			me._button_2.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._button_2.children.length; i++) {
+				let child = me._button_2.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._button_2 = el;
+		textureActive = loader.load(basePath + 'images_vr/button_2__a.png');
+		textureActive.colorSpace = player.getVRTextureColorSpace();
+		me._button_2.userData.materialActive = new THREE.MeshBasicMaterial( {map: textureActive, side: THREE.DoubleSide, transparent: true} );
+		me._button_2.userData.materialActive.name = 'Button   2_materialActive';
+		me._button_2.userData.materialNormal = me._button_2.material;
+		el.userData.ggId="Button   2";
+		me._button_2.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.ggUserdata.tags.indexOf("2") != -1))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._button_2.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._button_2.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._button_2.ggCurrentLogicStateVisible == 0) {
+			me._button_2.visible=((!me._button_2.material && Number(me._button_2.userData.opacity>0)) || Number(me._button_2.material.opacity)>0)?true:false;
+			me._button_2.userData.visible=true;
+				}
+				else {
+			me._button_2.visible=false;
+			me._button_2.userData.visible=false;
+				}
+			}
+		}
+		me._button_2.logicBlock_visible();
+		me._button_2.userData.onclick=function (e) {
+			player.setVariableValue('switched', !player.getVariableValue('switched'));
+			if (
+				(
+					((player.getVariableValue('switched') == true))
+				)
+			) {
+				startSnow();
+			}
+			if (
+				(
+					((player.getVariableValue('switched') == false))
+				)
+			) {
+				stopSnow();
+			}
+		}
+		me._button_2.userData.onmousedown=function (e) {
+			me._button_2.material = me._button_2.userData.materialActive;
+		}
+		me._button_2.userData.onmouseup=function (e) {
+			me._button_2.material = me._button_2.userData.materialNormal;
+		}
+		me._button_2.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me.skinGroup.add(me._button_2);
+		geometry = new THREE.PlaneGeometry(0.92, 0.94, 5, 5 );
+		geometry.name = 'Button   1_geometry';
+		loader = new THREE.TextureLoader();
+		texture = loader.load(basePath + 'images_vr/button_1.png');
+		texture.colorSpace = player.getVRTextureColorSpace();
+		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true, } );
+		material.name = 'Button   1_material';
+		el = new THREE.Mesh( geometry, material );
+		el.translateX(4.22);
+		el.translateY(2.25);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 92;
+		el.userData.height = 94;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'Button   1';
+		el.userData.x = 4.22;
+		el.userData.y = 2.25;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.170);
+		el.renderOrder = 17;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._button_1.material) me._button_1.material.opacity = v;
+			me._button_1.visible = (v>0 && me._button_1.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._button_1.visible
+			let parentEl = me._button_1.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._button_1.userData.opacity = v;
+			v = v * me._button_1.userData.parentOpacity;
+			me._button_1.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._button_1.children.length; i++) {
+				let child = me._button_1.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._button_1.userData.parentOpacity = v;
+			v = v * me._button_1.userData.opacity
+			me._button_1.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._button_1.children.length; i++) {
+				let child = me._button_1.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._button_1 = el;
+		textureActive = loader.load(basePath + 'images_vr/button_1__a.png');
+		textureActive.colorSpace = player.getVRTextureColorSpace();
+		me._button_1.userData.materialActive = new THREE.MeshBasicMaterial( {map: textureActive, side: THREE.DoubleSide, transparent: true} );
+		me._button_1.userData.materialActive.name = 'Button   1_materialActive';
+		me._button_1.userData.materialNormal = me._button_1.material;
+		el.userData.ggId="Button   1";
+		me._button_1.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.ggUserdata.tags.indexOf("1") != -1))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._button_1.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._button_1.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._button_1.ggCurrentLogicStateVisible == 0) {
+			me._button_1.visible=((!me._button_1.material && Number(me._button_1.userData.opacity>0)) || Number(me._button_1.material.opacity)>0)?true:false;
+			me._button_1.userData.visible=true;
+				}
+				else {
+			me._button_1.visible=false;
+			me._button_1.userData.visible=false;
+				}
+			}
+		}
+		me._button_1.logicBlock_visible();
+		me._button_1.userData.onclick=function (e) {
+			player.setVariableValue('switched', !player.getVariableValue('switched'));
+			if (
+				(
+					((player.getVariableValue('switched') == true))
+				)
+			) {
+				player.openNext("{"+player.getNextNode()+"}","$(cur)");
+			}
+			if (
+				(
+					((player.getVariableValue('switched') == false))
+				)
+			) {
+				player.openNext("{"+player.getPrevNode()+"}","$(cur)");
+			}
+		}
+		me._button_1.userData.onmousedown=function (e) {
+			me._button_1.material = me._button_1.userData.materialActive;
+		}
+		me._button_1.userData.onmouseup=function (e) {
+			me._button_1.material = me._button_1.userData.materialNormal;
+		}
+		me._button_1.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me.skinGroup.add(me._button_1);
 		me._variable_vis_skin = {};
 		me._variable_vis_skin.ggCurrentLogicState = -1;
 		me._variable_vis_skin.logicBlock = function() {
@@ -10690,6 +10947,10 @@ function pano2vrVrSkin(player,base) {
 		el = me._map_code;
 		;
 		me._map_code.userData.setOpacity(1.00);
+		me._button_2.logicBlock_visible();
+		me._button_2.userData.setOpacity(1.00);
+		me._button_1.logicBlock_visible();
+		me._button_1.userData.setOpacity(1.00);
 		me.eventactivehotspotchangedCallback = function() {
 			for(var i = 0; i < me._node_cloner_vr.userData.ggInstances.length; i++) {
 				me._node_cloner_vr.userData.ggInstances[i].ggEvent_activehotspotchanged();
@@ -10872,6 +11133,8 @@ function pano2vrVrSkin(player,base) {
 			me._map_phone.logicBlock_alpha();
 			me._map_el_phone.logicBlock_visible();
 			me._floorplan_el_phone.logicBlock_visible();
+			me._button_2.logicBlock_visible();
+			me._button_1.logicBlock_visible();
 			me._variable_vis_skin.logicBlock();
 		};
 		player.addListener('changenode', me.eventchangenodeCallback);
