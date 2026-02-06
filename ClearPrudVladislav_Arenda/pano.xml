@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node21" appversion="7.1.8" hassounds="1" apprev="20986">
+  <panorama id="node21">
+    <input levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node21/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelbiashidpi="1.000" leveltilesize="510" width="2000" height="2000">
+      <level preload="0" predecode="0" width="2000" height="2000"/>
+      <level preload="0" predecode="0" width="1000" height="1000"/>
+      <level preload="1" predecode="1" width="500" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start tilt="-1.86275" projection="4" pan="61.0603" fov="115.822"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" pan="360" fov="140" fovfisheye="360"/>
+    </view>
+    <userdata latitude="" customnodeid="" longitude="" copyright="" datetime="" title="Главный фасад" description="" author="" heading="0" comment="" info="" nodeid="node21" source="" tags="images_vr"/>
+    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
+      <label textcolor="0x000000" borderalpha="1" wordwrap="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderradius="1" enabled="1" width="180" height="20" backgroundalpha="1" textalpha="1" border="1" background="1"/>
+      <polystyle borderalpha="1" backgroundalpha="0.25098" handcursor="1" mode="0" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot description="" url="{node26}" tilt="-0.63" target="" id="За навесом" skinid="ht_node" pan="-289.5" title="За навесом"/>
+      <hotspot description="" url="{node22}" tilt="-4.98" target="" id="Боковой фасад" skinid="ht_node" pan="-68.42" title="Боковой фасад"/>
+    </hotspots>
+    <media>
+      <sound ambientlevel="0.000" nodechangekeep="1" pansize="10.000" id="_background" loop="3" mode="0" field="90.000" tiltsize="10.000" tilt="-1.000" startmutedmobile="0" pan="-1.000" level="0.500">
+        <source url="media/OST Khodyachiy zamok.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare blinding="20.000" tilt="21.180" color="0xffffff" type="6" id="Lensflare01" alpha="40.000" pan="-295.120"/>
+    </media>
+    <transition delay="none" zoomfov="40" softedge="0" type="crossdissolve" zoomafteroutfov="40" zoomin="6" zoomout="3" zoomoutpause="0" enabled="1" zoomafterinfov="140" blendcolor="0x000000" zoomspeed="2" blendtime="1"/>
+    <animation animsequence="Animation01" clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control lockedkeyboard="0" lockedkeyboardzoom="0" zoomcentercursor="1" speedwheel="1" hideabout="0" invertcontrol="1" contextprojections="0" invertwheel="0" simulatemass="1" lockedmouse="0" lockedwheel="0" contextfullscreen="1" sensitivity="8" rubberband="1" contextvr="1" dblclickfullscreen="1"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node26">
+    <input levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node26/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelbiashidpi="1.000" leveltilesize="510" width="2000" height="2000">
+      <level preload="0" predecode="0" width="2000" height="2000"/>
+      <level preload="0" predecode="0" width="1000" height="1000"/>
+      <level preload="1" predecode="1" width="500" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start tilt="-6.05862" projection="4" pan="-1.77832" fov="115.822"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" pan="360" fov="140" fovfisheye="360"/>
+    </view>
+    <userdata latitude="" customnodeid="" longitude="" copyright="" datetime="05.02.2026 21:18" title="За навесом" description="" author="" heading="0" comment="" info="" nodeid="node26" source="" tags="images_vr"/>
+    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
+      <label textcolor="0x000000" borderalpha="1" wordwrap="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderradius="1" enabled="1" width="180" height="20" backgroundalpha="1" textalpha="1" border="1" background="1"/>
+      <polystyle borderalpha="1" backgroundalpha="0.25098" handcursor="1" mode="0" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot description="" url="{node21}" tilt="-5.05" target="" id="Главный фасад" skinid="ht_node" pan="-354.97" title="Главный фасад"/>
+      <hotspot description="" url="{node25}" tilt="-1.87" target="" id="Зона барбекю" skinid="ht_node" pan="-179.94" title="Зона барбекю"/>
+    </hotspots>
+    <media>
+      <sound ambientlevel="0.000" nodechangekeep="1" pansize="10.000" id="_background" loop="3" mode="0" field="90.000" tiltsize="10.000" tilt="-1.000" startmutedmobile="0" pan="-1.000" level="0.500">
+        <source url="media/OST Khodyachiy zamok.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare blinding="20.000" tilt="20.840" color="0xffffff" type="6" id="Lensflare01" alpha="40.000" pan="-351.680"/>
+      <lensflare blinding="20.000" tilt="23.240" color="0xffffff" type="6" id="Lensflare02" alpha="40.000" pan="-183.030"/>
+    </media>
+    <transition delay="none" zoomfov="40" softedge="0" type="crossdissolve" zoomafteroutfov="40" zoomin="6" zoomout="3" zoomoutpause="0" enabled="1" zoomafterinfov="140" blendcolor="0x000000" zoomspeed="2" blendtime="1"/>
+    <animation animsequence="Animation01" clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control lockedkeyboard="0" lockedkeyboardzoom="0" zoomcentercursor="1" speedwheel="1" hideabout="0" invertcontrol="1" contextprojections="0" invertwheel="0" simulatemass="1" lockedmouse="0" lockedwheel="0" contextfullscreen="1" sensitivity="8" rubberband="1" contextvr="1" dblclickfullscreen="1"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node25">
+    <input levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node25/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelbiashidpi="1.000" leveltilesize="510" width="2000" height="2000">
+      <level preload="0" predecode="0" width="2000" height="2000"/>
+      <level preload="0" predecode="0" width="1000" height="1000"/>
+      <level preload="1" predecode="1" width="500" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start tilt="4.32123" projection="4" pan="49.4228" fov="115.822"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" pan="360" fov="140" fovfisheye="360"/>
+    </view>
+    <userdata latitude="" customnodeid="" longitude="" copyright="" datetime="05.02.2026 21:18" title="Зона барбекю" description="" author="" heading="0" comment="" info="" nodeid="node25" source="" tags="images_vr"/>
+    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
+      <label textcolor="0x000000" borderalpha="1" wordwrap="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderradius="1" enabled="1" width="180" height="20" backgroundalpha="1" textalpha="1" border="1" background="1"/>
+      <polystyle borderalpha="1" backgroundalpha="0.25098" handcursor="1" mode="0" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot description="" url="{node26}" tilt="-5.03" target="" id="За навесом" skinid="ht_node" pan="-10.46" title="За навесом"/>
+      <hotspot description="" url="{node24}" tilt="-11.94" target="" id="Дворовой фасад" skinid="ht_node" pan="-251.09" title="Дворовой фасад"/>
+    </hotspots>
+    <media>
+      <sound ambientlevel="0.000" nodechangekeep="1" pansize="10.000" id="_background" loop="3" mode="0" field="90.000" tiltsize="10.000" tilt="-1.000" startmutedmobile="0" pan="-1.000" level="0.500">
+        <source url="media/OST Khodyachiy zamok.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare blinding="20.000" tilt="29.770" color="0xffffff" type="6" id="Lensflare01" alpha="40.000" pan="-309.320"/>
+    </media>
+    <transition delay="none" zoomfov="40" softedge="0" type="crossdissolve" zoomafteroutfov="40" zoomin="6" zoomout="3" zoomoutpause="0" enabled="1" zoomafterinfov="140" blendcolor="0x000000" zoomspeed="2" blendtime="1"/>
+    <animation animsequence="Animation01" clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control lockedkeyboard="0" lockedkeyboardzoom="0" zoomcentercursor="1" speedwheel="1" hideabout="0" invertcontrol="1" contextprojections="0" invertwheel="0" simulatemass="1" lockedmouse="0" lockedwheel="0" contextfullscreen="1" sensitivity="8" rubberband="1" contextvr="1" dblclickfullscreen="1"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node24">
+    <input levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node24/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelbiashidpi="1.000" leveltilesize="510" width="2000" height="2000">
+      <level preload="0" predecode="0" width="2000" height="2000"/>
+      <level preload="0" predecode="0" width="1000" height="1000"/>
+      <level preload="1" predecode="1" width="500" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start tilt="6.62842" projection="4" pan="-0.0519136" fov="115.822"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" pan="360" fov="140" fovfisheye="360"/>
+    </view>
+    <userdata latitude="" customnodeid="" longitude="" copyright="" datetime="" title="Дворовой фасад" description="" author="" heading="0" comment="" info="" nodeid="node24" source="" tags="images_vr"/>
+    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
+      <label textcolor="0x000000" borderalpha="1" wordwrap="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderradius="1" enabled="1" width="180" height="20" backgroundalpha="1" textalpha="1" border="1" background="1"/>
+      <polystyle borderalpha="1" backgroundalpha="0.25098" handcursor="1" mode="0" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot description="" url="{node25}" tilt="-13.21" target="" id="Зона барбекю" skinid="ht_node" pan="-80.29" title="Зона барбекю"/>
+      <hotspot description="" url="{node23}" tilt="-9.36" target="" id="Вид на участок" skinid="ht_node" pan="-276.05" title="Вид на участок"/>
+    </hotspots>
+    <media>
+      <sound ambientlevel="0.000" nodechangekeep="1" pansize="10.000" id="_background" loop="3" mode="0" field="90.000" tiltsize="10.000" tilt="-1.000" startmutedmobile="0" pan="-1.000" level="0.500">
+        <source url="media/OST Khodyachiy zamok.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+      <lensflare blinding="20.000" tilt="28.960" color="0xffffff" type="6" id="Lensflare01" alpha="40.000" pan="-323.030"/>
+    </media>
+    <transition delay="none" zoomfov="40" softedge="0" type="crossdissolve" zoomafteroutfov="40" zoomin="6" zoomout="3" zoomoutpause="0" enabled="1" zoomafterinfov="140" blendcolor="0x000000" zoomspeed="2" blendtime="1"/>
+    <animation animsequence="Animation01" clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control lockedkeyboard="0" lockedkeyboardzoom="0" zoomcentercursor="1" speedwheel="1" hideabout="0" invertcontrol="1" contextprojections="0" invertwheel="0" simulatemass="1" lockedmouse="0" lockedwheel="0" contextfullscreen="1" sensitivity="8" rubberband="1" contextvr="1" dblclickfullscreen="1"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node23">
+    <input levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node23/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelbiashidpi="1.000" leveltilesize="510" width="2000" height="2000">
+      <level preload="0" predecode="0" width="2000" height="2000"/>
+      <level preload="0" predecode="0" width="1000" height="1000"/>
+      <level preload="1" predecode="1" width="500" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start tilt="0.578279" projection="4" pan="-72.1396" fov="115.822"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" pan="360" fov="140" fovfisheye="360"/>
+    </view>
+    <userdata latitude="" customnodeid="" longitude="" copyright="" datetime="" title="Открытая часть участка" description="" author="" heading="0" comment="" info="" nodeid="node23" source="" tags="images_vr"/>
+    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
+      <label textcolor="0x000000" borderalpha="1" wordwrap="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderradius="1" enabled="1" width="180" height="20" backgroundalpha="1" textalpha="1" border="1" background="1"/>
+      <polystyle borderalpha="1" backgroundalpha="0.25098" handcursor="1" mode="0" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot description="" url="{node22}" tilt="-7.61" target="" id="Боковой фасад" skinid="ht_node" pan="-351.48" title="Боковой фасад"/>
+      <hotspot description="" url="{node24}" tilt="-11.59" target="" id="Дворовой фасад" skinid="ht_node" pan="-92.24" title="Дворовой фасад"/>
+    </hotspots>
+    <media>
+      <sound ambientlevel="0.000" nodechangekeep="1" pansize="10.000" id="_background" loop="3" mode="0" field="90.000" tiltsize="10.000" tilt="-1.000" startmutedmobile="0" pan="-1.000" level="0.500">
+        <source url="media/OST Khodyachiy zamok.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+    </media>
+    <transition delay="none" zoomfov="40" softedge="0" type="crossdissolve" zoomafteroutfov="40" zoomin="6" zoomout="3" zoomoutpause="0" enabled="1" zoomafterinfov="140" blendcolor="0x000000" zoomspeed="2" blendtime="1"/>
+    <animation animsequence="Animation01" clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control lockedkeyboard="0" lockedkeyboardzoom="0" zoomcentercursor="1" speedwheel="1" hideabout="0" invertcontrol="1" contextprojections="0" invertwheel="0" simulatemass="1" lockedmouse="0" lockedwheel="0" contextfullscreen="1" sensitivity="8" rubberband="1" contextvr="1" dblclickfullscreen="1"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node22">
+    <input levelingpitch="0" levelingroll="0" overlap="1" leveltileurl="tiles/node22/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelbiashidpi="1.000" leveltilesize="510" width="2000" height="2000">
+      <level preload="0" predecode="0" width="2000" height="2000"/>
+      <level preload="0" predecode="0" width="1000" height="1000"/>
+      <level preload="1" predecode="1" width="500" height="500"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start tilt="1.8633" projection="4" pan="51.8096" fov="115.822"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" pan="360" fov="140" fovfisheye="360"/>
+    </view>
+    <userdata latitude="" customnodeid="" longitude="" copyright="" datetime="" title="Боковой фасад" description="" author="" heading="0" comment="" info="" nodeid="node22" source="" tags="images_vr"/>
+    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
+      <label textcolor="0x000000" borderalpha="1" wordwrap="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderradius="1" enabled="1" width="180" height="20" backgroundalpha="1" textalpha="1" border="1" background="1"/>
+      <polystyle borderalpha="1" backgroundalpha="0.25098" handcursor="1" mode="0" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+      <hotspot description="" url="{node23}" tilt="-7.31" target="" id="Вид на участок" skinid="ht_node" pan="-78.54" title="Вид на участок"/>
+      <hotspot description="" url="{node21}" tilt="-7.82" target="" id="Главный фасад" skinid="ht_node" pan="-286.45" title="Главный фасад"/>
+    </hotspots>
+    <media>
+      <sound ambientlevel="0.000" nodechangekeep="1" pansize="10.000" id="_background" loop="3" mode="0" field="90.000" tiltsize="10.000" tilt="-1.000" startmutedmobile="0" pan="-1.000" level="0.500">
+        <source url="media/OST Khodyachiy zamok.mp3" mono="0"/>
+        <source url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3" mono="0"/>
+      </sound>
+    </media>
+    <transition delay="none" zoomfov="40" softedge="0" type="crossdissolve" zoomafteroutfov="40" zoomin="6" zoomout="3" zoomoutpause="0" enabled="1" zoomafterinfov="140" blendcolor="0x000000" zoomspeed="2" blendtime="1"/>
+    <animation animsequence="Animation01" clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control lockedkeyboard="0" lockedkeyboardzoom="0" zoomcentercursor="1" speedwheel="1" hideabout="0" invertcontrol="1" contextprojections="0" invertwheel="0" simulatemass="1" lockedmouse="0" lockedwheel="0" contextfullscreen="1" sensitivity="8" rubberband="1" contextvr="1" dblclickfullscreen="1"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <masternode>
+    <userdata tags="" description="" author="Корпорация Архитектуры и Дизайна" comment="" copyright="" title="Сареево"/>
+    <animationsequences>
+      <sequence title="Animation01"/>
+    </animationsequences>
+  </masternode>
+</tour>
