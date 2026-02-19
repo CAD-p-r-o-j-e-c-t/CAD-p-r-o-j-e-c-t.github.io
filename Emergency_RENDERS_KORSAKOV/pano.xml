@@ -1,358 +1,354 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tour start="node28" apprev="20986" appversion="7.1.8" hassounds="1">
+<tour hassounds="1" appversion="7.1.8" start="node28" apprev="20986">
   <panorama id="node28">
-    <input levelingroll="0" levelingpitch="0" width="2000" height="2000" leveltileurl="tiles/node28/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelbias="0.400" overlap="1" leveltilesize="510">
-      <level preload="0" predecode="0" width="2000" height="2000"/>
-      <level preload="0" predecode="0" width="1000" height="1000"/>
-      <level preload="1" predecode="1" width="500" height="500"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="0" width="2000" leveltilesize="510" height="2000" levelingroll="0" levelbias="0.400" leveltileurl="tiles/node28/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" overlap="1">
+      <level height="2000" predecode="0" width="2000" preload="0"/>
+      <level height="1000" predecode="0" width="1000" preload="0"/>
+      <level height="500" predecode="1" width="500" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" pan="0" projection="4" tilt="0"/>
-      <flyin fov="170" pan="0" projection="9" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max scaletofit="1" fov="140" pan="360" tilt="90" fovstereographic="330" fovfisheye="360"/>
+      <start tilt="0" fov="100" projection="4" pan="0"/>
+      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" scaletofit="1" fovstereographic="330" fov="140" fovfisheye="360" pan="360"/>
     </view>
-    <userdata heading="0" description="" info="" copyright="" author="" comment="" latitude="" datetime="" source="" nodeid="node28" longitude="" tags="123_02_26__" customnodeid="" title="01_Open Spase (Вход)"/>
-    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
-      <label enabled="1" bordercolor="0x000000" border="1" width="180" height="20" textcolor="0x000000" textalpha="1" wordwrap="1" background="1" backgroundalpha="1" backgroundcolor="0xffffff" borderalpha="1" borderradius="1"/>
-      <polystyle bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
-      <hotspot id="Point01" description="" target="" url="{node29}" pan="-316.77" skinid="ht_node" tilt="-3.62" title="01.2_Open Spase (Бухгалтер)"/>
-      <hotspot id="Point02" description="" target="" url="{node30}" pan="-5.03" skinid="ht_node" tilt="-2.9" title="01.3_Open Spase (Угол у колл-центра)"/>
-      <hotspot id="Point03" description="" target="" url="{node31}" pan="-293.93" skinid="ht_node" tilt="-2.61" title="02_Секретарь"/>
+    <userdata source="" info="" copyright="" tags="123_02_26__" title="01_Open Spase (Вход)" nodeid="node28" author="" longitude="" description="" comment="" latitude="" customnodeid="" heading="0" datetime=""/>
+    <hotspots height="20" width="180" wordwrap="1" smoothmovement="0">
+      <label border="1" backgroundalpha="1" textalpha="1" width="180" bordercolor="0x000000" borderalpha="1" height="20" enabled="1" borderradius="1" background="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff" borderalpha="1" mode="0"/>
+      <hotspot skinid="ht_node" tilt="-2.8" id="Point01" title="01.2_Open Spase (Бухгалтер)" url="{node29}" target="" description="" pan="-17.35"/>
+      <hotspot skinid="ht_node" tilt="-5.3" id="Point02" title="01.3_Open Spase (Угол у колл-центра)" url="{node30}" target="" description="" pan="-312.71"/>
+      <hotspot skinid="ht_node" tilt="-2.61" id="Point03" title="02_Секретарь" url="{node31}" target="" description="" pan="-293.93"/>
     </hotspots>
     <media>
-      <sound ambientlevel="0.000" tiltsize="10.000" id="_background" level="0.500" loop="3" nodechangekeep="1" pan="-1.000" mode="0" pansize="10.000" field="90.000" tilt="-1.000" startmutedmobile="0">
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
+      <sound mode="0" pan="-1.000" tiltsize="10.000" startmutedmobile="0" id="_background" pansize="10.000" nodechangekeep="1" tilt="-1.000" ambientlevel="0.000" loop="3" field="90.000" level="0.500">
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
       </sound>
-      <lensflare id="Lensflare01" color="0xffffff" pan="-6.650" blinding="40.000" alpha="45.000" type="3" tilt="3.890"/>
-      <lensflare id="Lensflare02" color="0xffffff" pan="-33.450" blinding="30.000" alpha="40.000" type="7" tilt="9.130"/>
-      <lensflare id="Lensflare03" color="0xffffff" pan="-330.280" blinding="30.000" alpha="40.000" type="5" tilt="7.690"/>
-      <lensflare id="Lensflare04" color="0xffffff" pan="-307.070" blinding="40.000" alpha="50.000" type="6" tilt="73.590"/>
-      <lensflare id="Lensflare05" color="0xffffff" pan="-94.390" blinding="30.000" alpha="35.000" type="6" tilt="15.790"/>
-      <lensflare id="Lensflare06" color="0xffffff" pan="-272.030" blinding="30.000" alpha="30.000" type="6" tilt="13.810"/>
-      <lensflare id="Lensflare07" color="0xffffff" pan="-82.630" blinding="30.000" alpha="40.000" type="6" tilt="35.980"/>
+      <lensflare alpha="45.000" type="3" tilt="16.350" id="Lensflare01" color="0xffffff" blinding="40.000" pan="-10.260"/>
+      <lensflare alpha="40.000" type="7" tilt="19.230" id="Lensflare02" color="0xffffff" blinding="30.000" pan="-34.840"/>
+      <lensflare alpha="40.000" type="5" tilt="13.950" id="Lensflare03" color="0xffffff" blinding="30.000" pan="-324.460"/>
+      <lensflare alpha="50.000" type="6" tilt="73.590" id="Lensflare04" color="0xffffff" blinding="40.000" pan="-307.070"/>
+      <lensflare alpha="35.000" type="6" tilt="15.060" id="Lensflare05" color="0xffffff" blinding="30.000" pan="-96.610"/>
+      <lensflare alpha="30.000" type="6" tilt="21.960" id="Lensflare06" color="0xffffff" blinding="30.000" pan="-272.500"/>
+      <lensflare alpha="40.000" type="6" tilt="35.980" id="Lensflare07" color="0xffffff" blinding="30.000" pan="-82.630"/>
     </media>
-    <transition enabled="1" blendcolor="0x000000" zoomout="3" zoomfov="40" blendtime="1" type="crossdissolve" zoomafteroutfov="40" zoomspeed="2" zoomafterinfov="140" zoomin="6" delay="none" zoomoutpause="0" softedge="0"/>
-    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
-    <control sensitivity="8" contextvr="1" rubberband="1" invertcontrol="1" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" contextfullscreen="1" speedwheel="1" zoomcentercursor="1" lockedkeyboard="0" contextprojections="0" lockedwheel="0" hideabout="0" dblclickfullscreen="1"/>
-    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+    <transition softedge="0" blendtime="1" zoomafteroutfov="40" blendcolor="0x000000" zoomoutpause="0" zoomafterinfov="140" zoomspeed="2" zoomin="6" type="crossdissolve" zoomout="3" zoomfov="40" enabled="1" delay="none"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control rubberband="1" lockedwheel="0" simulatemass="1" lockedmouse="0" invertwheel="0" zoomcentercursor="1" invertcontrol="1" contextprojections="0" hideabout="0" speedwheel="1" lockedkeyboard="0" dblclickfullscreen="1" contextvr="1" sensitivity="8" lockedkeyboardzoom="0" contextfullscreen="1"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
   </panorama>
   <panorama id="node29">
-    <input levelingroll="0" levelingpitch="0" width="2000" height="2000" leveltileurl="tiles/node29/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelbias="0.400" overlap="1" leveltilesize="510">
-      <level preload="0" predecode="0" width="2000" height="2000"/>
-      <level preload="0" predecode="0" width="1000" height="1000"/>
-      <level preload="1" predecode="1" width="500" height="500"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="0" width="2000" leveltilesize="510" height="2000" levelingroll="0" levelbias="0.400" leveltileurl="tiles/node29/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" overlap="1">
+      <level height="2000" predecode="0" width="2000" preload="0"/>
+      <level height="1000" predecode="0" width="1000" preload="0"/>
+      <level height="500" predecode="1" width="500" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" pan="0" projection="4" tilt="0"/>
-      <flyin fov="170" pan="0" projection="9" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max scaletofit="1" fov="140" pan="360" tilt="90" fovstereographic="330" fovfisheye="360"/>
+      <start tilt="0" fov="100" projection="4" pan="0"/>
+      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" scaletofit="1" fovstereographic="330" fov="140" fovfisheye="360" pan="360"/>
     </view>
-    <userdata heading="0" description="" info="" copyright="" author="" comment="" latitude="" datetime="" source="" nodeid="node29" longitude="" tags="123_02_26__" customnodeid="" title="01.2_Open Spase (Бухгалтер)"/>
-    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
-      <label enabled="1" bordercolor="0x000000" border="1" width="180" height="20" textcolor="0x000000" textalpha="1" wordwrap="1" background="1" backgroundalpha="1" backgroundcolor="0xffffff" borderalpha="1" borderradius="1"/>
-      <polystyle bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
-      <hotspot id="Point01" description="" target="" url="{node28}" pan="-35.04" skinid="ht_node" tilt="-6.28" title="01_Open Spase (Вход)"/>
-      <hotspot id="Point02" description="" target="" url="{node30}" pan="-323.58" skinid="ht_node" tilt="-6.73" title="01.3_Open Spase (Угол у колл-центра)"/>
-      <hotspot id="Point03" description="" target="" url="{node31}" pan="-178.49" skinid="ht_node" tilt="-13.26" title="02_Секретарь"/>
-      <hotspot id="Point04" description="" target="" url="{node36}" pan="-249.4" skinid="ht_node" tilt="-15.38" title="07_Кабинет бухгалтера"/>
-      <hotspot id="Point05" description="" target="" url="{node37}" pan="-290.23" skinid="ht_node" tilt="-14.78" title="08_Колл-центр"/>
-      <hotspot id="Point06" description="" target="" url="{node32}" pan="-179.55" skinid="ht_node" tilt="-1.35" title="04_Family кабинет"/>
-      <hotspot id="Point07" description="" target="" url="{node33}" pan="-169.23" skinid="ht_node" tilt="-6.73" title="09_Переговорная"/>
+    <userdata source="" info="" copyright="" tags="123_02_26__" title="01.2_Open Spase (Бухгалтер)" nodeid="node29" author="" longitude="" description="" comment="" latitude="" customnodeid="" heading="0" datetime=""/>
+    <hotspots height="20" width="180" wordwrap="1" smoothmovement="0">
+      <label border="1" backgroundalpha="1" textalpha="1" width="180" bordercolor="0x000000" borderalpha="1" height="20" enabled="1" borderradius="1" background="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff" borderalpha="1" mode="0"/>
+      <hotspot skinid="ht_node" tilt="-4.6" id="Point01" title="01_Open Spase (Вход)" url="{node28}" target="" description="" pan="-201.64"/>
+      <hotspot skinid="ht_node" tilt="-5.64" id="Point02" title="01.3_Open Spase (Угол у колл-центра)" url="{node30}" target="" description="" pan="-247.55"/>
+      <hotspot skinid="ht_node" tilt="-13.26" id="Point03" title="02_Секретарь" url="{node31}" target="" description="" pan="-178.49"/>
+      <hotspot skinid="ht_node" tilt="-11.18" id="Point04" title="07_Кабинет бухгалтера" url="{node36}" target="" description="" pan="-136.61"/>
+      <hotspot skinid="ht_node" tilt="-14.78" id="Point05" title="08_Колл-центр" url="{node37}" target="" description="" pan="-290.23"/>
+      <hotspot skinid="ht_node" tilt="-1.35" id="Point06" title="04_Family кабинет" url="{node32}" target="" description="" pan="-179.55"/>
+      <hotspot skinid="ht_node" tilt="-6.73" id="Point07" title="09_Переговорная" url="{node33}" target="" description="" pan="-169.23"/>
     </hotspots>
     <media>
-      <sound ambientlevel="0.000" tiltsize="10.000" id="_background" level="0.500" loop="3" nodechangekeep="1" pan="-1.000" mode="0" pansize="10.000" field="90.000" tilt="-1.000" startmutedmobile="0">
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
+      <sound mode="0" pan="-1.000" tiltsize="10.000" startmutedmobile="0" id="_background" pansize="10.000" nodechangekeep="1" tilt="-1.000" ambientlevel="0.000" loop="3" field="90.000" level="0.500">
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
       </sound>
-      <lensflare id="Lensflare01" color="0xffffff" pan="-26.670" blinding="45.000" alpha="50.000" type="6" tilt="80.890"/>
-      <lensflare id="Lensflare02" color="0xffffff" pan="-276.310" blinding="30.000" alpha="40.000" type="6" tilt="42.130"/>
-      <lensflare id="Lensflare03" color="0xffffff" pan="-23.540" blinding="20.000" alpha="35.000" type="7" tilt="12.870"/>
-      <lensflare id="Lensflare04" color="0xffffff" pan="-277.010" blinding="40.000" alpha="50.000" type="3" tilt="7.950"/>
-      <lensflare id="Lensflare05" color="0xffffff" pan="-351.510" blinding="20.000" alpha="35.000" type="7" tilt="13.100"/>
-      <lensflare id="Lensflare06" color="0xffffff" pan="-322.710" blinding="20.000" alpha="35.000" type="7" tilt="10.890"/>
-      <lensflare id="Lensflare07" color="0xffffff" pan="-176.490" blinding="30.000" alpha="35.000" type="6" tilt="33.870"/>
-      <lensflare id="Lensflare08" color="0xffffff" pan="-218.030" blinding="30.000" alpha="35.000" type="1" tilt="27.900"/>
-      <lensflare id="Lensflare09" color="0xffffff" pan="-122.090" blinding="20.000" alpha="40.000" type="7" tilt="12.600"/>
+      <lensflare alpha="50.000" type="6" tilt="50.990" id="Lensflare01" color="0xffffff" blinding="45.000" pan="-26.700"/>
+      <lensflare alpha="40.000" type="6" tilt="26.540" id="Lensflare02" color="0xffffff" blinding="30.000" pan="-288.720"/>
+      <lensflare alpha="35.000" type="7" tilt="12.190" id="Lensflare05" color="0xffffff" blinding="20.000" pan="-352.210"/>
+      <lensflare alpha="35.000" type="6" tilt="56.700" id="Lensflare07" color="0xffffff" blinding="30.000" pan="-144.190"/>
+      <lensflare alpha="35.000" type="1" tilt="40.120" id="Lensflare08" color="0xffffff" blinding="30.000" pan="-231.170"/>
     </media>
-    <transition enabled="1" blendcolor="0x000000" zoomout="3" zoomfov="40" blendtime="1" type="crossdissolve" zoomafteroutfov="40" zoomspeed="2" zoomafterinfov="140" zoomin="6" delay="none" zoomoutpause="0" softedge="0"/>
-    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
-    <control sensitivity="8" contextvr="1" rubberband="1" invertcontrol="1" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" contextfullscreen="1" speedwheel="1" zoomcentercursor="1" lockedkeyboard="0" contextprojections="0" lockedwheel="0" hideabout="0" dblclickfullscreen="1"/>
-    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+    <transition softedge="0" blendtime="1" zoomafteroutfov="40" blendcolor="0x000000" zoomoutpause="0" zoomafterinfov="140" zoomspeed="2" zoomin="6" type="crossdissolve" zoomout="3" zoomfov="40" enabled="1" delay="none"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control rubberband="1" lockedwheel="0" simulatemass="1" lockedmouse="0" invertwheel="0" zoomcentercursor="1" invertcontrol="1" contextprojections="0" hideabout="0" speedwheel="1" lockedkeyboard="0" dblclickfullscreen="1" contextvr="1" sensitivity="8" lockedkeyboardzoom="0" contextfullscreen="1"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
   </panorama>
   <panorama id="node30">
-    <input levelingroll="0" levelingpitch="0" width="2000" height="2000" leveltileurl="tiles/node30/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelbias="0.400" overlap="1" leveltilesize="510">
-      <level preload="0" predecode="0" width="2000" height="2000"/>
-      <level preload="0" predecode="0" width="1000" height="1000"/>
-      <level preload="1" predecode="1" width="500" height="500"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="0" width="2000" leveltilesize="510" height="2000" levelingroll="0" levelbias="0.400" leveltileurl="tiles/node30/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" overlap="1">
+      <level height="2000" predecode="0" width="2000" preload="0"/>
+      <level height="1000" predecode="0" width="1000" preload="0"/>
+      <level height="500" predecode="1" width="500" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" pan="0" projection="4" tilt="0"/>
-      <flyin fov="170" pan="0" projection="9" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max scaletofit="1" fov="140" pan="360" tilt="90" fovstereographic="330" fovfisheye="360"/>
+      <start tilt="0" fov="100" projection="4" pan="0"/>
+      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" scaletofit="1" fovstereographic="330" fov="140" fovfisheye="360" pan="360"/>
     </view>
-    <userdata heading="0" description="" info="" copyright="" author="" comment="" latitude="" datetime="" source="" nodeid="node30" longitude="" tags="123_02_26__" customnodeid="" title="01.3_Open Spase (Угол у колл-центра)"/>
-    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
-      <label enabled="1" bordercolor="0x000000" border="1" width="180" height="20" textcolor="0x000000" textalpha="1" wordwrap="1" background="1" backgroundalpha="1" backgroundcolor="0xffffff" borderalpha="1" borderradius="1"/>
-      <polystyle bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
-      <hotspot id="Point01" description="" target="" url="{node28}" pan="-189.8" skinid="ht_node" tilt="-7.21" title="01_Open Spase (Вход)"/>
-      <hotspot id="Point02" description="" target="" url="{node29}" pan="-251.52" skinid="ht_node" tilt="-4.42" title="01.2_Open Spase (Бухгалтер)"/>
-      <hotspot id="Point03" description="" target="" url="{node37}" pan="-295.7" skinid="ht_node" tilt="-8.41" title="08_Колл-центр"/>
+    <userdata source="" info="" copyright="" tags="123_02_26__" title="01.3_Open Spase (Угол у колл-центра)" nodeid="node30" author="" longitude="" description="" comment="" latitude="" customnodeid="" heading="0" datetime=""/>
+    <hotspots height="20" width="180" wordwrap="1" smoothmovement="0">
+      <label border="1" backgroundalpha="1" textalpha="1" width="180" bordercolor="0x000000" borderalpha="1" height="20" enabled="1" borderradius="1" background="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff" borderalpha="1" mode="0"/>
+      <hotspot skinid="ht_node" tilt="-12.55" id="Point01" title="01_Open Spase (Вход)" url="{node28}" target="" description="" pan="-34.88"/>
+      <hotspot skinid="ht_node" tilt="-2.97" id="Point02" title="01.2_Open Spase (Бухгалтер)" url="{node29}" target="" description="" pan="-323.22"/>
+      <hotspot skinid="ht_node" tilt="-8.84" id="Point03" title="08_Колл-центр" url="{node37}" target="" description="" pan="-280.99"/>
+      <hotspot skinid="ht_node" tilt="-5.36" id="Point04" title="02_Секретарь" url="{node31}" target="" description="" pan="-177.76"/>
+      <hotspot skinid="ht_node" tilt="-7.9" id="Point05" title="07_Кабинет бухгалтера" url="{node36}" target="" description="" pan="-251.47"/>
     </hotspots>
     <media>
-      <sound ambientlevel="0.000" tiltsize="10.000" id="_background" level="0.500" loop="3" nodechangekeep="1" pan="-1.000" mode="0" pansize="10.000" field="90.000" tilt="-1.000" startmutedmobile="0">
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
+      <sound mode="0" pan="-1.000" tiltsize="10.000" startmutedmobile="0" id="_background" pansize="10.000" nodechangekeep="1" tilt="-1.000" ambientlevel="0.000" loop="3" field="90.000" level="0.500">
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
       </sound>
-      <lensflare id="Lensflare01" color="0xffffff" pan="-8.870" blinding="50.000" alpha="70.000" type="5" tilt="9.430"/>
-      <lensflare id="Lensflare02" color="0xffffff" pan="-142.290" blinding="40.000" alpha="50.000" type="6" tilt="59.270"/>
-      <lensflare id="Lensflare03" color="0xffffff" pan="-21.900" blinding="50.000" alpha="50.000" type="6" tilt="51.000"/>
-      <lensflare id="Lensflare04" color="0xffffff" pan="-229.800" blinding="30.000" alpha="40.000" type="7" tilt="11.570"/>
-      <lensflare id="Lensflare05" color="0xffffff" pan="-64.140" blinding="30.000" alpha="40.000" type="7" tilt="11.720"/>
-      <lensflare id="Lensflare06" color="0xffffff" pan="-324.820" blinding="30.000" alpha="50.000" type="7" tilt="11.270"/>
+      <lensflare alpha="70.000" type="5" tilt="15.300" id="Lensflare01" color="0xffffff" blinding="50.000" pan="-18.420"/>
+      <lensflare alpha="50.000" type="6" tilt="80.120" id="Lensflare02" color="0xffffff" blinding="40.000" pan="-91.000"/>
+      <lensflare alpha="40.000" type="7" tilt="28.490" id="Lensflare04" color="0xffffff" blinding="30.000" pan="-213.200"/>
+      <lensflare alpha="40.000" type="7" tilt="8.100" id="Lensflare05" color="0xffffff" blinding="30.000" pan="-120.750"/>
+      <lensflare alpha="50.000" type="7" tilt="40.120" id="Lensflare06" color="0xffffff" blinding="30.000" pan="-286.430"/>
     </media>
-    <transition enabled="1" blendcolor="0x000000" zoomout="3" zoomfov="40" blendtime="1" type="crossdissolve" zoomafteroutfov="40" zoomspeed="2" zoomafterinfov="140" zoomin="6" delay="none" zoomoutpause="0" softedge="0"/>
-    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
-    <control sensitivity="8" contextvr="1" rubberband="1" invertcontrol="1" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" contextfullscreen="1" speedwheel="1" zoomcentercursor="1" lockedkeyboard="0" contextprojections="0" lockedwheel="0" hideabout="0" dblclickfullscreen="1"/>
-    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+    <transition softedge="0" blendtime="1" zoomafteroutfov="40" blendcolor="0x000000" zoomoutpause="0" zoomafterinfov="140" zoomspeed="2" zoomin="6" type="crossdissolve" zoomout="3" zoomfov="40" enabled="1" delay="none"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control rubberband="1" lockedwheel="0" simulatemass="1" lockedmouse="0" invertwheel="0" zoomcentercursor="1" invertcontrol="1" contextprojections="0" hideabout="0" speedwheel="1" lockedkeyboard="0" dblclickfullscreen="1" contextvr="1" sensitivity="8" lockedkeyboardzoom="0" contextfullscreen="1"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
   </panorama>
   <panorama id="node31">
-    <input levelingroll="0" levelingpitch="0" width="2000" height="2000" leveltileurl="tiles/node31/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelbias="0.400" overlap="1" leveltilesize="510">
-      <level preload="0" predecode="0" width="2000" height="2000"/>
-      <level preload="0" predecode="0" width="1000" height="1000"/>
-      <level preload="1" predecode="1" width="500" height="500"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="0" width="2000" leveltilesize="510" height="2000" levelingroll="0" levelbias="0.400" leveltileurl="tiles/node31/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" overlap="1">
+      <level height="2000" predecode="0" width="2000" preload="0"/>
+      <level height="1000" predecode="0" width="1000" preload="0"/>
+      <level height="500" predecode="1" width="500" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" pan="0" projection="4" tilt="0"/>
-      <flyin fov="170" pan="0" projection="9" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max scaletofit="1" fov="140" pan="360" tilt="90" fovstereographic="330" fovfisheye="360"/>
+      <start tilt="0" fov="100" projection="4" pan="0"/>
+      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" scaletofit="1" fovstereographic="330" fov="140" fovfisheye="360" pan="360"/>
     </view>
-    <userdata heading="0" description="" info="" copyright="" author="" comment="" latitude="" datetime="" source="" nodeid="node31" longitude="" tags="02_" customnodeid="" title="02_Секретарь"/>
-    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
-      <label enabled="1" bordercolor="0x000000" border="1" width="180" height="20" textcolor="0x000000" textalpha="1" wordwrap="1" background="1" backgroundalpha="1" backgroundcolor="0xffffff" borderalpha="1" borderradius="1"/>
-      <polystyle bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
-      <hotspot id="Point01" description="" target="" url="{node29}" pan="-192.81" skinid="ht_node" tilt="-13.9" title="01.2_Open Spase (Бухгалтер)"/>
-      <hotspot id="Point02" description="" target="" url="{node32}" pan="-344.21" skinid="ht_node" tilt="-13.01" title="04_Family кабинет"/>
-      <hotspot id="Point03" description="" target="" url="{node33}" pan="-253.29" skinid="ht_node" tilt="-20.01" title="09_Переговорная"/>
-      <hotspot id="Point04" description="" target="" url="{node34}" pan="-38" skinid="ht_node" tilt="-15.62" title="05_Кабинет руководителя (19,6 кв.м.)"/>
-      <hotspot id="Point05" description="" target="" url="{node35}" pan="-74.32" skinid="ht_node" tilt="-18.76" title="06_Кабинет руководителя (16,9 кв.м.)"/>
+    <userdata source="" info="" copyright="" tags="02_" title="02_Секретарь" nodeid="node31" author="" longitude="" description="" comment="" latitude="" customnodeid="" heading="0" datetime=""/>
+    <hotspots height="20" width="180" wordwrap="1" smoothmovement="0">
+      <label border="1" backgroundalpha="1" textalpha="1" width="180" bordercolor="0x000000" borderalpha="1" height="20" enabled="1" borderradius="1" background="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff" borderalpha="1" mode="0"/>
+      <hotspot skinid="ht_node" tilt="-9.47" id="Point01" title="01.2_Open Spase (Бухгалтер)" url="{node29}" target="" description="" pan="-4.78999"/>
+      <hotspot skinid="ht_node" tilt="-9.22" id="Point02" title="04_Family кабинет" url="{node32}" target="" description="" pan="-176.7"/>
+      <hotspot skinid="ht_node" tilt="-17.87" id="Point03" title="09_Переговорная" url="{node33}" target="" description="" pan="-90.12"/>
+      <hotspot skinid="ht_node" tilt="-12.46" id="Point04" title="05_Кабинет руководителя (19,6 кв.м.)" url="{node34}" target="" description="" pan="-236.17"/>
+      <hotspot skinid="ht_node" tilt="-11.74" id="Point05" title="06_Кабинет руководителя (16,9 кв.м.)" url="{node35}" target="" description="" pan="-278"/>
     </hotspots>
     <media>
-      <sound ambientlevel="0.000" tiltsize="10.000" id="_background" level="0.500" loop="3" nodechangekeep="1" pan="-1.000" mode="0" pansize="10.000" field="90.000" tilt="-1.000" startmutedmobile="0">
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
+      <sound mode="0" pan="-1.000" tiltsize="10.000" startmutedmobile="0" id="_background" pansize="10.000" nodechangekeep="1" tilt="-1.000" ambientlevel="0.000" loop="3" field="90.000" level="0.500">
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
       </sound>
-      <lensflare id="Lensflare01" color="0xffffff" pan="-253.500" blinding="40.000" alpha="50.000" type="6" tilt="58.100"/>
-      <lensflare id="Lensflare02" color="0xffffff" pan="-96.830" blinding="40.000" alpha="50.000" type="6" tilt="54.770"/>
-      <lensflare id="Lensflare03" color="0xffffff" pan="-179.180" blinding="20.000" alpha="40.000" type="7" tilt="15.060"/>
+      <lensflare alpha="50.000" type="6" tilt="45.570" id="Lensflare01" color="0xffffff" blinding="40.000" pan="-277.630"/>
+      <lensflare alpha="40.000" type="7" tilt="41.660" id="Lensflare03" color="0xffffff" blinding="20.000" pan="-177.980"/>
     </media>
-    <transition enabled="1" blendcolor="0x000000" zoomout="3" zoomfov="40" blendtime="1" type="crossdissolve" zoomafteroutfov="40" zoomspeed="2" zoomafterinfov="140" zoomin="6" delay="none" zoomoutpause="0" softedge="0"/>
-    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
-    <control sensitivity="8" contextvr="1" rubberband="1" invertcontrol="1" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" contextfullscreen="1" speedwheel="1" zoomcentercursor="1" lockedkeyboard="0" contextprojections="0" lockedwheel="0" hideabout="0" dblclickfullscreen="1"/>
-    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+    <transition softedge="0" blendtime="1" zoomafteroutfov="40" blendcolor="0x000000" zoomoutpause="0" zoomafterinfov="140" zoomspeed="2" zoomin="6" type="crossdissolve" zoomout="3" zoomfov="40" enabled="1" delay="none"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control rubberband="1" lockedwheel="0" simulatemass="1" lockedmouse="0" invertwheel="0" zoomcentercursor="1" invertcontrol="1" contextprojections="0" hideabout="0" speedwheel="1" lockedkeyboard="0" dblclickfullscreen="1" contextvr="1" sensitivity="8" lockedkeyboardzoom="0" contextfullscreen="1"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
   </panorama>
   <panorama id="node32">
-    <input levelingroll="0" levelingpitch="0" width="2000" height="2000" leveltileurl="tiles/node32/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelbias="0.400" overlap="1" leveltilesize="510">
-      <level preload="0" predecode="0" width="2000" height="2000"/>
-      <level preload="0" predecode="0" width="1000" height="1000"/>
-      <level preload="1" predecode="1" width="500" height="500"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="0" width="2000" leveltilesize="510" height="2000" levelingroll="0" levelbias="0.400" leveltileurl="tiles/node32/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" overlap="1">
+      <level height="2000" predecode="0" width="2000" preload="0"/>
+      <level height="1000" predecode="0" width="1000" preload="0"/>
+      <level height="500" predecode="1" width="500" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" pan="0" projection="4" tilt="0"/>
-      <flyin fov="170" pan="0" projection="9" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max scaletofit="1" fov="140" pan="360" tilt="90" fovstereographic="330" fovfisheye="360"/>
+      <start tilt="0" fov="100" projection="4" pan="0"/>
+      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" scaletofit="1" fovstereographic="330" fov="140" fovfisheye="360" pan="360"/>
     </view>
-    <userdata heading="0" description="" info="" copyright="" author="" comment="" latitude="" datetime="" source="" nodeid="node32" longitude="" tags="04_Family" customnodeid="" title="04_Family кабинет"/>
-    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
-      <label enabled="1" bordercolor="0x000000" border="1" width="180" height="20" textcolor="0x000000" textalpha="1" wordwrap="1" background="1" backgroundalpha="1" backgroundcolor="0xffffff" borderalpha="1" borderradius="1"/>
-      <polystyle bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
-      <hotspot id="Point01" description="" target="" url="{node31}" pan="-166.92" skinid="ht_node" tilt="-11.86" title="02_Секретарь"/>
+    <userdata source="" info="" copyright="" tags="04_Family" title="04_Family кабинет" nodeid="node32" author="" longitude="" description="" comment="" latitude="" customnodeid="" heading="0" datetime=""/>
+    <hotspots height="20" width="180" wordwrap="1" smoothmovement="0">
+      <label border="1" backgroundalpha="1" textalpha="1" width="180" bordercolor="0x000000" borderalpha="1" height="20" enabled="1" borderradius="1" background="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff" borderalpha="1" mode="0"/>
+      <hotspot skinid="ht_node" tilt="-11.86" id="Point01" title="02_Секретарь" url="{node31}" target="" description="" pan="-166.92"/>
     </hotspots>
     <media>
-      <sound ambientlevel="0.000" tiltsize="10.000" id="_background" level="0.500" loop="3" nodechangekeep="1" pan="-1.000" mode="0" pansize="10.000" field="90.000" tilt="-1.000" startmutedmobile="0">
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
+      <sound mode="0" pan="-1.000" tiltsize="10.000" startmutedmobile="0" id="_background" pansize="10.000" nodechangekeep="1" tilt="-1.000" ambientlevel="0.000" loop="3" field="90.000" level="0.500">
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
       </sound>
     </media>
-    <transition enabled="1" blendcolor="0x000000" zoomout="3" zoomfov="40" blendtime="1" type="crossdissolve" zoomafteroutfov="40" zoomspeed="2" zoomafterinfov="140" zoomin="6" delay="none" zoomoutpause="0" softedge="0"/>
-    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
-    <control sensitivity="8" contextvr="1" rubberband="1" invertcontrol="1" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" contextfullscreen="1" speedwheel="1" zoomcentercursor="1" lockedkeyboard="0" contextprojections="0" lockedwheel="0" hideabout="0" dblclickfullscreen="1"/>
-    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+    <transition softedge="0" blendtime="1" zoomafteroutfov="40" blendcolor="0x000000" zoomoutpause="0" zoomafterinfov="140" zoomspeed="2" zoomin="6" type="crossdissolve" zoomout="3" zoomfov="40" enabled="1" delay="none"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control rubberband="1" lockedwheel="0" simulatemass="1" lockedmouse="0" invertwheel="0" zoomcentercursor="1" invertcontrol="1" contextprojections="0" hideabout="0" speedwheel="1" lockedkeyboard="0" dblclickfullscreen="1" contextvr="1" sensitivity="8" lockedkeyboardzoom="0" contextfullscreen="1"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
   </panorama>
   <panorama id="node33">
-    <input levelingroll="0" levelingpitch="0" width="2000" height="2000" leveltileurl="tiles/node33/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelbias="0.400" overlap="1" leveltilesize="510">
-      <level preload="0" predecode="0" width="2000" height="2000"/>
-      <level preload="0" predecode="0" width="1000" height="1000"/>
-      <level preload="1" predecode="1" width="500" height="500"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="0" width="2000" leveltilesize="510" height="2000" levelingroll="0" levelbias="0.400" leveltileurl="tiles/node33/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" overlap="1">
+      <level height="2000" predecode="0" width="2000" preload="0"/>
+      <level height="1000" predecode="0" width="1000" preload="0"/>
+      <level height="500" predecode="1" width="500" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" pan="0" projection="4" tilt="0"/>
-      <flyin fov="170" pan="0" projection="9" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max scaletofit="1" fov="140" pan="360" tilt="90" fovstereographic="330" fovfisheye="360"/>
+      <start tilt="0" fov="100" projection="4" pan="0"/>
+      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" scaletofit="1" fovstereographic="330" fov="140" fovfisheye="360" pan="360"/>
     </view>
-    <userdata heading="0" description="" info="" copyright="" author="" comment="" latitude="" datetime="" source="" nodeid="node33" longitude="" tags="09_" customnodeid="" title="09_Переговорная"/>
-    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
-      <label enabled="1" bordercolor="0x000000" border="1" width="180" height="20" textcolor="0x000000" textalpha="1" wordwrap="1" background="1" backgroundalpha="1" backgroundcolor="0xffffff" borderalpha="1" borderradius="1"/>
-      <polystyle bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
-      <hotspot id="Point01" description="" target="" url="{node31}" pan="-356.54" skinid="ht_node" tilt="-16.63" title="02_Секретарь"/>
+    <userdata source="" info="" copyright="" tags="09_" title="09_Переговорная" nodeid="node33" author="" longitude="" description="" comment="" latitude="" customnodeid="" heading="0" datetime=""/>
+    <hotspots height="20" width="180" wordwrap="1" smoothmovement="0">
+      <label border="1" backgroundalpha="1" textalpha="1" width="180" bordercolor="0x000000" borderalpha="1" height="20" enabled="1" borderradius="1" background="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff" borderalpha="1" mode="0"/>
+      <hotspot skinid="ht_node" tilt="-16.63" id="Point01" title="02_Секретарь" url="{node31}" target="" description="" pan="-356.54"/>
     </hotspots>
     <media>
-      <sound ambientlevel="0.000" tiltsize="10.000" id="_background" level="0.500" loop="3" nodechangekeep="1" pan="-1.000" mode="0" pansize="10.000" field="90.000" tilt="-1.000" startmutedmobile="0">
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
+      <sound mode="0" pan="-1.000" tiltsize="10.000" startmutedmobile="0" id="_background" pansize="10.000" nodechangekeep="1" tilt="-1.000" ambientlevel="0.000" loop="3" field="90.000" level="0.500">
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
       </sound>
-      <lensflare id="Lensflare01" color="0xffffff" pan="-37.090" blinding="20.000" alpha="40.000" type="7" tilt="32.920"/>
-      <lensflare id="Lensflare02" color="0xffffff" pan="-313.340" blinding="20.000" alpha="40.000" type="7" tilt="27.910"/>
+      <lensflare alpha="40.000" type="7" tilt="28.330" id="Lensflare01" color="0xffffff" blinding="20.000" pan="-58.650"/>
+      <lensflare alpha="40.000" type="7" tilt="33.420" id="Lensflare02" color="0xffffff" blinding="20.000" pan="-313.380"/>
     </media>
-    <transition enabled="1" blendcolor="0x000000" zoomout="3" zoomfov="40" blendtime="1" type="crossdissolve" zoomafteroutfov="40" zoomspeed="2" zoomafterinfov="140" zoomin="6" delay="none" zoomoutpause="0" softedge="0"/>
-    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
-    <control sensitivity="8" contextvr="1" rubberband="1" invertcontrol="1" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" contextfullscreen="1" speedwheel="1" zoomcentercursor="1" lockedkeyboard="0" contextprojections="0" lockedwheel="0" hideabout="0" dblclickfullscreen="1"/>
-    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+    <transition softedge="0" blendtime="1" zoomafteroutfov="40" blendcolor="0x000000" zoomoutpause="0" zoomafterinfov="140" zoomspeed="2" zoomin="6" type="crossdissolve" zoomout="3" zoomfov="40" enabled="1" delay="none"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control rubberband="1" lockedwheel="0" simulatemass="1" lockedmouse="0" invertwheel="0" zoomcentercursor="1" invertcontrol="1" contextprojections="0" hideabout="0" speedwheel="1" lockedkeyboard="0" dblclickfullscreen="1" contextvr="1" sensitivity="8" lockedkeyboardzoom="0" contextfullscreen="1"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
   </panorama>
   <panorama id="node34">
-    <input levelingroll="0" levelingpitch="0" width="2000" height="2000" leveltileurl="tiles/node34/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelbias="0.400" overlap="1" leveltilesize="510">
-      <level preload="0" predecode="0" width="2000" height="2000"/>
-      <level preload="0" predecode="0" width="1000" height="1000"/>
-      <level preload="1" predecode="1" width="500" height="500"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="0" width="2000" leveltilesize="510" height="2000" levelingroll="0" levelbias="0.400" leveltileurl="tiles/node34/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" overlap="1">
+      <level height="2000" predecode="0" width="2000" preload="0"/>
+      <level height="1000" predecode="0" width="1000" preload="0"/>
+      <level height="500" predecode="1" width="500" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" pan="0" projection="4" tilt="0"/>
-      <flyin fov="170" pan="0" projection="9" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max scaletofit="1" fov="140" pan="360" tilt="90" fovstereographic="330" fovfisheye="360"/>
+      <start tilt="0" fov="100" projection="4" pan="0"/>
+      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" scaletofit="1" fovstereographic="330" fov="140" fovfisheye="360" pan="360"/>
     </view>
-    <userdata heading="0" description="" info="" copyright="" author="" comment="" latitude="" datetime="" source="" nodeid="node34" longitude="" tags="05_196" customnodeid="" title="05_Кабинет руководителя (19,6 кв.м.)"/>
-    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
-      <label enabled="1" bordercolor="0x000000" border="1" width="180" height="20" textcolor="0x000000" textalpha="1" wordwrap="1" background="1" backgroundalpha="1" backgroundcolor="0xffffff" borderalpha="1" borderradius="1"/>
-      <polystyle bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
-      <hotspot id="Point01" description="" target="" url="{node31}" pan="-228.45" skinid="ht_node" tilt="-24.84" title="02_Секретарь"/>
+    <userdata source="" info="" copyright="" tags="05_196" title="05_Кабинет руководителя (19,6 кв.м.)" nodeid="node34" author="" longitude="" description="" comment="" latitude="" customnodeid="" heading="0" datetime=""/>
+    <hotspots height="20" width="180" wordwrap="1" smoothmovement="0">
+      <label border="1" backgroundalpha="1" textalpha="1" width="180" bordercolor="0x000000" borderalpha="1" height="20" enabled="1" borderradius="1" background="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff" borderalpha="1" mode="0"/>
+      <hotspot skinid="ht_node" tilt="-17.9" id="Point01" title="02_Секретарь" url="{node31}" target="" description="" pan="-235.69"/>
     </hotspots>
     <media>
-      <sound ambientlevel="0.000" tiltsize="10.000" id="_background" level="0.500" loop="3" nodechangekeep="1" pan="-1.000" mode="0" pansize="10.000" field="90.000" tilt="-1.000" startmutedmobile="0">
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
+      <sound mode="0" pan="-1.000" tiltsize="10.000" startmutedmobile="0" id="_background" pansize="10.000" nodechangekeep="1" tilt="-1.000" ambientlevel="0.000" loop="3" field="90.000" level="0.500">
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
       </sound>
-      <lensflare id="Lensflare01" color="0xffffff" pan="-94.410" blinding="20.000" alpha="40.000" type="7" tilt="46.250"/>
-      <lensflare id="Lensflare02" color="0xffffff" pan="-101.290" blinding="40.000" alpha="60.000" type="3" tilt="18.250"/>
+      <lensflare alpha="40.000" type="7" tilt="43.410" id="Lensflare01" color="0xffffff" blinding="20.000" pan="-105.760"/>
+      <lensflare alpha="60.000" type="3" tilt="18.250" id="Lensflare02" color="0xffffff" blinding="40.000" pan="-101.290"/>
     </media>
-    <transition enabled="1" blendcolor="0x000000" zoomout="3" zoomfov="40" blendtime="1" type="crossdissolve" zoomafteroutfov="40" zoomspeed="2" zoomafterinfov="140" zoomin="6" delay="none" zoomoutpause="0" softedge="0"/>
-    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
-    <control sensitivity="8" contextvr="1" rubberband="1" invertcontrol="1" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" contextfullscreen="1" speedwheel="1" zoomcentercursor="1" lockedkeyboard="0" contextprojections="0" lockedwheel="0" hideabout="0" dblclickfullscreen="1"/>
-    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+    <transition softedge="0" blendtime="1" zoomafteroutfov="40" blendcolor="0x000000" zoomoutpause="0" zoomafterinfov="140" zoomspeed="2" zoomin="6" type="crossdissolve" zoomout="3" zoomfov="40" enabled="1" delay="none"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control rubberband="1" lockedwheel="0" simulatemass="1" lockedmouse="0" invertwheel="0" zoomcentercursor="1" invertcontrol="1" contextprojections="0" hideabout="0" speedwheel="1" lockedkeyboard="0" dblclickfullscreen="1" contextvr="1" sensitivity="8" lockedkeyboardzoom="0" contextfullscreen="1"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
   </panorama>
   <panorama id="node35">
-    <input levelingroll="0" levelingpitch="0" width="2000" height="2000" leveltileurl="tiles/node35/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelbias="0.400" overlap="1" leveltilesize="510">
-      <level preload="0" predecode="0" width="2000" height="2000"/>
-      <level preload="0" predecode="0" width="1000" height="1000"/>
-      <level preload="1" predecode="1" width="500" height="500"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="0" width="2000" leveltilesize="510" height="2000" levelingroll="0" levelbias="0.400" leveltileurl="tiles/node35/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" overlap="1">
+      <level height="2000" predecode="0" width="2000" preload="0"/>
+      <level height="1000" predecode="0" width="1000" preload="0"/>
+      <level height="500" predecode="1" width="500" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" pan="0" projection="4" tilt="0"/>
-      <flyin fov="170" pan="0" projection="9" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max scaletofit="1" fov="140" pan="360" tilt="90" fovstereographic="330" fovfisheye="360"/>
+      <start tilt="0" fov="100" projection="4" pan="0"/>
+      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" scaletofit="1" fovstereographic="330" fov="140" fovfisheye="360" pan="360"/>
     </view>
-    <userdata heading="0" description="" info="" copyright="" author="" comment="" latitude="" datetime="" source="" nodeid="node35" longitude="" tags="TelegramDesktop" customnodeid="" title="06_Кабинет руководителя (16,9 кв.м.)"/>
-    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
-      <label enabled="1" bordercolor="0x000000" border="1" width="180" height="20" textcolor="0x000000" textalpha="1" wordwrap="1" background="1" backgroundalpha="1" backgroundcolor="0xffffff" borderalpha="1" borderradius="1"/>
-      <polystyle bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
-      <hotspot id="Point01" description="" target="" url="{node31}" pan="-91.9" skinid="ht_node" tilt="-12.67" title="02_Секретарь"/>
+    <userdata source="" info="" copyright="" tags="TelegramDesktop" title="06_Кабинет руководителя (16,9 кв.м.)" nodeid="node35" author="" longitude="" description="" comment="" latitude="" customnodeid="" heading="0" datetime=""/>
+    <hotspots height="20" width="180" wordwrap="1" smoothmovement="0">
+      <label border="1" backgroundalpha="1" textalpha="1" width="180" bordercolor="0x000000" borderalpha="1" height="20" enabled="1" borderradius="1" background="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff" borderalpha="1" mode="0"/>
+      <hotspot skinid="ht_node" tilt="-12.67" id="Point01" title="02_Секретарь" url="{node31}" target="" description="" pan="-91.9"/>
     </hotspots>
     <media>
-      <sound ambientlevel="0.000" tiltsize="10.000" id="_background" level="0.500" loop="3" nodechangekeep="1" pan="-1.000" mode="0" pansize="10.000" field="90.000" tilt="-1.000" startmutedmobile="0">
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
+      <sound mode="0" pan="-1.000" tiltsize="10.000" startmutedmobile="0" id="_background" pansize="10.000" nodechangekeep="1" tilt="-1.000" ambientlevel="0.000" loop="3" field="90.000" level="0.500">
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
       </sound>
-      <lensflare id="Lensflare01" color="0xffffff" pan="-357.080" blinding="20.000" alpha="40.000" type="7" tilt="27.490"/>
-      <lensflare id="Lensflare02" color="0xffffff" pan="-285.890" blinding="40.000" alpha="60.000" type="3" tilt="26.750"/>
+      <lensflare alpha="40.000" type="7" tilt="27.490" id="Lensflare01" color="0xffffff" blinding="20.000" pan="-357.080"/>
+      <lensflare alpha="60.000" type="3" tilt="26.750" id="Lensflare02" color="0xffffff" blinding="40.000" pan="-285.890"/>
     </media>
-    <transition enabled="1" blendcolor="0x000000" zoomout="3" zoomfov="40" blendtime="1" type="crossdissolve" zoomafteroutfov="40" zoomspeed="2" zoomafterinfov="140" zoomin="6" delay="none" zoomoutpause="0" softedge="0"/>
-    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
-    <control sensitivity="8" contextvr="1" rubberband="1" invertcontrol="1" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" contextfullscreen="1" speedwheel="1" zoomcentercursor="1" lockedkeyboard="0" contextprojections="0" lockedwheel="0" hideabout="0" dblclickfullscreen="1"/>
-    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+    <transition softedge="0" blendtime="1" zoomafteroutfov="40" blendcolor="0x000000" zoomoutpause="0" zoomafterinfov="140" zoomspeed="2" zoomin="6" type="crossdissolve" zoomout="3" zoomfov="40" enabled="1" delay="none"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control rubberband="1" lockedwheel="0" simulatemass="1" lockedmouse="0" invertwheel="0" zoomcentercursor="1" invertcontrol="1" contextprojections="0" hideabout="0" speedwheel="1" lockedkeyboard="0" dblclickfullscreen="1" contextvr="1" sensitivity="8" lockedkeyboardzoom="0" contextfullscreen="1"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
   </panorama>
   <panorama id="node36">
-    <input levelingroll="0" levelingpitch="0" width="2000" height="2000" leveltileurl="tiles/node36/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelbias="0.400" overlap="1" leveltilesize="510">
-      <level preload="0" predecode="0" width="2000" height="2000"/>
-      <level preload="0" predecode="0" width="1000" height="1000"/>
-      <level preload="1" predecode="1" width="500" height="500"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="0" width="2000" leveltilesize="510" height="2000" levelingroll="0" levelbias="0.400" leveltileurl="tiles/node36/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" overlap="1">
+      <level height="2000" predecode="0" width="2000" preload="0"/>
+      <level height="1000" predecode="0" width="1000" preload="0"/>
+      <level height="500" predecode="1" width="500" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" pan="0" projection="4" tilt="0"/>
-      <flyin fov="170" pan="0" projection="9" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max scaletofit="1" fov="140" pan="360" tilt="90" fovstereographic="330" fovfisheye="360"/>
+      <start tilt="0" fov="100" projection="4" pan="0"/>
+      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" scaletofit="1" fovstereographic="330" fov="140" fovfisheye="360" pan="360"/>
     </view>
-    <userdata heading="0" description="" info="" copyright="" author="" comment="" latitude="" datetime="" source="" nodeid="node36" longitude="" tags="07_" customnodeid="" title="07_Кабинет бухгалтера"/>
-    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
-      <label enabled="1" bordercolor="0x000000" border="1" width="180" height="20" textcolor="0x000000" textalpha="1" wordwrap="1" background="1" backgroundalpha="1" backgroundcolor="0xffffff" borderalpha="1" borderradius="1"/>
-      <polystyle bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
-      <hotspot id="Point01" description="" target="" url="{node29}" pan="-265.77" skinid="ht_node" tilt="-18.25" title="01.2_Open Spase (Бухгалтер)"/>
+    <userdata source="" info="" copyright="" tags="07_" title="07_Кабинет бухгалтера" nodeid="node36" author="" longitude="" description="" comment="" latitude="" customnodeid="" heading="0" datetime=""/>
+    <hotspots height="20" width="180" wordwrap="1" smoothmovement="0">
+      <label border="1" backgroundalpha="1" textalpha="1" width="180" bordercolor="0x000000" borderalpha="1" height="20" enabled="1" borderradius="1" background="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff" borderalpha="1" mode="0"/>
+      <hotspot skinid="ht_node" tilt="-14.19" id="Point01" title="01.3_Open Spase (Угол у колл-центра)" url="{node30}" target="" description="" pan="-266.02"/>
     </hotspots>
     <media>
-      <sound ambientlevel="0.000" tiltsize="10.000" id="_background" level="0.500" loop="3" nodechangekeep="1" pan="-1.000" mode="0" pansize="10.000" field="90.000" tilt="-1.000" startmutedmobile="0">
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
+      <sound mode="0" pan="-1.000" tiltsize="10.000" startmutedmobile="0" id="_background" pansize="10.000" nodechangekeep="1" tilt="-1.000" ambientlevel="0.000" loop="3" field="90.000" level="0.500">
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
       </sound>
-      <lensflare id="Lensflare01" color="0xffffff" pan="-336.580" blinding="20.000" alpha="35.000" type="7" tilt="23.810"/>
-      <lensflare id="Lensflare02" color="0xffffff" pan="-29.330" blinding="20.000" alpha="35.000" type="7" tilt="21.100"/>
+      <lensflare alpha="35.000" type="7" tilt="37.600" id="Lensflare01" color="0xffffff" blinding="20.000" pan="-305.310"/>
+      <lensflare alpha="35.000" type="7" tilt="41.240" id="Lensflare02" color="0xffffff" blinding="20.000" pan="-60.630"/>
     </media>
-    <transition enabled="1" blendcolor="0x000000" zoomout="3" zoomfov="40" blendtime="1" type="crossdissolve" zoomafteroutfov="40" zoomspeed="2" zoomafterinfov="140" zoomin="6" delay="none" zoomoutpause="0" softedge="0"/>
-    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
-    <control sensitivity="8" contextvr="1" rubberband="1" invertcontrol="1" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" contextfullscreen="1" speedwheel="1" zoomcentercursor="1" lockedkeyboard="0" contextprojections="0" lockedwheel="0" hideabout="0" dblclickfullscreen="1"/>
-    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+    <transition softedge="0" blendtime="1" zoomafteroutfov="40" blendcolor="0x000000" zoomoutpause="0" zoomafterinfov="140" zoomspeed="2" zoomin="6" type="crossdissolve" zoomout="3" zoomfov="40" enabled="1" delay="none"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control rubberband="1" lockedwheel="0" simulatemass="1" lockedmouse="0" invertwheel="0" zoomcentercursor="1" invertcontrol="1" contextprojections="0" hideabout="0" speedwheel="1" lockedkeyboard="0" dblclickfullscreen="1" contextvr="1" sensitivity="8" lockedkeyboardzoom="0" contextfullscreen="1"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
   </panorama>
   <panorama id="node37">
-    <input levelingroll="0" levelingpitch="0" width="2000" height="2000" leveltileurl="tiles/node37/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelbias="0.400" overlap="1" leveltilesize="510">
-      <level preload="0" predecode="0" width="2000" height="2000"/>
-      <level preload="0" predecode="0" width="1000" height="1000"/>
-      <level preload="1" predecode="1" width="500" height="500"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="0" width="2000" leveltilesize="510" height="2000" levelingroll="0" levelbias="0.400" leveltileurl="tiles/node37/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" overlap="1">
+      <level height="2000" predecode="0" width="2000" preload="0"/>
+      <level height="1000" predecode="0" width="1000" preload="0"/>
+      <level height="500" predecode="1" width="500" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" pan="0" projection="4" tilt="0"/>
-      <flyin fov="170" pan="0" projection="9" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max scaletofit="1" fov="140" pan="360" tilt="90" fovstereographic="330" fovfisheye="360"/>
+      <start tilt="0" fov="100" projection="4" pan="0"/>
+      <flyin tilt="-90" fov="170" projection="9" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" scaletofit="1" fovstereographic="330" fov="140" fovfisheye="360" pan="360"/>
     </view>
-    <userdata heading="0" description="" info="" copyright="" author="" comment="" latitude="" datetime="" source="" nodeid="node37" longitude="" tags="08_-" customnodeid="" title="08_Колл-центр"/>
-    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
-      <label enabled="1" bordercolor="0x000000" border="1" width="180" height="20" textcolor="0x000000" textalpha="1" wordwrap="1" background="1" backgroundalpha="1" backgroundcolor="0xffffff" borderalpha="1" borderradius="1"/>
-      <polystyle bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
-      <hotspot id="Point01" description="" target="" url="{node30}" pan="-177.87" skinid="ht_node" tilt="-16.7" title="01.3_Open Spase (Угол у колл-центра)"/>
-      <hotspot id="Point02" description="" target="" url="{node29}" pan="-287.36" skinid="ht_node" tilt="-10.76" title="01.2_Open Spase (Бухгалтер)"/>
+    <userdata source="" info="" copyright="" tags="08_-" title="08_Колл-центр" nodeid="node37" author="" longitude="" description="" comment="" latitude="" customnodeid="" heading="0" datetime=""/>
+    <hotspots height="20" width="180" wordwrap="1" smoothmovement="0">
+      <label border="1" backgroundalpha="1" textalpha="1" width="180" bordercolor="0x000000" borderalpha="1" height="20" enabled="1" borderradius="1" background="1" backgroundcolor="0xffffff" wordwrap="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff" borderalpha="1" mode="0"/>
+      <hotspot skinid="ht_node" tilt="-3.87" id="Point01" title="01.3_Open Spase (Угол у колл-центра)" url="{node30}" target="" description="" pan="-292.67"/>
+      <hotspot skinid="ht_node" tilt="-12.67" id="Point02" title="01.2_Open Spase (Бухгалтер)" url="{node29}" target="" description="" pan="-176.1"/>
     </hotspots>
     <media>
-      <sound ambientlevel="0.000" tiltsize="10.000" id="_background" level="0.500" loop="3" nodechangekeep="1" pan="-1.000" mode="0" pansize="10.000" field="90.000" tilt="-1.000" startmutedmobile="0">
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
-        <source url="media/tmph9zpfj2l.mp3" mono="0"/>
+      <sound mode="0" pan="-1.000" tiltsize="10.000" startmutedmobile="0" id="_background" pansize="10.000" nodechangekeep="1" tilt="-1.000" ambientlevel="0.000" loop="3" field="90.000" level="0.500">
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
+        <source mono="0" url="media/tmph9zpfj2l.mp3"/>
       </sound>
-      <lensflare id="Lensflare01" color="0xffffff" pan="-23.230" blinding="20.000" alpha="35.000" type="7" tilt="18.100"/>
-      <lensflare id="Lensflare02" color="0xffffff" pan="-309.450" blinding="20.000" alpha="35.000" type="7" tilt="12.940"/>
-      <lensflare id="Lensflare03" color="0xffffff" pan="-126.870" blinding="40.000" alpha="50.000" type="3" tilt="13.500"/>
+      <lensflare alpha="35.000" type="7" tilt="18.100" id="Lensflare01" color="0xffffff" blinding="20.000" pan="-23.230"/>
+      <lensflare alpha="35.000" type="7" tilt="39.040" id="Lensflare02" color="0xffffff" blinding="20.000" pan="-289.860"/>
+      <lensflare alpha="50.000" type="3" tilt="42.880" id="Lensflare03" color="0xffffff" blinding="40.000" pan="-124.280"/>
     </media>
-    <transition enabled="1" blendcolor="0x000000" zoomout="3" zoomfov="40" blendtime="1" type="crossdissolve" zoomafteroutfov="40" zoomspeed="2" zoomafterinfov="140" zoomin="6" delay="none" zoomoutpause="0" softedge="0"/>
-    <animation useinautorotation="0" animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0"/>
-    <control sensitivity="8" contextvr="1" rubberband="1" invertcontrol="1" simulatemass="1" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" contextfullscreen="1" speedwheel="1" zoomcentercursor="1" lockedkeyboard="0" contextprojections="0" lockedwheel="0" hideabout="0" dblclickfullscreen="1"/>
-    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+    <transition softedge="0" blendtime="1" zoomafteroutfov="40" blendcolor="0x000000" zoomoutpause="0" zoomafterinfov="140" zoomspeed="2" zoomin="6" type="crossdissolve" zoomout="3" zoomfov="40" enabled="1" delay="none"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control rubberband="1" lockedwheel="0" simulatemass="1" lockedmouse="0" invertwheel="0" zoomcentercursor="1" invertcontrol="1" contextprojections="0" hideabout="0" speedwheel="1" lockedkeyboard="0" dblclickfullscreen="1" contextvr="1" sensitivity="8" lockedkeyboardzoom="0" contextfullscreen="1"/>
+    <vr toggleskinbutton="1" skinbuttonposition="0" defaulthsscale="100"/>
   </panorama>
   <masternode>
-    <userdata description="" tags="" copyright="" author="Корпорация Архитектуры и Дизайна" comment="" title="Office_CADproject feat Leader"/>
+    <userdata tags="" copyright="" title="Office_CADproject feat Leader" author="Корпорация Архитектуры и Дизайна" description="" comment=""/>
     <animationsequences>
       <sequence title="Animation01"/>
     </animationsequences>
