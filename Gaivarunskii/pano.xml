@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node42" apprev="20986" appversion="7.1.8" hassounds="1">
+  <panorama id="node42">
+    <input width="1500" levelbiashidpi="1.000" overlap="1" levelbias="0.400" levelingpitch="0" height="1500" leveltileurl="tiles/node42/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510">
+      <level width="1500" predecode="0" height="1500" preload="0"/>
+      <level width="750" predecode="0" height="750" preload="0"/>
+      <level width="375" predecode="1" height="375" preload="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start pan="-10.5357" projection="4" tilt="-8.44198" fov="97.2914"/>
+      <flyin pan="0" projection="9" tilt="-90" fov="170"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max fovfisheye="360" pan="360" fovstereographic="330" tilt="90" fov="140" scaletofit="1"/>
+    </view>
+    <userdata title="" customnodeid="" nodeid="node42" datetime="" info="" longitude="" latitude="" author="" comment="" source="" heading="0" description="" tags="02" copyright=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderalpha="1" borderradius="1" width="180" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" bordercolor="0x000000" height="20" backgroundcolor="0xffffff" background="1" enabled="1"/>
+      <polystyle handcursor="1" bordercolor="0x0000ff" backgroundalpha="0.25098" mode="0" backgroundcolor="0x0000ff" borderalpha="1"/>
+      <hotspot title="" url="{node43}" pan="-4.87" skinid="ht_node" target="" description="" id="Point01" tilt="-9.06"/>
+    </hotspots>
+    <media>
+      <sound ambientlevel="0.000" pan="-1.000" pansize="10.000" nodechangekeep="1" mode="0" tiltsize="10.000" loop="3" field="90.000" level="0.500" startmutedmobile="0" id="_background" tilt="-1.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3"/>
+      </sound>
+    </media>
+    <transition zoomspeed="2" zoomafteroutfov="40" delay="none" zoomout="3" zoomoutpause="0" type="crossdissolve" blendtime="1" zoomafterinfov="140" blendcolor="0x000000" softedge="0" zoomin="6" zoomfov="40" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" contextprojections="0" lockedwheel="0" sensitivity="8" zoomcentercursor="1" contextvr="1" dblclickfullscreen="1" invertcontrol="1" simulatemass="1" rubberband="1" contextfullscreen="1" lockedmouse="0" speedwheel="1" invertwheel="0" lockedkeyboard="0" hideabout="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node43">
+    <input width="1500" levelbiashidpi="1.000" overlap="1" levelbias="0.400" levelingpitch="0" height="1500" leveltileurl="tiles/node43/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510">
+      <level width="1500" predecode="0" height="1500" preload="0"/>
+      <level width="750" predecode="0" height="750" preload="0"/>
+      <level width="375" predecode="1" height="375" preload="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start pan="-16.1174" projection="4" tilt="-7.45229" fov="97.2914"/>
+      <flyin pan="0" projection="9" tilt="-90" fov="170"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max fovfisheye="360" pan="360" fovstereographic="330" tilt="90" fov="140" scaletofit="1"/>
+    </view>
+    <userdata title="" customnodeid="" nodeid="node43" datetime="" info="" longitude="" latitude="" author="" comment="" source="" heading="0" description="" tags="02" copyright=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderalpha="1" borderradius="1" width="180" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" bordercolor="0x000000" height="20" backgroundcolor="0xffffff" background="1" enabled="1"/>
+      <polystyle handcursor="1" bordercolor="0x0000ff" backgroundalpha="0.25098" mode="0" backgroundcolor="0x0000ff" borderalpha="1"/>
+      <hotspot title="" url="{node42}" pan="-171.43" skinid="ht_node" target="" description="" id="Point01" tilt="-10.03"/>
+      <hotspot title="" url="{node44}" pan="-215.58" skinid="ht_node" target="" description="" id="Point02" tilt="-12.81"/>
+      <hotspot title="" url="{node37}" pan="-238.3" skinid="ht_node" target="" description="" id="Point03" tilt="-8.77"/>
+    </hotspots>
+    <media>
+      <sound ambientlevel="0.000" pan="-1.000" pansize="10.000" nodechangekeep="1" mode="0" tiltsize="10.000" loop="3" field="90.000" level="0.500" startmutedmobile="0" id="_background" tilt="-1.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3"/>
+      </sound>
+    </media>
+    <transition zoomspeed="2" zoomafteroutfov="40" delay="none" zoomout="3" zoomoutpause="0" type="crossdissolve" blendtime="1" zoomafterinfov="140" blendcolor="0x000000" softedge="0" zoomin="6" zoomfov="40" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" contextprojections="0" lockedwheel="0" sensitivity="8" zoomcentercursor="1" contextvr="1" dblclickfullscreen="1" invertcontrol="1" simulatemass="1" rubberband="1" contextfullscreen="1" lockedmouse="0" speedwheel="1" invertwheel="0" lockedkeyboard="0" hideabout="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node37">
+    <input width="1500" levelbiashidpi="1.000" overlap="1" levelbias="0.400" levelingpitch="0" height="1500" leveltileurl="tiles/node37/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510">
+      <level width="1500" predecode="0" height="1500" preload="0"/>
+      <level width="750" predecode="0" height="750" preload="0"/>
+      <level width="375" predecode="1" height="375" preload="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start pan="127.328" projection="4" tilt="-25.5297" fov="97.2914"/>
+      <flyin pan="0" projection="9" tilt="-90" fov="170"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max fovfisheye="360" pan="360" fovstereographic="330" tilt="90" fov="140" scaletofit="1"/>
+    </view>
+    <userdata title="" customnodeid="" nodeid="node37" datetime="" info="" longitude="" latitude="" author="" comment="" source="" heading="0" description="" tags="02" copyright=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderalpha="1" borderradius="1" width="180" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" bordercolor="0x000000" height="20" backgroundcolor="0xffffff" background="1" enabled="1"/>
+      <polystyle handcursor="1" bordercolor="0x0000ff" backgroundalpha="0.25098" mode="0" backgroundcolor="0x0000ff" borderalpha="1"/>
+      <hotspot title="" url="{node43}" pan="-109.61" skinid="ht_node" target="" description="" id="Point02" tilt="-5.16"/>
+      <hotspot title="" url="{node44}" pan="-129.44" skinid="ht_node" target="" description="" id="Point03" tilt="-6.46"/>
+      <hotspot title="" url="{node45}" pan="-160.95" skinid="ht_node" target="" description="" id="Point01" tilt="-7.42"/>
+    </hotspots>
+    <media>
+      <sound ambientlevel="0.000" pan="-1.000" pansize="10.000" nodechangekeep="1" mode="0" tiltsize="10.000" loop="3" field="90.000" level="0.500" startmutedmobile="0" id="_background" tilt="-1.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3"/>
+      </sound>
+    </media>
+    <transition zoomspeed="2" zoomafteroutfov="40" delay="none" zoomout="3" zoomoutpause="0" type="crossdissolve" blendtime="1" zoomafterinfov="140" blendcolor="0x000000" softedge="0" zoomin="6" zoomfov="40" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" contextprojections="0" lockedwheel="0" sensitivity="8" zoomcentercursor="1" contextvr="1" dblclickfullscreen="1" invertcontrol="1" simulatemass="1" rubberband="1" contextfullscreen="1" lockedmouse="0" speedwheel="1" invertwheel="0" lockedkeyboard="0" hideabout="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node45">
+    <input width="1500" levelbiashidpi="1.000" overlap="1" levelbias="0.400" levelingpitch="0" height="1500" leveltileurl="tiles/node45/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510">
+      <level width="1500" predecode="0" height="1500" preload="0"/>
+      <level width="750" predecode="0" height="750" preload="0"/>
+      <level width="375" predecode="1" height="375" preload="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start pan="0" projection="4" tilt="0" fov="100"/>
+      <flyin pan="0" projection="9" tilt="-90" fov="170"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max fovfisheye="360" pan="360" fovstereographic="330" tilt="90" fov="140" scaletofit="1"/>
+    </view>
+    <userdata title="" customnodeid="" nodeid="node45" datetime="" info="" longitude="" latitude="" author="" comment="" source="" heading="0" description="" tags="02" copyright=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderalpha="1" borderradius="1" width="180" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" bordercolor="0x000000" height="20" backgroundcolor="0xffffff" background="1" enabled="1"/>
+      <polystyle handcursor="1" bordercolor="0x0000ff" backgroundalpha="0.25098" mode="0" backgroundcolor="0x0000ff" borderalpha="1"/>
+      <hotspot title="" url="{node37}" pan="-36.64" skinid="ht_node" target="" description="" id="Point01" tilt="-13.16"/>
+    </hotspots>
+    <media>
+      <sound ambientlevel="0.000" pan="-1.000" pansize="10.000" nodechangekeep="1" mode="0" tiltsize="10.000" loop="3" field="90.000" level="0.500" startmutedmobile="0" id="_background" tilt="-1.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3"/>
+      </sound>
+    </media>
+    <transition zoomspeed="2" zoomafteroutfov="40" delay="none" zoomout="3" zoomoutpause="0" type="crossdissolve" blendtime="1" zoomafterinfov="140" blendcolor="0x000000" softedge="0" zoomin="6" zoomfov="40" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" contextprojections="0" lockedwheel="0" sensitivity="8" zoomcentercursor="1" contextvr="1" dblclickfullscreen="1" invertcontrol="1" simulatemass="1" rubberband="1" contextfullscreen="1" lockedmouse="0" speedwheel="1" invertwheel="0" lockedkeyboard="0" hideabout="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <panorama id="node44">
+    <input width="1500" levelbiashidpi="1.000" overlap="1" levelbias="0.400" levelingpitch="0" height="1500" leveltileurl="tiles/node44/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510">
+      <level width="1500" predecode="0" height="1500" preload="0"/>
+      <level width="750" predecode="0" height="750" preload="0"/>
+      <level width="375" predecode="1" height="375" preload="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start pan="-51.081" projection="4" tilt="-24.559" fov="97.2914"/>
+      <flyin pan="0" projection="9" tilt="-90" fov="170"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max fovfisheye="360" pan="360" fovstereographic="330" tilt="90" fov="140" scaletofit="1"/>
+    </view>
+    <userdata title="" customnodeid="" nodeid="node44" datetime="" info="" longitude="" latitude="" author="" comment="" source="" heading="0" description="" tags="02" copyright=""/>
+    <hotspots smoothmovement="0" wordwrap="1" width="180" height="20">
+      <label borderalpha="1" borderradius="1" width="180" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" bordercolor="0x000000" height="20" backgroundcolor="0xffffff" background="1" enabled="1"/>
+      <polystyle handcursor="1" bordercolor="0x0000ff" backgroundalpha="0.25098" mode="0" backgroundcolor="0x0000ff" borderalpha="1"/>
+      <hotspot title="" url="{node43}" pan="-8.59" skinid="ht_node" target="" description="" id="Point01" tilt="-7.76"/>
+    </hotspots>
+    <media>
+      <sound ambientlevel="0.000" pan="-1.000" pansize="10.000" nodechangekeep="1" mode="0" tiltsize="10.000" loop="3" field="90.000" level="0.500" startmutedmobile="0" id="_background" tilt="-1.000">
+        <source mono="0" url="media/OST Khodyachiy zamok.mp3"/>
+        <source mono="0" url="media/ZHU-Musical-Chairs-Mixtape-_Vol.-2-Visualizer_.mp3"/>
+      </sound>
+    </media>
+    <transition zoomspeed="2" zoomafteroutfov="40" delay="none" zoomout="3" zoomoutpause="0" type="crossdissolve" blendtime="1" zoomafterinfov="140" blendcolor="0x000000" softedge="0" zoomin="6" zoomfov="40" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" contextprojections="0" lockedwheel="0" sensitivity="8" zoomcentercursor="1" contextvr="1" dblclickfullscreen="1" invertcontrol="1" simulatemass="1" rubberband="1" contextfullscreen="1" lockedmouse="0" speedwheel="1" invertwheel="0" lockedkeyboard="0" hideabout="0"/>
+    <vr toggleskinbutton="1" defaulthsscale="100" skinbuttonposition="0"/>
+  </panorama>
+  <masternode>
+    <userdata title="Gaivarunskyy" author="Корпорация Архитектуры и Дизайна" comment="" description="" tags="" copyright=""/>
+    <animationsequences>
+      <sequence title="Animation01"/>
+    </animationsequences>
+  </masternode>
+</tour>
